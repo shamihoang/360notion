@@ -29,7 +29,7 @@ body
 }
 	
 .form-control
-{
+{	resize: none;
     display: block;
     width: 96%;
     height: 104px;
@@ -81,7 +81,7 @@ body
 { display: inline-block;
  }
     
-.entirecompanyicon
+.entirecompany_icon
 {
 	color:#6fb5e3; font-size:12px;
 }
@@ -91,7 +91,8 @@ body
 .remove_icon
 {	color:#aaaaaa; font-size:12px;}
 
-.float_right{ float:right;}
+.remove_icon_upload{ float:right; padding-top:12px;}
+.upload_message { font-size:10px; color:#428BCA;}
 #feedback360
 {   padding-left:15px;
 	width:100%;
@@ -134,10 +135,10 @@ width:31%; margin:auto; text-align:center;
 .iconcolorblue { color:#70b5e3; }
 .feedback360_icon
 {
-	display: inline-block;   text-align:center;   	    margin:auto; text-decoration: none;
+	display: inline-block;   text-align:center;   margin:auto; text-decoration: none;
 	background-color: #FFF;
 	border-color: #CCC;
-	border-radius: 4px; padding-top:10px; 			    padding-left:15px;  
+	border-radius: 4px; padding-top:10px;   padding-left:15px;  
 }
 .image_wrap
 {
@@ -145,15 +146,16 @@ width:31%; margin:auto; text-align:center;
 	 padding-right:15px;
 	
 }
+#upload_file_left { float:left; width:70%;}
 #upload_file
 {
 	padding-left:15px;
 	border-top: 1px dotted #DDD;
-	height:40px;
+	height:35px;
 	margin:auto;
 	padding:10px;
-
-
+	line-height:10px;
+	background-color:#f5f5f5;
 }
 
 #caret {  z-index:1;}
