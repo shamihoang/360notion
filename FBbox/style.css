@@ -88,9 +88,10 @@ body
 .padding
 {	padding:5px; 
 }
-.minus
+.remove_icon
 {	color:#aaaaaa; font-size:12px;}
 
+.float_right{ float:right;}
 #feedback360
 {   padding-left:15px;
 	width:100%;
@@ -133,11 +134,28 @@ width:31%; margin:auto; text-align:center;
 .iconcolorblue { color:#70b5e3; }
 .feedback360_icon
 {
-	display: inline-block;  text-align:center; margin:auto; text-decoration: none;
+	display: inline-block;   text-align:center;   	    margin:auto; text-decoration: none;
 	background-color: #FFF;
 	border-color: #CCC;
-	border-radius: 4px; padding-top:10px; padding-left:15px;  
+	border-radius: 4px; padding-top:10px; 			    padding-left:15px;  
 }
+.image_wrap
+{
+	float: left;
+	 padding-right:15px;
+	
+}
+#upload_file
+{
+	padding-left:15px;
+	border-top: 1px dotted #DDD;
+	height:40px;
+	margin:auto;
+	padding:10px;
+
+
+}
+
 #caret {  z-index:1;}
 #caret_360 { background-color:#000;}
 #box_bottom
