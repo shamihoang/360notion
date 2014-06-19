@@ -78,7 +78,8 @@ body
 	height:25px;
 }
 .inline-block
-{ display: inline-block;
+{ 
+	display: inline-block;
  }
     
 .entirecompany_icon
@@ -92,7 +93,7 @@ body
 {	color:#aaaaaa; font-size:12px;}
 
 .remove_icon_upload{ float:right; padding-top:12px;}
-.upload_message { font-size:10px; color:#428BCA;}
+.upload_message { font-size:11px; font-style:italic; color:#428BCA;}
 #feedback360
 {   padding-left:15px;
 	width:100%;
@@ -110,13 +111,9 @@ body
     height: 20px;
     margin-top: 5px;
     width: 2px;
-}
-	
+}	
 . paddingleft { padding-left:15px;}
-.feedback 
-{ 
-width:31%; margin:auto; text-align:center;
-}
+.feedback { width:31%; margin:auto; text-align:center;}
 .share-widget-actions {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
@@ -141,11 +138,7 @@ width:31%; margin:auto; text-align:center;
 	border-radius: 4px; padding-top:10px;   padding-left:15px;  
 }
 .image_wrap
-{
-	float: left;
-	 padding-right:15px;
-	
-}
+{ float: left; padding-right:15px;}
 #upload_file_left { float:left; width:70%;}
 #upload_file
 {
@@ -160,5 +153,4 @@ width:31%; margin:auto; text-align:center;
 
 #caret {  z-index:1;}
 #caret_360 { background-color:#000;}
-#box_bottom
-{ height:40px; background-color: #F5F5F5;}
+#box_bottom { height:40px; background-color: #F5F5F5;}
