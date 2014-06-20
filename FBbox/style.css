@@ -140,6 +140,9 @@ body
 .image_wrap
 { float: left; padding-right:15px;}
 #upload_file_left { float:left; width:70%;}
+
+#uploadfile_button {  float:right; }
+#uploadfile_button_height{ height:28px; padding-right:15px;}
 #upload_file
 {
 	padding-left:15px;
