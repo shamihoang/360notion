@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+    <div class="masthead">
+        <div class="container">
+            <!-- carousel -->
+            <div id="masthead-carousel" class="carousel masthead-carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-6 masthead-text animated fadeInUpBig">
+                                <h1 class="masthead-title">Social Network For Your Company</h1>
+                                    <p class="masthead-">
+                                        Connect, collaborate, and share what matters within your company easily and securely. 
+                                        Your private {siteName} network requires a company domain email address to Sign Up.
+                                    </p>
+                                <br>
+
+                                <div class="masthead-actions">
+                                    <a href="/features" class="btn btn-transparent btn-jumbo">
+                                        Learn More
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 masthead-img animated pulse">
+                                <form id="signup_form" action="/signup" method="POST" class="form masthead-form well" role="form">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input type="text"
+                                                name="organization"
+                                                placeholder="Organization"
+                                                class="form-control validate[required]">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="email"
+                                                id="email"
+                                                name="email"
+                                                placeholder="Email"
+                                                class="form-control validate[required,custom[email]]">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text"
+                                                id="name"
+                                                name="name"
+                                                placeholder="Full Name"
+                                                class="form-control validate[required]">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password"
+                                                id="password"
+                                                name="password"
+                                                placeholder="Password"
+                                                class="form-control validate[required,minSize[6],maxSize[32]]">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password"
+                                                id="confirm_password"
+                                                name="confirm_password"
+                                                placeholder="Confirm Password"
+                                                class="form-control validate[required,equals[password]]">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-secondary btn-jumbo btn-block">Get Started Today!</button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6 masthead-text animated fadeInLeftBig">
+                                <h1 class="masthead-title">Snap Messages</h1>
+
+                                <p class="masthead-">
+                                    Delete what you share 30 seconds after the recipient opens them. 
+                                    Sharing sensitive or personal content has never been safer.
+                                </p>
+
+                                <br>
+
+                                <div class="masthead-actions">
+                                    <a href="/features" class="btn btn-transparent btn-jumbo">
+                                        Learn More
+                                    </a>
+
+                                    <a href="/signup" class="btn btn-primary btn-jumbo">
+                                        Create an Account
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 masthead-img animated fadeInRightBig">
+                                <img src="/themes/landing/img/masthead/ipad.png" alt="slide2" class="img-responsive" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-6 masthead-text animated fadeInDownBig">
+                                <h1 class="masthead-title">Mistake-Proof Messages</h1>
+
+                                <p class="masthead-">
+                                    Reduce the unnecessary pressure associated with sending anything that will be evaluated in-house. 
+                                    Preventing stress and mental fatigue has never been easier.
+                                </p>
+
+                                <br>
+
+                                <div class="masthead-actions">
+                                    <a href="/features" class="btn btn-transparent btn-jumbo">
+                                        Learn More
+                                    </a>
+
+                                    <a href="/signup" class="btn btn-primary btn-jumbo">
+                                        Create an Account
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 masthead-img animated fadeInUpBig">
+                                <img src="/themes/landing/img/masthead/mobile.png" alt="slide2" class="img-responsive" />     
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="row">
+                                <div class="col-md-6 masthead-text animated fadeInDownBig">
+                                    <h1 class="masthead-title">360 Degree Feedback</h1>
+                                    <p class="masthead-">
+                                        Evaluate co-workers using a technique called 360-degree feedback. 
+                                        When implemented effectively, a 360-degree feedback system 
+                                        can lead to dynamic and positive change.
+                                    </p>
+                                    <br>
+                                    <div class="masthead-actions">
+                                        <a href="/features" class="btn btn-transparent btn-jumbo">
+                                            Learn More
+                                        </a>
+                                        <a href="/signup" class="btn btn-primary btn-jumbo">
+                                            Create an Account
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 masthead-img animated fadeInUpBig">
+                                    <iframe src="http://player.vimeo.com/video/57175742?title=0&amp;byline=0&amp;portrait=0&amp;color=e2007a" style="width: 85%; height: 325px;">
+                                    </iframe>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <a class="carousel-control left" href="#masthead-carousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#masthead-carousel" data-slide="next">&rsaquo;</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-push-6">
+                    <h4 class="content-title">
+                      <span>About {siteName}</span>
+                    </h4>
+                    <p>
+                        Whether you are a startup or a big enterprise, you need to engage with your co-workers in order to 
+                        get things done. After creating a {siteName} network for your organization, you can: 
+                    </p>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="icons-list">
+                                <li>
+                                    <i class="icon-li fa fa-check text-primary"></i>
+                                    Share status updates
+                                </li>
+                                <li>
+                                    <i class="icon-li fa fa-check text-primary"></i>
+                                    Chat with co-workers
+                                </li>
+                                <li>
+                                    <i class="icon-li fa fa-check text-primary"></i>
+                                    Share and store files
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <ul class="icons-list">
+                                <li>
+                                    <i class="icon-li fa fa-check text-primary"></i>
+                                    Conduct 360-degree evaluations
+                                </li>
+                                <li>
+                                    <i class="icon-li fa fa-check text-primary"></i>
+                                    Customize your profile
+                                </li>
+                                <li>
+                                    <i class="icon-li fa fa-check text-primary"></i>
+                                    And more cool things...
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <a href="/signup" class="btn btn-default">I Want to Create an Account</a>
+                    <br><br><br>
+                </div>
+
+                <div class="col-sm-6 col-sm-pull-6 text-center">
+                    <br><br>
+                    <img src="./themes/landing/img/devices/macbook.png" class="img-responsive" alt="Macbook">
+                </div>
+            </div>
+
+            <h4 class="content-title">
+                <span>Why choose {siteName} for your company?</span>
+            </h4>
+            <br>
+            <div class="row">
+                <div class="mini-feature">
+                    <i class="fa fa-globe mini-feature-icon text-secondary"></i>
+
+                    <div class="mini-feature-text">
+                        <h5 class="mini-feature-title">Wide Browser Support</h5>            
+                        <p>
+                            {siteName} is secure and mobile-friendly with a sharp display on a wide variety of mobile devices. 
+                            360-degree feedback with video takes full advantage of the built in cameras in mobile devices. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mini-feature">
+                    <i class="fa fa-dashboard mini-feature-icon text-secondary"></i>
+
+                    <div class="mini-feature-text">
+                        <h5 class="mini-feature-title">Accurate Dashboard Interface</h5>
+                        <p>
+                            Our dashboard lets you see a summary of what is happening inside your entire network in a glance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mini-feature">
+                    <i class="fa fa-lock mini-feature-icon text-secondary"></i>
+
+                    <div class="mini-feature-text">
+                        <h5 class="mini-feature-title">Secure End-to-End Encryption</h5>
+                        <p>
+                            We protect each company's {siteName} network with end-to-end 2048-bit SSL encryption.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-divider"></div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4 class="content-title">
+                        <span>Latest News</span>
+                    </h4>
+
+                    <div class="recent-news">
+                        {#news}
+                            <div class="recent-news-item clearfix">
+                                <div class="recent-news-item-date">
+                                    {@getDate value="{.date}"/}<span>{@getMonth value="{.date}"/}</span>
+                                </div>
+                                <div class="recent-news-item-description">
+                                    <h5 class="recent-news-item-title">
+                                        <a href="{.url}" title="{.title}">{.title}</a>
+                                    </h5>
+                                    <div class="recent-news-item-excerpt">
+                                        {.preview|s}
+                                    </div>
+                                </div>
+                            </div>
+                        {/news}
+                    </div>
+                    <br class="visible-xs">
+                </div>
+
+                <div class="col-sm-6">
+                    <h4 class="content-title">
+                      <span>Testimonials</span>
+
+                      <a class="btn btn-default btn-sm carousel-prev" href="#clients-carousel" data-slide="prev">&lsaquo;</a>
+                      <a class="btn btn-default btn-sm carousel-next" href="#clients-carousel" data-slide="next">&rsaquo;</a>
+                    </h4>
+
+                    <div id="clients-carousel" class="carousel slide" data-interval="0">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="testimonial">
+                                    <p class="testimonial-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sed, nulla, provident porro quaerat aperiam eum tempore fugiat dicta obcaecati itaque adipisci perspiciatis unde voluptatibus architecto vitae reiciendis distinctio incidunt! Tempore quae impedit velit voluptatum consequuntur cupiditate.
+                                    </p>
+
+                                    <div class="testimonials-arrow"></div>
+
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-image"><img alt="" src="./themes/landing/img/avatars/avatar-1-lg.jpg"></div>
+                                        <div class="testimonial-author-info">
+                                            <h5><a href="#">Rod Howard</a></h5> Jumpstart Themes
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="testimonial">
+                                    <p class="testimonial-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sed, nulla, provident porro quaerat aperiam eum tempore fugiat dicta obcaecati itaque adipisci perspiciatis unde voluptatibus architecto vitae reiciendis distinctio incidunt! Tempore quae impedit velit voluptatum consequuntur cupiditate.
+                                    </p>
+
+                                    <div class="testimonials-arrow"></div>
+
+                                    <div class="testimonial-author">
+                                      <div class="testimonial-image"><img alt="" src="./themes/landing/img/avatars/avatar-2-lg.jpg"></div>
+
+                                      <div class="testimonial-author-info">
+                                        <h5><a href="#">Nikita Williams</a></h5> Nikita Chanel
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-divider"></div>
+
+            <div class="carousel-container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="content-title">
+                          <span>They use {siteName}</span>
+
+                          <a class="btn btn-default btn-sm carousel-prev" href="#" data-slide="prev">&lsaquo;</a>
+                          <a class="btn btn-default btn-sm carousel-next" href="#" data-slide="next">&rsaquo;</a>
+                        </h4>
+                        <ul class="clients-list">
+                            <li>
+                                <img src="./themes/landing/img/clients/logo1-grayscale.png" class="img-responsive" alt="Client Logo">
+                            </li>
+                            <li>
+                                <img src="./themes/landing/img/clients/logo2-grayscale.png" class="img-responsive" alt="Client Logo">
+                            </li>
+                            <li>
+                                <img src="./themes/landing/img/clients/logo3-grayscale.png" class="img-responsive" alt="Client Logo">
+                            </li>
+                            <li>
+                                <img src="./themes/landing/img/clients/logo4-grayscale.png" class="img-responsive" alt="Client Logo">
+                            </li>
+                            <li>
+                                <img src="./themes/landing/img/clients/logo5-grayscale.png" class="img-responsive" alt="Client Logo">
+                            </li>
+                            <li>
+                                <img src="./themes/landing/img/clients/logo6-grayscale.png" class="img-responsive" alt="Client Logo">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
