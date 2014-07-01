@@ -506,10 +506,15 @@ fieldset[disabled] .btn-twitter.active {
   border-color: #0094cd;
 }
 .btn-jumbo-new {
-  padding: 10px 18px;
-  font-size: 16px;
+  padding: 10px 20px;
+  font-size: 18px;
   line-height: 1.33;
   border-radius: 6px;
+}
+.btn-jumbo {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
 }
 /* !Badges */
 /* ----------------------------------------------- */
@@ -1211,8 +1216,7 @@ p {
   width: 30px;
   height: 30px;
   display: block;
-  background: #283947;
-  background-color: rgba(40, 57, 71, 0.85);
+  background: #4d4d28;
   font-size: 13px;
   text-align: center;
   line-height: 30px;
@@ -1221,15 +1225,15 @@ p {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   cursor: pointer;
-  transition: background 0.25s linear;
+ 
 }
 #back-to-top:hover {
   text-decoration: none;
-  background-color: #d74b4b;
-  background-color: rgba(215, 75, 75, 0.85);
+  background-color: #4d4d28;
+  background-color:none;
 }
 #back-to-top i {
-  color: #fff;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   #back-to-top {
@@ -1471,6 +1475,12 @@ p {
   font-size: 13px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
+.masthead-text- {
+  padding-top: 13px;
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
 .masthead-title {
   font-size: 40px;
   font-weight: 400;
@@ -1506,7 +1516,7 @@ p {
 }
 @media (min-width: 992px) {
   .masthead-carousel {
-    padding-top: 50px;
+    padding-top: 35px;
   }
 }
 @media (max-width: 992px) {
@@ -1552,7 +1562,7 @@ p {
 
 .masthead-cloud {
 	width: 100%;
-	height:auto;
+	height:60px;
 	background:url(../img/masthead/cloud.png);
 	background-repeat:repeat-x;
 	background-position:bottom center;
@@ -1849,6 +1859,8 @@ background: #623550;
   margin-bottom: 50px;
 }
 
+ a.footer-link{ color:#ffffff;}
+ a.footer-link:hover, a.footer-link:focus { color:#ffffff; text-decoration:underline;}
 /* !Copyright */
 /* ----------------------------------------------- */
 .copyright-new {
@@ -1887,10 +1899,10 @@ background: #623550;
 
   width: 100%;
   height: 55px;
-  font-size: 48px;
+  font-size: 50px;
   text-align: center;
   line-height: 48px;
-  color:#623550;
+  color:#666634;
 }
 .mini-feature-text {
   display: block;
@@ -1898,11 +1910,11 @@ background: #623550;
   text-align: center;
 }
 .mini-feature-title {
-	text-align: center;
-  color: #623550;
-  font-weight: 400;
-  font-size:18px;
-  padding-bottom:10px;
+    color: #666634;
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    text-align: center;
 }
 @media (min-width: 768px) {
   .mini-feature {
@@ -2025,7 +2037,7 @@ background: #623550;
   color: #623550;
 }
 .recent-news-item-date {
-    background: none repeat scroll 0 0 #fad100;
+    background: none repeat scroll 0 0 #666634;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: #ffffff;
@@ -2173,3 +2185,15 @@ a:hover, a:focus { color: #623550;;
 }
 .recent-news-item-excerpt
 { padding-top:10px;}
+
+.zindex2 { z-index:2; position:inherit;
+ }
+  .zindex3 { bottom: 0;
+    position: absolute;
+    z-index: 3;}
+.zindex1{ position: relative;
+  z-index: 1; }
+  .About-Us
+  { font-size:14px; font-weight:400;}
+  .about-us-icon{font-size:20px; color:#fffffe;}
+  .why-choose-us {font-size:24px;}
