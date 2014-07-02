@@ -1626,6 +1626,9 @@ p {
 .layout-main-left .layout-sidebar {
   padding-right: 15px;
   padding-left: 30px;
+  border-left: none;
+  -webkit-box-shadow: none;
+  box-shadow:none;
 }
 .layout-main-right .layout-main {
   padding-right: 15px;
@@ -2168,11 +2171,11 @@ fieldset[disabled] .footer .btn-transparent.active {
 	 background-repeat:repeat-x;
 }
 a {
-    color: #623550;
+    color: #AC618D;
     text-decoration: none;
 }
 
-a:hover, a:focus { color: #623550;;
+a:hover, a:focus { color: #AC618D;;
     text-decoration: underline;
 }
 .recent-news-item-excerpt
@@ -2190,12 +2193,6 @@ a:hover, a:focus { color: #623550;;
   .about-us-icon{font-size:20px; color:#fffffe;}
   .why-choose-us {font-size:24px;}
   
-  .btn-primary {
-    background-image: linear-gradient(to bottom, #666634 0%, #666634 100%);
-    background-repeat: repeat-x;
-    border-color: #666634;
-}
-.btn-primary {
   .btn-primary {
     background-image: linear-gradient(to bottom, #666634 0%, #666634 100%);
     background-repeat: repeat-x;
