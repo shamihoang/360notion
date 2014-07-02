@@ -1,0 +1,514 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>...</title>
+   <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="{author}">
+
+         <link rel="stylesheet" href="../themes/admin/css/FB-style.css">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="../themes/admin/css/font-awesome.min.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../themes/admin/css/bootstrap.min.css">
+
+        <!-- Validation CSS -->
+        <link rel="stylesheet" href="/css/validationEngine.jquery.css"/>
+
+        <!-- Alertify -->
+        <link rel="stylesheet" href="/css/alertify.core.css"/>
+        <link rel="stylesheet" href="/css/alertify.bootstrap3.css"/>
+
+        <!-- App CSS -->
+        <link rel="stylesheet" href="../themes/admin/css/mvpready-admin.css">
+        <link rel="stylesheet" href="../themes/admin/css/mvpready-flat.css">
+        <link rel="stylesheet" href="/css/dashboard.css"/>
+
+        <!-- HTML5 shim -->
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+
+        <link rel="shortcut icon" href="../themes/img/favicon.ico">
+<link href="../themes/landing/css/mvpready-landing-admin-new.css" rel="stylesheet">
+</head>
+
+<body>
+<!--header-->
+ <header class="navbar navbar-inverse" role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <i class="fa fa-cog"></i>
+                        </button>
+                    <img class="padding-top" src="../themes/admin/img/logo.png" alt="360notion-Logo"/>                    </div>
+
+                    <nav class="collapse navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav noticebar navbar-left">
+                            <li class="dropdown">
+                                <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-bell big-font"></i>
+                                    <span class="navbar-visible-collapsed">&nbsp;Notifications&nbsp;</span>
+                                    <span class="badge badge-primary">3</span>
+                                </a>
+
+                                <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+                                    <li class="nav-header">
+                                        <div class="pull-left">
+                                            
+                                        </div>
+
+                                        <div class="pull-right">
+                                            <a href="javascript:;">Mark as Read</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="./page-notifications.html" class="noticebar-item">
+                                            <span class="noticebar-item-image">
+                                                <i class="fa fa-cloud-upload text-success"></i>
+                                            </span>
+                                            <span class="noticebar-item-body">
+                                                <strong class="noticebar-item-title">Templates Synced</strong>
+                                                <span class="noticebar-item-text">20 Templates have been synced to the Mashon Demo instance.</span>
+                                                <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 12 minutes ago</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./page-notifications.html" class="noticebar-item">
+                                            <span class="noticebar-item-image">
+                                                <i class="fa fa-ban text-danger"></i>
+                                            </span>
+                                            <span class="noticebar-item-body">
+                                                <strong class="noticebar-item-title">Sync Error</strong>
+                                                <span class="noticebar-item-text">5 Designs have been failed to be synced to the Mashon Demo instance.</span>
+                                                <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 20 minutes ago</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="noticebar-menu-view-all">
+                                        <a href="./page-notifications.html">View All Notifications</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="dropdown">
+                                <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-envelope big-font"></i>
+                                    <span class="navbar-visible-collapsed">&nbsp;Messages&nbsp;</span>
+                                </a>
+
+                                <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+                                    <li class="nav-header">
+                                        <div class="pull-left">
+                                            
+                                        </div>
+
+                                        <div class="pull-right">
+                                            <a href="javascript:;">New Message</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="./page-notifications.html" class="noticebar-item">
+                                            <span class="noticebar-item-image">
+                                                <img src="../themes/admin/img/avatars/avatar-1-md.jpg" style="width: 50px" alt="">
+                                            </span>
+
+                                            <span class="noticebar-item-body">
+                                                <strong class="noticebar-item-title">New Message</strong>
+                                                <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span>
+                                                <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 20 minutes ago</span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="./page-notifications.html" class="noticebar-item">
+                                            <span class="noticebar-item-image">
+                                                <img src="../themes/admin/img/avatars/avatar-2-md.jpg" style="width: 50px" alt="">
+                                            </span>
+
+                                            <span class="noticebar-item-body">
+                                                <strong class="noticebar-item-title">New Message</strong>
+                                                <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span>
+                                                <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 5 hours ago</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="noticebar-menu-view-all">
+                                        <a href="./page-notifications.html">View All Messages</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-exclamation-triangle big-font"></i>
+                                    <span class="navbar-visible-collapsed">&nbsp;Alerts&nbsp;</span>
+                                </a>
+
+                                <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+                                    <li class="nav-header">
+                                        <div class="pull-left">
+                                            Alerts
+                                        </div>
+                                    </li>
+
+                                    <li class="noticebar-empty">
+                                        <h4 class="noticebar-empty-title">No alerts here.</h4>
+                                        <p class="noticebar-empty-text">Check out what other makers are doing on Explore!</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="padding-top-home" href="/dashboard">Home</a>
+                            </li>
+
+                            <li class="dropdown navbar-profile">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;">
+                                    <img src="../themes/landing/img/avatars/avatar-1-xs.jpg" class="navbar-profile-avatar" alt="Profile Picture">
+                                    <span class="navbar-profile-label">rod@rod.me &nbsp;</span>
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="/dashboard/settings">
+                                            <i class="fa fa-cogs"></i> 
+                                            &nbsp;&nbsp;Settings
+                                        </a>
+                                    </li>
+
+                                    <li class="divider"></li>
+
+                                    <li>
+                                        <a href="#" onclick="this.childNodes[0].submit()">
+                                            <form action="/logout" method="POST">
+                                                <i class="fa fa-sign-out"></i> 
+                                                &nbsp;&nbsp;Log Out
+                                            </form>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+<!--end header-->
+<div class="content">
+        <div class="container">
+          <div class="row">
+                     <div class="col-md-3">
+                    <div class="profile-avatar">
+        <img src="../themes/landing/img/avatars/avatar-1-md.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture">
+    </div>
+
+    <div class="list-group">
+        <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}">
+            <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&nbsp;Activity Feed
+            <i class="fa fa-chevron-right list-group-chevron"></i>
+        </a>
+<a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}">
+            <i class="fa fa-home text-sidebar"></i> &nbsp;&nbsp;My Activity Feed
+            <i class="fa fa-chevron-right list-group-chevron"></i>
+        </a>
+        <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}">
+            <i class="fa fa-envelope text-sidebar"></i> &nbsp;&nbsp;Messages
+
+            <i class="fa fa-chevron-right list-group-chevron"></i>
+            <span class="badge">3</span>
+        </a>
+
+        <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}">
+            <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files
+
+            <i class="fa fa-chevron-right list-group-chevron"></i>
+        </a>
+
+        <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}">
+            <i class="fa fa-group text-sidebar"></i> &nbsp;&nbsp;Friends
+
+            <i class="fa fa-chevron-right list-group-chevron"></i>
+        </a>
+
+        <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}">
+            <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile
+
+            <i class="fa fa-chevron-right list-group-chevron"></i>
+        </a>
+    </div>
+                </div>
+                <div class="col-md-6 col-sm-7">
+                    <h4 class="content-title"><u>Activity Feed</u></h4>
+                    <div class="share-widget clearfix">
+                        <!-- Post an Idea -->
+                        <div id="post_idea_container" class="fb-container">
+                            <textarea class="form-control share-widget-textarea" rows="3" placeholder="Conduct 360-degree feedback" tabindex="1"></textarea>
+                        </div>
+<!-- -->
+<div class="box-border">
+<div id="possible_answer">
+        1. Possible answer
+    </div>
+    
+    <div id="add_possible_answer">
+        <i class="fa fa-plus padding remove_icon"></i>Add possible answer
+    </div>
+    
+    <div class="row 
+boder-top ">
+    <div class="col-md-4 text-center"><i class="fa fa-question padding feedback360_icon "></i>Ask another question </div>
+    <div class="col-md-4 text-center"> <i class="fa fa-file padding feedback360_icon"></i>Attach file</div>
+    <div class="col-md-4 text-center">  <i class="fa fa-video-camera padding feedback360_icon"></i>Attach video</div>
+    </div>
+    
+    
+    <div  id="feedback360"  >
+        
+    </div>
+    
+    <div id="announcement" >
+        <div class="announcement_list">
+        <i class="fa fa-users entirecompany_icon padding text-sidebar "></i>Entire Company <i class="fa fa-times padding remove_icon"></i>
+        </div>
+        <div class="announcement_list">
+        ntthuy@gmail.com <i class="fa fa-times padding remove_icon"></i>
+        </div>    
+        <div class="inline-block" >
+        <i class="fa fa-plus padding remove_icon"></i>Add People
+        </div>
+    </div>
+    </div>
+    <!-- -->
+                        <!-- Post an Image -->
+                        <div id="post_image_container" class="fb-container hidden">
+                            <textarea class="form-control share-widget-textarea" rows="3" placeholder="What do you want to share?" tabindex="1"></textarea>
+                            <div class="upload-file">
+                                <div class="upload-file-details">
+                                    <img class="image-preview" src="{@imgUrl key="{user.avatarKey}"/}" width="40" height="40"/>
+                                    <p>File name</p>
+                                    <p class="upload-message">File attached successfully<p>
+                                </div>
+                                <div class="fa fa-times close remove-icon-upload"></div>
+                            </div>
+                        </div>
+
+                        <!-- Upload a File -->
+                        <div id="upload_file_container" class="fb-container hidden">
+                            <textarea class="form-control share-widget-textarea" rows="3" placeholder="What do you want to share?" tabindex="1"></textarea>
+                        </div>
+
+                        <!-- Ask a Question -->
+                        <div id="ask_question_container" class="fb-container hidden">
+                            <textarea class="form-control share-widget-textarea" rows="3" placeholder="Conduct 360-degree feedback" tabindex="1"></textarea>
+                        </div>
+
+                        <div class="share-widget-actions"> 
+                         <div class="pull-right">
+                                <a class="btn btn-primary btn-sm" tabindex="2">Post</a>
+                            </div>
+                            <div class="share-widget-types pull-left">
+                                <a href="#" class="fa fa-lightbulb-o ui-tooltip box-post-idea active" title="Post an Idea" data-open="#post_idea_container"></a>
+                                <a href="#" class="fa fa-picture-o ui-tooltip box-post-image" title="Post an Image" data-open="#post_image_container"></a>
+                                <a href="#" class="fa fa-paperclip ui-tooltip box-post-file" title="Upload a File" data-open="#upload_file_container"></a>
+                                <a href="#" class="fa fa-question-circle ui-tooltip box-post-question" title="Ask a Question" data-open="#ask_question_container"></a> &nbsp;&nbsp;
+                            </div>  
+
+                           <!---->
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="feed-item feed-item-idea">
+                        <div class="feed-icon">
+                            <i class="fa fa-lightbulb-o"></i>
+                        </div>
+
+                        <div class="feed-subject">
+                            <p>
+                                <a href="javascript:;">Shami Hoang</a> shared an idea:
+                            </p>
+                        </div>
+
+                        <div class="feed-content">
+                            <ul class="icons-list">
+                                <li>
+                                    <i class="icon-li fa fa-quote-left"></i>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+                                    parturient montes.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="feed-actions">
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> 
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a>
+
+                            <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago</a>
+                        </div>
+                    </div>
+
+                    <div class="feed-item feed-item-image">
+                        <div class="feed-icon">
+                            <i class="fa fa-picture-o"></i>
+                        </div>
+
+                        <div class="feed-subject">
+                            <p>
+                                <a href="javascript:;">Shami Hoang</a> posted the <strong>4 files</strong>: 
+                                <a href="javascript:;">Annual Reports</a>
+                            </p>
+                        </div>
+
+                        <div class="feed-content">
+                            <div class="thumbnail" style="width: 375px">
+                                <img src="/themes/admin/img/mockup.png" style="width: 100%;" alt="Gallery Image">
+                            </div>
+                        </div>
+
+                        <div class="feed-actions">
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> 
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a>
+
+                            <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago</a>
+                        </div>
+                    </div>
+
+                    <div class="feed-item feed-item-file">
+                        <div class="feed-icon">
+                            <i class="fa fa-paperclip"></i>
+                        </div>
+
+                        <div class="feed-subject">
+                            <p>
+                                <a href="javascript:;">Shami Hoang</a> posted the <strong>4 files</strong>: 
+                                <a href="javascript:;">Annual Reports</a>
+                            </p>
+                        </div>
+
+                        <div class="feed-content">
+                            <ul class="icons-list">
+                                <li>
+                                    <i class="icon-li fa fa-file-text-o"></i>
+                                    <a href="javascript:;">Annual Report 2007</a> - annual_report_2007.pdf
+                                </li>
+
+                                <li>
+                                    <i class="icon-li fa fa-file-text-o"></i>
+                                    <a href="javascript:;">Annual Report 2008</a> - annual_report_2007.pdf
+                                </li>
+
+                                <li>
+                                    <i class="icon-li fa fa-file-text-o"></i>
+                                    <a href="javascript:;">Annual Report 2009</a> - annual_report_2007.pdf
+                                </li>
+
+                                <li>
+                                    <i class="icon-li fa fa-file-text-o"></i>
+                                    <a href="javascript:;">Annual Report 2010</a> - annual_report_2007.pdf
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="feed-actions">
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> 
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a>
+
+                            <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago</a>
+                        </div>
+                    </div>
+
+                    <div class="feed-item feed-item-bookmark">
+                        <div class="feed-icon">
+                            <i class="fa fa-bookmark"></i>
+                        </div>
+
+                        <div class="feed-subject">
+                            <p>
+                                <a href="javascript:;">Shami Hoang</a> bookmarked a page on Delicious: 
+                                <a href="javascript:;">Jumpstart Themes</a>
+                            </p>
+                        </div>
+
+                        <div class="feed-content"></div>
+
+                        <div class="feed-actions">
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> 
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a>
+
+                            <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago</a>
+                        </div>
+                    </div>
+
+                    <div class="feed-item feed-item-question">
+                        <div class="feed-icon">
+                            <i class="fa fa-question"></i>
+                        </div>
+
+                        <div class="feed-subject">
+                            <p>
+                                <a href="javascript:;">Shami Hoang</a> posted the question: 
+                                <a href="javascript:;">Who can I call to get a new parking pass for the Rowan Building?</a>
+                            </p>
+                        </div>
+
+                        <div class="feed-content">
+                            <ul class="icons-list">
+                                <li>
+                                    <i class="icon-li fa fa-quote-left"></i>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="feed-actions">
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> 
+                            <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a>
+
+                            <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago</a>
+                        </div>
+                    </div>
+
+                    <br class="visible-xs">
+                    <br class="visible-xs">
+                </div>
+<!--project-->
+        
+              
+                <!--end-->
+            </div>
+        </div>
+    </div>
+        
+ <!-- Bootstrap core JavaScript  -->
+        <script type="text/javascript" src="../themes/admin/js/libs/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../themes/admin/js/libs/bootstrap.min.js"></script>
+
+        <!-- Validation JS -->
+        <script type="text/javascript" src="/js/jquery.validationEngine-en.js"></script>
+        <script type="text/javascript" src="/js/jquery.validationEngine.js"></script>
+
+        <!-- Alertify JS -->
+        <script type="text/javascript" src="/js/alertify.js"></script>
+
+        <!-- App JS -->
+        <script type="text/javascript" src="../themes/admin/js/mvpready-core.js"></script>
+        <script type="text/javascript" src="../themes/admin/js/mvpready-admin.js"></script>
+</body>
+
+    
+</html>

@@ -1,0 +1,633 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
+<link href="../themes/landing/css/font-awesome.min.css" rel="stylesheet">
+<link href="../themes/landing/css/bootstrap.min.css" rel="stylesheet">
+<link href="../themes/landing/css/validationEngine.jquery.css"rel="stylesheet">
+<link href="../themes/landing/css/alertify.core.css" rel="stylesheet">
+<link href="../themes/landing/css/alertify.bootstrap3.css" rel="stylesheet">
+<link href="../themes/landing/css/mvpready-landing.css" rel="stylesheet">
+<link href="../themes/landing/css/mvpready-flat.css" rel="stylesheet">
+<link href="../themes/landing/css/animate.css" rel="stylesheet">
+<link href="/img/favicon.ico" rel="shortcut icon">
+<link href="../themes/landing/css/mvpready-landing-new-style.css" rel="stylesheet">
+</head>
+
+<body>
+<!--header-->
+<header class="navbar navbar-inverse" role="banner">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="/" class="navbar-brand navbar-brand-img">
+                                 <img src="../themes/landing/img/logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+
+                        <nav class="collapse navbar-collapse" role="navigation">
+                            <ul class="nav navbar-nav navbar-right mainnav-menu">
+                                <li {@eq key="/" value="{url}"}class="active"{/eq}>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li {@eq key="/features" value="{url}"}class="active"{/eq}>
+                                    <a href="/features">Features</a>
+                                </li>
+                                <li {@eq key="/faq" value="{url}"}class="active"{/eq}>
+                                    <a href="/faq">FAQ</a>
+                                </li>
+                                <li {@eq key="/pricing" value="{url}"}class="active"{/eq}>
+                                    <a href="/pricing">Pricing</a>
+                                </li>   
+                              
+                                <li {@eq key="/login" value="{url}"}class="active"{/eq}>
+                                    <a href="/login">Log In</a>
+                                </li>
+                            </ul>
+
+                        
+                        </nav>
+                    </div>
+                </header>
+<!--end header-->
+
+  <div class="masthead">
+  <div class="masthead-pattern">
+        <div class="container masthead-text-title">
+            <h1 class="masthead-subtitle">
+               FAQ
+            </h1>
+        </div>
+    </div>
+	</div>
+   <div class="content">
+        <div class="container">
+            <div class="layout layout-stack-sm layout-main-left">
+                <div class="col-sm-4 col-sm-push-8 layout-sidebar">
+                    <div class="well text-center">
+                        <p><i class="fa fa-question-circle fa-5x text-muted text-white"></i></p>
+                        <h4 class="text-white">Have a Question?</h4>
+                        <p class="text-white">Send us a message and we will reply within 24 hours.</p>
+                        <a href="#" class="btn btn-default" data-toggle="modal" data-target="#question_modal">Ask a question</a>
+                    </div>
+                </div>
+                
+                <div class="col-sm-8 col-sm-pull-4 layout-main">
+                    <h3 class="content-title">
+                        <span>General Questions</span>
+                    </h3>
+
+                    <div id="accordion-help" class="panel-group accordion-simple">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-help" href="#faq-general-1">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        What is 360notion™?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-general-1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    360notion™ allows you to create a private social network for your company wherein you could:
+                                </p>
+                                <ul>
+                                    <li>chat with friends</li>
+                                    <li>share and backup files</li>
+                                    <li>post status updates</li>
+                                    <li>customize your profile</li>
+                                    <li>conduct performance evaluations</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-help" href="#faq-general-2">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        Why should I create a 360notion™ network for my company?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-general-2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    companys are more productive if its members engage effectively with his/her colleagues.
+                                </p>
+                                <p>
+                                    360notion™ increases employee engagement by making it easier for members to share their ideas and 
+                                    experiences while the rest of the company gain new information and provide valuable feedback.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-help" href="#faq-general-3">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        How do can my company start using 360notion™?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-general-3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    To create a social network for your company, just <a href="/signup">sign up here</a>.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-help" href="#faq-general-4">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        How do I join my company's network?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-general-4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    To get a personal 360notion™ account, ask the responsible personnel to give you an invitation to your 
+                                    company's social network.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-help" href="#faq-general-5">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        How safe is 360notion™?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-general-5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    360notion™ is designed to be safe and secure at all times. We can do this because:
+                                </p>
+                                <ul>
+                                    <li>Every session is secured with 2048-bit encryption, from login to logout regardless of device</li>
+                                    <li>We use multiple cloud storage providers to minimize potential disruptions</li>
+                                    <li>We do not store our members' financial data</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-help" href="#faq-general-6">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        How is 360notion™ different from free social networks and chat applications?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-general-6" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    On free social networks and mobile chat applications, you cannot manage anything. 
+                                    This includes the exclusive right to profit from Intellectual Property you, your employees or your 
+                                    company communicates privately. <br>Moreover:
+                                </p>
+                                <ul>
+                                    <li>It's impossible to know or control what content people in your company are sharing and with whom</li>
+                                    <li>It's impossible to enforce employee accountability or conduct performance evaluations</li>
+                                    <li>Private messages on free social networks and chat applications are not private</li>
+                                    <li>Communications may not be secure or encrypted</li>
+                                </ul>
+                                <p>
+                                    Free social networks and mobile chat applications were not designed for the needs of companies! 
+                                    <br>In 360notion™:
+                                </p>
+                                <ul>
+                                    <li>
+                                        You can use or assign admin roles and manage your company's network, create communities of interest 
+                                        (COIs), restrict file access and add or remove members.
+                                    </li>
+                                    <li>Your company's Intellectual Property (IP) remains private and secured</li>
+                                    <li>We provide a wide variety of features so you can communicate and share based on context.</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <h3 class="content-title">
+                        <span>Pre-Sale Questions</span>
+                    </h3>
+
+                    <div id="accordion-customization" class="panel-group accordion-simple">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-customization"
+                                        href="#faq-presale-1">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        Is there a trial period?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-presale-1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    Yes! All companies get a 14-day trial period which is FREE of charge.
+                                </p>
+                                <p>
+                                    If you do not find 360notion™ useful during the trial period, you may cancel 
+                                    your subscription to remove your company from 360notion™ and you will not be charged anything.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-customization"
+                                        href="#faq-presale-2">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        How do I pay for this service?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-presale-2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    You need a valid credit card to pay for your company's chosen <a href="/pricing">plan</a>. 
+                                    Payments are charged monthly.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-customization"
+                                        href="#faq-presale-3">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        What plan is best for my company?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-presale-3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    If you are:
+                                </p>
+                                <ul>
+                                    <li>
+                                         A startup with <strong>less than 3 members</strong>, you should get the Starter plan.
+                                    </li>
+                                    <li>
+                                        A small/medium size company with <strong>3 to 50 members</strong>, you should get the Mega Plan 
+                                        for only $30/month per member. 
+                                        This costs less than a small cup of Starbucks® coffee per day! 
+                                    </li>
+                                    <li>
+                                        A large company with <strong>51 members or more</strong>, you should get the Premium Plan 
+                                        for only $25/month per member. 
+                                        This also costs less than a small cup of Starbucks® coffee per day!
+                                    </li>
+                                </ul>
+                                <small class="help-block">
+                                    Know more about our pricing <a href="/pricing">here</a>.
+                                </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-customization"
+                                        href="#faq-presale-4">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        Can I change my company's plan after signing up?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-presale-4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    Yes! You may change your company's plan after signing up depending on your needs.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-customization"
+                                        href="#faq-presale-5">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        Can I opt-out from 360notion™?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-presale-5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    Yes! You may opt-out any time if you already want to remove your company from 360notion™.
+                                </p>
+                                <p>
+                                    After opting out, your company's data will be deleted from our database and you 
+                                    will not be charged anymore.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-customization"
+                                        href="#faq-presale-6">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        Do you offer a referral program?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-presale-6" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    Yes, you earn a 10% commission for referrals made to friends that result in the purchase of a new 
+                                    Mega or Premium Plan for their company. 
+                                    The 10% credit will be applied to your company's 360notion™ network the following month. 
+                                </p>
+                                <p>
+                                    There is a monthly $1000 referral credit limit per company. 
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle"
+                                        data-toggle="collapse"
+                                        data-parent="#accordion-customization"
+                                        href="#faq-presale-7">
+                                        <i class="fa accordion-caret"></i><i class="fa faq-accordion-caret"></i>
+                                        How can 360notion™ save my company's resources?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq-presale-7" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                <p>
+                                    First, you save time because tasks that used to take a long time can be done quickly and privately. 
+                                </p>
+                                <p>
+                                    Second, our communication tools such as mistake-proof messages™ remove the emotional and inter-personal 
+                                    stressors in the workplace that often cause burnout. 
+                                </p>
+                                <p>
+                                    Third, anyone in your company can easily conduct 360-degree evaluations. 
+                                    Outside consultants charge $500 or more per "evaluation" visit, often with less accurate results.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="question_modal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="question_form" action="/faq" method="POST" role="form">
+                    <fieldset>
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="modal_label">Ask a question</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label form="email">Email Address</label>
+                                <input id="email"
+                                    name="email"
+                                    type="text"
+                                    class="form-control validate[required,custom[email]]"
+                                    placeholder="user@email.com"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label form="email">Question</label>
+                                <textarea id="question"
+                                    name="question"
+                                    rows="5"
+                                    class="form-control validate[required]"
+                                    placeholder="We will get back to you within 24 hours.">
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            &nbsp;
+                            <button type="submit" class="btn btn-primary btn-ask">Send</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+    <!--footer-->
+    
+     <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h4 class="content-title">
+                                <span >About Us</span>
+                            </h4>
+                            <p class="About-Us">        <i class="icon-li fa fa-quote-left about-us-icon"></i>&nbsp;&nbsp;360notion™ was founded on a simple idea, that people should be engaged with the company they are a part of. 
+                            To do this, the boardroom, break room, meeting room and file room should be centralized and remain private.&nbsp;&nbsp; <i class="icon-li fa fa-quote-right about-us-icon"></i>
+                            <small class="help-block text-right">
+                                -Joel Goslar, Founder and CEO
+                            </small> </p>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <h4 class="content-title">
+                                <span>Stay Connected</span>
+                            </h4>
+
+                            <p>
+                               Add us on Facebook or follow us on Twitter
+                            </p>
+
+                            <br>
+
+                            <ul class="footer-social-link">
+                                <li>
+                                    <a href="https://www.facebook.com/360notion"
+                                        target="_blank"
+                                        class="ui-tooltip"
+                                        title="Facebook"
+                                        data-placement="bottom">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/360notion™"
+                                        target="_blank"
+                                        class="ui-tooltip"
+                                        title="Twitter"
+                                        data-placement="bottom">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <h4 class="content-title">
+                                <span>Stay Updated</span>
+                            </h4>
+
+                            <div class="subscribe-form">
+                                <p>Get emails about new features and future updates.</p>
+
+                                <form id="subscribe_form" action="/subscribe" method="POST" class="form" role="form">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input type="text"
+                                                class="form-control validate[required,custom[email]]"
+                                                id="newsletter_email"
+                                                name="newsletter_email"
+                                                placeholder="Email Address">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-transparent">Notify me</button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+
+                            <p class="subscribe-thanks">
+                                Thanks for subscribing!
+                            </p>
+                        </div>
+
+
+                        <div class="col-sm-3">
+                            <h4 class="content-title">
+                                <span>Get In Touch</span>
+                            </h4>
+
+                            <ul class="icons-list">
+                                <li>
+                                    <i class="icon-li fa fa-map-marker"></i>
+                                    1201 Orange St Ste 600 <br>
+                                    Wilmington, DE 19801
+                                </li>
+
+                                <li>
+                                    <i class="icon-li fa fa-phone"></i>
+                                    +1 302-415-1226
+                                </li>
+
+                                <li>
+                                    <i class="icon-li fa fa-envelope"></i>
+                                    <a href="mailto:admin@myabuy.com" class="footer-link">admin@myabuy.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+        <footer class="copyright-new">
+            <div class="container">
+                 <div class="row">
+                    <div class="col-sm-6">
+                         <a class="footer-link" href="mailto:admin@myabuy.com">Careers </a>&nbsp;|&nbsp;<a href="#" class="footer-link" >Terms of Service</a>
+                    </div>
+                     <div class="col-sm-6">
+                        Copyright &copy; 2014 Myabuy LLC. 
+                    </div>
+            </div>
+            </div>
+            
+        </footer>
+        
+        
+            
+ <!-- Bootstrap core JavaScript  -->
+        <script type="text/javascript" src="../themes/landing/js/libs/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="../themes/landing/js/libs/bootstrap.js"></script>
+
+        <script type="text/javascript" src="../themes/landing/js/plugins/timeago/jquery.timeago.js"></script>
+
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="../themes/landing/js/libs/excanvas.compiled.js"></script>
+        <![endif]-->
+
+        <!-- Validation JS -->
+        <script type="text/javascript" src="../js/jquery.validationEngine-en.js"></script>
+        <script type="text/javascript" src="../js/jquery.validationEngine.js"></script>
+
+        <!-- Alertify JS -->
+        <script type="text/javascript" src="../js/alertify.js"></script>
+
+        <!-- App JS -->
+        <script type="text/javascript" src="../themes/landing/js/mvpready-core.js"></script>
+        <script type="text/javascript" src="../themes/landing/js/mvpready-landing.js"></script>
+</body>
+
+    
+</html>

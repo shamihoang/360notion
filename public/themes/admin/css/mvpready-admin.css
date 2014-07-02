@@ -10,12 +10,7 @@
 * Website: http://mvpready.com
 *
 * ======================================================== */
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Open Sans', 'Trebuchet MS', arial, sans-serif;
-  font-size: 13px;
-}
+
 .fontawesome-icon-list {
   margin-top: 3em;
   margin-bottom: 3em;
@@ -1522,13 +1517,13 @@ fieldset[disabled] .btn-twitter.active {
   width: 2em;
   padding: 5px 0;
   color: #aaa;
-  font-size: 17px;
+  font-size: 22px;
   text-align: center;
   border: 1px solid transparent;
 }
 .share-widget-types a:hover {
   text-decoration: none;
-  color: #d74b4b;
+  color: #666634;
   background-color: #fff;
   border-color: #ccc;
   border-top-right-radius: 4px;
@@ -1597,38 +1592,35 @@ fieldset[disabled] .btn-twitter.active {
   margin: 0 0 0 15px;
 }
 .feed-item .feed-icon {
-  position: absolute;
-  top: 15px;
-  left: -23px;
-  width: 40px;
-  height: 40px;
-  color: #FFF;
-  text-align: center;
-  font-size: 16px;
-  line-height: 34px;
-  background-color: #6685a4;
-  border: 3px solid #FFF;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 15px;
+    left: -23px;
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 34px;
+    background-color: #666634;
+    border: 2px solid #FFF;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+
 }
 .feed-item-idea .feed-icon {
-  background-color: #6685a4;
+  background-color: #666634;
 }
 .feed-item-image .feed-icon {
-  background-color: #bcbcbc;
+  background-color: #666634;
 }
 .feed-item-file .feed-icon {
-  background-color: #d74b4b;
+  background-color: #666634;
 }
 .feed-item-bookmark .feed-icon {
-  background-color: #555;
+  background-color: #666634;
 }
 .feed-item-question .feed-icon {
-  background-color: #428bca;
+  background-color: #666634;
 }
 /* !Progress Stats */
 /* ----------------------------------------------- */
@@ -1994,7 +1986,7 @@ table.table thead .sorting_desc_disabled,
 .navbar-inverse .navbar-nav > .navbar-profile > a {
   height: 60px;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 15px;
   line-height: 60px;
 }
 .navbar-profile-avatar {
@@ -2024,7 +2016,7 @@ table.table thead .sorting_desc_disabled,
     display: none;
   }
   .navbar-inverse .navbar-nav > li > a {
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
     font-size: 13px;
   }
@@ -2557,7 +2549,7 @@ body {
 /* !Notice Bar */
 /* ----------------------------------------------- */
 .navbar-inverse .noticebar > li > a {
-  color: #547795;
+  color: #edeeee;
   font-size: 14px;
 }
 .navbar-inverse .noticebar > li > a .badge {
@@ -2569,7 +2561,7 @@ body {
   border-bottom-left-radius: 100px;
 }
 .navbar-inverse .noticebar > li > a:hover {
-  color: #547795;
+  color: #ffffff;
 }
 .noticebar-empty {
   padding: 25px 35px !important;
@@ -2837,3 +2829,9 @@ form .required:after {
   text-decoration: none;
   border-bottom: 1px solid #6685a4;
 }
+.sign-in{ width:50%; height:35px; margin:auto; text-align:center;}
+
+.pull-left {
+    float: right !important;
+}
+.big-font{ font-size:20px; padding-top:0px;}
