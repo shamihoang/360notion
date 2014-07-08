@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>faq</title>
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
+<link href="../themes/landing/css/font-awesome.min.css" rel="stylesheet">
+<link href="../themes/landing/css/bootstrap.min.css" rel="stylesheet">
+<link href="../themes/landing/css/validationEngine.jquery.css"rel="stylesheet">
+<link href="../themes/landing/css/alertify.core.css" rel="stylesheet">
+<link href="../themes/landing/css/alertify.bootstrap3.css" rel="stylesheet">
+<link href="../themes/landing/css/mvpready-landing.css" rel="stylesheet">
+<link href="../themes/landing/css/mvpready-flat.css" rel="stylesheet">
+<link href="../themes/landing/css/animate.css" rel="stylesheet">
+<link href="/img/favicon.ico" rel="shortcut icon">
+<link href="../themes/landing/css/mvpready-landing-new-style.css" rel="stylesheet">
+</head>
+
+<body>
+<!--header-->
+<a href="#" class="btn btn-default " data-toggle="modal" data-target="#question_modal">Ask a question</a>
+                 
+      
+        <div class="modal fade" id="question_modal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form id="question_form" action="/faq" method="POST" role="form">
+                    <fieldset>
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="modal_label">Send a Message</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                               
+                                <input id="email"
+                                    name="email"
+                                    type="text"
+                                    class="form-control validate[required,custom[email]]"
+                                    placeholder="To: user@companyemail.com"/>
+                            </div>
+                             <div class="form-group">
+                               
+                                <input id="subject"
+                                    name="subject"
+                                    type="text"
+                                    class="form-control validate[required,custom[email]]"
+                                    placeholder="subject:"/>
+                            </div>
+
+                            <div class="form-group">
+                                <label form="message">Message</label>
+                                <textarea class="form-control share-widget-textarea" rows="3" placeholder="Compose a standard message. Click on the radio button to turn this into a snap message." tabindex="1"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class=" ui-tooltip box-post-idea active" title="Post an Idea">Standard message</a>  Snap message<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            &nbsp;
+                            <button type="submit" class="btn btn-primary  btn-default">Send</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+  </div>
+  
+  </div>           
+ <!-- Bootstrap core JavaScript  -->
+        <script type="text/javascript" src="../themes/landing/js/libs/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="../themes/landing/js/libs/bootstrap.js"></script>
+
+        <script type="text/javascript" src="../themes/landing/js/plugins/timeago/jquery.timeago.js"></script>
+
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="../themes/landing/js/libs/excanvas.compiled.js"></script>
+        <![endif]-->
+
+        <!-- Validation JS -->
+        <script type="text/javascript" src="../js/jquery.validationEngine-en.js"></script>
+        <script type="text/javascript" src="../js/jquery.validationEngine.js"></script>
+
+        <!-- Alertify JS -->
+        <script type="text/javascript" src="../js/alertify.js"></script>
+
+        <!-- App JS -->
+        <script type="text/javascript" src="../themes/landing/js/mvpready-core.js"></script>
+        <script type="text/javascript" src="../themes/landing/js/mvpready-landing.js"></script>
+</body>
+
+    
+</html>

@@ -21,7 +21,7 @@ body {
 /* ----------------------------------------------- */
 .text-primary,
 .text-primary:hover {
-  color: #ac618d;
+  color: #666634;
 }
 .text-secondary,
 .text-secondary:hover {
@@ -542,7 +542,7 @@ fieldset[disabled] .btn-twitter.active {
   width: 30px;
   height: 30px;
   display: block;
-  background: #4d4d28;
+  background:#4B473A;
   font-size: 13px;
   text-align: center;
   line-height: 30px;
@@ -555,7 +555,7 @@ fieldset[disabled] .btn-twitter.active {
 }
 #back-to-top:hover {
   text-decoration: none;
-  background-color: #4d4d28;
+  background-color:#696453;
   background-color:none;
 }
 #back-to-top i {
@@ -575,7 +575,7 @@ fieldset[disabled] .btn-twitter.active {
 /* ----------------------------------------------- */
 .navbar-inverse {
   margin-bottom: 0;
-  background-color: #623550;
+  background-color: #4b473a;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   border: none;
   border-bottom: 1px solid #0d1216;
@@ -637,7 +637,7 @@ fieldset[disabled] .btn-twitter.active {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  background-color: #4E4E28;
+  background-color: #696453;
 }
 .navbar-inverse .navbar-nav > li.active > a,
 .navbar-inverse .navbar-nav > li.active > a:hover,
@@ -744,7 +744,7 @@ fieldset[disabled] .btn-twitter.active {
   border-bottom: 1px solid transparent;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  background: #4d4d28;
+  background: #696453;
   border-bottom-color: #ffffff;
 }
 .navbar-inverse .navbar-nav > li.active > a {
@@ -914,7 +914,7 @@ fieldset[disabled] .btn-twitter.active {
   position: relative;
   display: block;
   margin-bottom: 1.35em;
-  border-bottom: 1px solid #b6b6b6;
+  border-bottom: 0px solid #b6b6b6;
 }
 .content-title span {
   display: inline-block;
@@ -922,7 +922,7 @@ fieldset[disabled] .btn-twitter.active {
   top: 1px;
   padding-right: 1em;
   padding-bottom: 15px;
-  border-bottom: 1px solid #ac618d;
+  border-bottom: 0px solid #666634;
 }
 .content-title .carousel-next,
 .content-title .carousel-prev {
@@ -1159,11 +1159,11 @@ fieldset[disabled] .btn-twitter.active {
 }
 
 a {
-    color: #AC618D;
+    color: #666634;
     text-decoration: none;
 }
 
-a:hover, a:focus { color: #AC618D;;
+a:hover, a:focus { color: #666634;
     text-decoration: underline;
 }
 
