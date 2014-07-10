@@ -1429,7 +1429,7 @@ p {
 }
 .navbar-inverse .navbar-nav > li.active > a {
   background: #696453;
-  border-bottom-color: #d74b4b;
+  border-bottom-color:#FFF;
 }
 .navbar-social-label {
   display: inline;
@@ -2263,3 +2263,6 @@ background-color:#fbfbfb;}
 .content-title-main {font-size:24px;}
 .bg-corlor { width:100%; background-color:#fbfbfb;}
 .padding-left { padding-left:30px;}
+.zindex10 { bottom: 0;
+    position: absolute;
+    z-index: 10;}
