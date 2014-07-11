@@ -41,7 +41,7 @@
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-cog"></i> </button>
-      <img class="padding-top" src="../themes/admin/img/logo.png" alt="360notion-Logo"/> </div>
+      <img  src="../themes/admin/img/logo.png" alt="360notion-Logo"/> </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav noticebar navbar-left">
         <li class="dropdown"> <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Notifications&nbsp;</span> <span class="badge badge-primary">3</span> </a>
@@ -100,30 +100,31 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-5">
-        <div class="profile-avatar-img"> <img class="profile-avatar-img thumbnail" alt="Profile Image" src="../themes/landing/img/avatars/avatar-1-md.jpg"> </div>
+        <div class="profile-avatar-img padding-top"> <img class="profile-avatar-img thumbnail" alt="Profile Image" src="../themes/landing/img/avatars/avatar-1-md.jpg"> </div>
         <div class="list-group"> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&nbsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&nbsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&nbsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}"> <i class="fa fa-group text-sidebar"></i> &nbsp;&nbsp;Friends <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}"> <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
       </div>
       
       <!-- end left sidebar-->
       <div class="col-md-9 col-sm-8 ">
-        <h4 class="title-heading text-center">My Activity Stream</h4>
+        <h4 class="title-heading text-center">Activity Stream</h4>
         <div class="share-widget clearfix"> 
           <!-- Post an Idea -->
           <div id="post_idea_container" class="fb-container">
-            <textarea class="form-control share-widget-textarea" rows="3" placeholder="Conduct 360-degree feedback" tabindex="1"></textarea>
+            <textarea class="form-control share-widget-textarea" rows="3" placeholder="Enter a 360-degree feedback question" tabindex="1"></textarea>
           </div>
           <!-- -->
           <div class="box-border">
             <div id="possible_answer"> 1. Possible answer </div>
             <div class="add-possible-answer"> <i class="fa fa-plus padding remove_icon"></i>Add possible answer </div>
+            <div class="add-possible-answer"> <i class="fa fa-plus padding remove_icon"></i>Add open-ended answer </div>
             <div class="row">
-              <div class="col-md-4 text-center"><i class="fa fa-question padding feedback360_icon "></i>Ask another question </div>
-              <div class="col-md-4 text-center"> <i class="fa fa-file padding feedback360_icon"></i>Attach file</div>
-              <div class="col-md-4 text-center"> <i class="fa fa-video-camera padding feedback360_icon"></i>Attach video</div>
+              <div class="col-md-4 text-center"><i class="fa fa-question padding feedback360_icon icon-color"></i>Ask another question </div>
+              <div class="col-md-4 text-center"> <i class="fa fa-paperclip padding feedback360_icon icon-color"></i>Attach file</div>
+              <div class="col-md-4 text-center"> <i class="fa fa-video-camera padding feedback360_icon icon-color"></i>Attach video</div>
             </div>
             <div  id="feedback360"  > </div>
             <div id="announcement" >
-              <div class="announcement_list"> <i class="fa fa-users entirecompany_icon padding text-sidebar "></i>Entire Company <i class="fa fa-times padding remove_icon"></i> </div>
+              <div class="announcement_list"> <i class="fa fa-users entirecompany_icon padding icon-color"></i>Entire Company <i class="fa fa-times padding remove_icon"></i> </div>
               <div class="announcement_list"> ntthuy@gmail.com <i class="fa fa-times padding remove_icon"></i> </div>
               <div class="inline-block" > <i class="fa fa-plus padding remove_icon"></i>Add People </div>
             </div>
@@ -159,70 +160,142 @@
             <!----> 
           </div>
         </div>
-        <br>
-        <br>
-        <div class="feed-item feed-item-idea">
-          <div class="feed-icon"> <i class="fa fa-lightbulb-o"></i> </div>
-          <div class="feed-subject">
-            <p> <a href="javascript:;">Shami Hoang</a> shared an idea: </p>
+        <div class="activity-stream-box">
+          <div class="activity-stream activity-stream-idea">
+            <div class="pull-right"> <a ><i class="fa fa-cog"></i></a> </div>
+            <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <p> <a href="javascript:;">Shami Hoang</a> shared an idea to <a> Entire Company</a>,<a> David Harison and 3 other people</a>  </p>
+            </div>
+            <div class="feed-content">
+              <ul class="icons-list">
+                <li> <i class="icon-li fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+                  parturient montes. </li>
+              </ul>
+            </div>
           </div>
-          <div class="feed-content">
-            <ul class="icons-list">
-              <li> <i class="icon-li fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-                parturient montes. </li>
-            </ul>
-          </div>
-          <div class="feed-actions"> <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a> <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago</a> </div>
+          <div class="activity-actions"> <a class="" href="javascript:;">
+<i class="fa fa-thumbs-up icon-color"></i>
+123
+</a>&nbsp; 
+<a class="" href="javascript:;">
+<i class="fa fa-comment-o icon-color"></i>
+29
+</a>&nbsp; 
+<a class="icon-color" href="javascript:;">
+Share
+</a>
+<a class="pull-right" href="javascript:;">
+<i class="fa fa-clock-o icon-color"></i>
+2 days ago
+</a></div>
+    <div> <a class="" href="javascript:;">
+View 5 more comments
+</a>&nbsp; 
+</div>
+<div class="activity-stream activity-stream-idea"> <div class="feed-image coworker-image-comment text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <p> <a href="javascript:;">Shami Hoang</a>&nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. massa. Cum sociis natoque penatibus et magnis dis parturient montes.  </p>
+            </div>
+            <div class="feed-content">
+            
+                 
+                <p class="activity-actions">  <a>Like</a>&nbsp; <a> Reply </a></p>
+                  
+           
+            </div></div>
+            <div class="activity-stream activity-stream-idea"> <div class="feed-image coworker-image-comment text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <textarea class="form-control "  placeholder="" tabindex="1"> </textarea> <a class="comment-attach-file">
+<i class="fa fa-paperclip"></i>
+</a>
+            </div>
+            </div>
         </div>
-        <div class="feed-item feed-item-image">
-          <div class="feed-icon"> <i class="fa fa-picture-o"></i> </div>
-          <div class="feed-subject">
-            <p> <a href="javascript:;">Shami Hoang</a> posted <strong>4 files</strong>: <a href="javascript:;">Annual Reports</a> </p>
+        
+        <br class="visible-xs">
+
+            
+               <div class="activity-stream-box">
+          <div class="activity-stream activity-stream-idea">
+            <div class="pull-right"> <a ><i class="fa fa-cog"></i></a> </div>
+            <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <p> <a href="javascript:;">Shami Hoang</a>&nbsp;Entered a 360-degree feedback question<a> Entire Company</a>,<a> David Harison and 3 other people</a>  </p>
+            </div>
+            <div class="feed-content">
+              <ul class="icons-list">
+                <li>  Which color do you like the most?</li>
+                <li> Answer 1: Pink </li>
+                <li class="inline-block"> <div class="row  progress-bar-padding">
+                <div class="progress progress-sm">
+<div class="progress-bar progress-bar-primary" style="width:20%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar">
+</div>
+</div>          
+               </div> </li>
+                <li class="inline-block "> </li>
+                <li> Answer 2: Blue </li>
+                <li class="inline-block"> <div class="row  progress-bar-padding">
+                <div class="progress progress-sm">
+<div class="progress-bar progress-bar-primary" style="width:70%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar">
+</div>
+</div>          
+               </div> </li>
+                <li class="inline-block "> </li>
+                <li> Answer 3: Green</li>
+                <li class="inline-block"> <div class="row  progress-bar-padding">
+                <div class="progress progress-sm">
+<div class="progress-bar progress-bar-primary" style="width:90%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar">
+</div>
+</div>          
+               </div> </li>
+                <li class="inline-block "> </li>
+              </ul>
+            </div>
           </div>
-          <div class="feed-content">
-            <div class="thumbnail" style="width: 375px"> <img src="/themes/admin/img/mockup.png" style="width: 100%;" alt="Gallery Image"> </div>
-          </div>
-          <div class="feed-actions"> <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a> <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago </a> </div>
+          <div class="activity-actions"> <a class="" href="javascript:;">
+<i class="fa fa-thumbs-up icon-color"></i>
+123
+</a>&nbsp; 
+<a class="" href="javascript:;">
+<i class="fa fa-comment-o icon-color"></i>
+29
+</a>&nbsp; 
+<a class="" href="javascript:;">
+Share </a>&nbsp; &nbsp; <a class="" href="javascript:;">300 total votes &nbsp; &nbsp;Change Vote </a> 
+
+<a class="pull-right" href="javascript:;">
+<i class="fa fa-clock-o icon-color"></i>
+2 days ago
+</a></div>
+    <div> <a class="" href="javascript:;">
+View 5 more comments
+</a>&nbsp; 
+</div>
+<div class="activity-stream activity-stream-idea"> <div class="feed-image coworker-image-comment text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <p> <a href="javascript:;">Shami Hoang</a>&nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. massa. Cum sociis natoque penatibus et magnis dis parturient montes.  </p>
+            </div>
+            <div class="feed-content">
+            
+                 
+                <p class="">  <a>Like</a>&nbsp; <a> Reply </a></p>
+                  
+           
+            </div></div>
+            <div class="activity-stream activity-stream-idea"> <div class="feed-image coworker-image-comment text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <textarea class="form-control "  placeholder="" tabindex="1"> </textarea> <a class="comment-attach-file">
+<i class="fa fa-paperclip"></i>
+</a>
+            </div>
+            </div>
         </div>
-        <div class="feed-item feed-item-file">
-          <div class="feed-icon"> <i class="fa fa-paperclip"></i> </div>
-          <div class="feed-subject">
-            <p> <a href="javascript:;">Shami Hoang</a> posted <strong>4 files</strong>: <a href="javascript:;">Annual Reports</a> </p>
-          </div>
-          <div class="feed-content">
-            <ul class="icons-list">
-              <li> <i class="icon-li fa fa-file-text-o"></i> <a href="javascript:;">Annual Report 2007</a> - annual_report_2007.pdf </li>
-              <li> <i class="icon-li fa fa-file-text-o"></i> <a href="javascript:;">Annual Report 2008</a> - annual_report_2007.pdf </li>
-              <li> <i class="icon-li fa fa-file-text-o"></i> <a href="javascript:;">Annual Report 2009</a> - annual_report_2007.pdf </li>
-              <li> <i class="icon-li fa fa-file-text-o"></i> <a href="javascript:;">Annual Report 2010</a> - annual_report_2007.pdf </li>
-            </ul>
-          </div>
-          <div class="feed-actions"> <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a> <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago</a> </div>
-        </div>
-        <div class="feed-item feed-item-bookmark">
-          <div class="feed-icon"> <i class="fa fa-bookmark"></i> </div>
-          <div class="feed-subject">
-            <p> <a href="javascript:;">Shami Hoang</a> bookmarked a page on Delicious: <a href="javascript:;">Jumpstart Themes</a> </p>
-          </div>
-          <div class="feed-content"></div>
-          <div class="feed-actions"> <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a> <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago</a> </div>
-        </div>
-        <div class="feed-item feed-item-question">
-          <div class="feed-icon"> <i class="fa fa-question"></i> </div>
-          <div class="feed-subject">
-            <p> <a href="javascript:;">Shami Hoang</a> posted the question: <a href="javascript:;">Who can I call to get a new parking pass for the Rowan Building?</a> </p>
-          </div>
-          <div class="feed-content">
-            <ul class="icons-list">
-              <li> <i class="icon-li fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
-                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes. </li>
-            </ul>
-          </div>
-          <div class="feed-actions"> <a href="javascript:;" class="pull-left"><i class="fa fa-thumbs-up"></i> 123</a> <a href="javascript:;" class="pull-left"><i class="fa fa-comment-o"></i> 29</a> <a href="javascript:;" class="pull-right"><i class="fa fa-clock-o"></i> 2 days ago</a> </div>
         </div>
         <br class="visible-xs">
-        <br class="visible-xs">
+        
+        
       </div>
       <!--project--> 
       
