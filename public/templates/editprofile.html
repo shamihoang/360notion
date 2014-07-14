@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>...</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="{author}">
+<link rel="stylesheet" href="../themes/admin/css/FB-style.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="../themes/admin/css/font-awesome.min.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../themes/admin/css/bootstrap.min.css">
+
+<!-- Validation CSS -->
+<link rel="stylesheet" href="/css/validationEngine.jquery.css"/>
+
+<!-- Alertify -->
+<link rel="stylesheet" href="/css/alertify.core.css"/>
+<link rel="stylesheet" href="/css/alertify.bootstrap3.css"/>
+
+<!-- App CSS -->
+<link rel="stylesheet" href="../themes/admin/css/mvpready-admin.css">
+<link rel="stylesheet" href="../themes/admin/css/mvpready-flat.css">
+<link rel="stylesheet" href="/css/dashboard.css"/>
+
+<!-- HTML5 shim -->
+<!--[if lt IE 9]>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+<link rel="shortcut icon" href="../themes/img/favicon.ico">
+</head>
+
+<body>
+<!--header-->
+<header class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-cog"></i> </button>
+      <img src="../themes/admin/img/logo.png" alt="360notion-Logo"/> </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav noticebar navbar-left">
+        <li class="dropdown"> <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Notifications&nbsp;</span> <span class="badge badge-primary">3</span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="nav-header">
+              <div class="pull-left"> </div>
+              <div class="pull-right"> <a href="javascript:;">Mark as Read</a> </div>
+            </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <i class="fa fa-cloud-upload text-success"></i> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">Templates Synced</strong> <span class="noticebar-item-text">20 Templates have been synced to the Mashon Demo instance.</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 12 minutes ago</span> </span> </a> </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <i class="fa fa-ban text-danger"></i> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">Sync Error</strong> <span class="noticebar-item-text">5 Designs have been failed to be synced to the Mashon Demo instance.</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 20 minutes ago</span> </span> </a> </li>
+            <li class="noticebar-menu-view-all"> <a href="./page-notifications.html">View All Notifications</a> </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-envelope big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Messages&nbsp;</span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="nav-header">
+              <div class="pull-left"> </div>
+              <div class="pull-right"> <a href="javascript:;">New Message</a> </div>
+            </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <img src="../themes/admin/img/avatars/avatar-1-md.jpg" style="width: 50px" alt=""> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">New Message</strong> <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 20 minutes ago</span> </span> </a> </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <img src="../themes/admin/img/avatars/avatar-2-md.jpg" style="width: 50px" alt=""> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">New Message</strong> <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 5 hours ago</span> </span> </a> </li>
+            <li class="noticebar-menu-view-all"> <a href="./page-notifications.html">View All Messages</a> </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-exclamation-triangle big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Alerts&nbsp;</span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="nav-header">
+              <div class="pull-left"> Alerts </div>
+            </li>
+            <li class="noticebar-empty">
+              <h4 class="noticebar-empty-title">No alerts here.</h4>
+              <p class="noticebar-empty-text">Check out what other makers are doing on Explore!</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown navbar-profile"> <a class="padding-top-home" href="/dashboard">Home</a> </li>
+        <li class="dropdown navbar-profile"> <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> <img src="../themes/landing/img/avatars/avatar-1-xs.jpg" class="navbar-profile-avatar" alt="Profile Picture"> <span class="navbar-profile-label">rod@rod.me &nbsp;</span> <i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu" role="menu">
+            <li> <a href="/dashboard/settings"> <i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings </a> </li>
+            <li class="divider"></li>
+            <li> <a href="#" onclick="this.childNodes[0].submit()">
+              <form action="/logout" method="POST">
+                <i class="fa fa-sign-out"></i> &nbsp;&nbsp;Log Out
+              </form>
+              </a> </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--end header-->
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-5">
+        <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
+      <div class="list-group"> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}"> <i class="fa fa-group text-sidebar"></i> &nbsp;Friends <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}"> <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
+    
+       </div>
+      
+      <!-- end left sidebar-->
+      <div class="col-md-9 col-sm-8 profile-line-height">
+        <h4 class="title-heading text-center">My Profile</h4>
+      <div class="stream-box">
+      <div class=" pull-right valign-top"> <a> Edit </a></div>
+       <h4> General Infomation </h4>
+       <div class="tab-pane fade in active" id="profile-tab">
+        
+
+                            <form id="profile_form"
+                                action="/dashboard/profile"
+                                method="POST"
+                                class="form-horizontal"
+                                role="form"
+                                enctype="multipart/form-data">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-md-3">Avatar</label>
+
+                                        <div class="col-md-7">
+                                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                                                {?user.avatarKey}
+                                              <div class="fileupload-new thumbnail" style="width: 180px; height: 180px;">
+                                                    <img src="{@imgUrl key="{user.avatarKey}"/}" alt="Profile Avatar"/></div>
+                                              <div class="fileupload-preview fileupload-exists thumbnail"
+                                                    style="max-width: 200px; max-height: 200px; line-height: 20px;">
+                                                </div>
+
+                                                <div>
+                                                    <span class="btn btn-default btn-file">
+                                                        <span class="fileupload-new">Select image</span>
+                                                        <span class="fileupload-exists">Change</span>
+                                                        <input type="file" name="pic"/>
+                                                    </span>
+
+                                                    <a href="#"
+                                                        class="btn btn-default fileupload-exists"
+                                                        data-dismiss="fileupload">
+                                                        Remove
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email" class="col-md-3">Company Email</label>
+
+                                        <div class="col-md-7">
+                                            <input type="email"
+                                                id="email"
+                                                name="email"
+                                                value="{user.email}"
+                                                class="form-control"
+                                                disabled/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="name" class="col-md-3 required">Full Name</label>
+
+                                        <div class="col-md-7">
+                                            <input type="text"
+                                                id="name"
+                                                name="name"
+                                                value="{user.name}"
+                                                class="form-control validate[required]"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="position" class="col-md-3">Position</label>
+
+                                        <div class="col-md-7">
+                                            <input type="text"
+                                                id="position"
+                                                name="position"
+                                                value="{user.position}"
+                                                class="form-control"/>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="contact_num" class="col-md-3">Contact Number</label>
+
+                                        <div class="col-md-7">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                                <input type="text"
+                                                    id="contact_num"
+                                                    name="contact_num"
+                                                    value="{user.contactNo}"
+                                                    class="form-control"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="website" class="col-md-3">Website</label>
+
+                                        <div class="col-md-7">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">http://</span>
+                                                <input type="text"
+                                                    id="website"
+                                                    name="website"
+                                                    class="form-control"
+                                                    value="{user.website}"
+                                                    placeholder="www.example.com">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="location" class="col-md-3">Location</label>
+
+                                        <div class="col-md-7">
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                                                <input type="text"
+                                                    id="location"
+                                                    name="location"
+                                                    value="{user.location}"
+                                                    class="form-control"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="about" class="col-md-3">About You</label>
+
+                                        <div class="col-md-7">
+                                            <textarea id="about" name="about" rows="6" class="form-control">
+                                                {user.about}
+                                            </textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-7 col-md-push-3">
+                                            <button type="submit" class="btn btn-primary">Save Changes</button>
+                                            &nbsp;
+                                            <button type="reset" class="btn btn-default">Cancel</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+          </div>
+        </div>
+       <div class="stream-box">
+            <div class=" pull-right valign-top"> <a> Edit </a></div>
+      <h4> Other Infomation</h4>
+        <div> <b>Avatar:</b> <a></a></div>
+        <div class="fileupload-new thumbnail" style="width: 180px; height: 180px;">
+<img alt="Profile Avatar" src="../themes/landing/img/avatars/avatar-1-lg.jpg">
+</div>
+       <div> <b>Number of Friends:</b> <a>1234</a></div>
+       <div> <b>Number of Follower:</b><a> 234</a></div>
+       <div> <b>Number of Following:</b><a> 234</a></div>
+       <div> <b>About Me:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+       <div><b> Department:</b> Marketing</div>
+       
+       <div> <b>Job Title:</b> Manager</div>
+       <div> <b>Location:</b></b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div><b>Birthday:</b> 12-12-1976</div>
+         <div><b>Skill:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <div><b>url:</b> http://www.url.com</div>
+         </div>
+         <div class="stream-box">
+              <div class=" pull-right valign-top"> <a> Edit </a></div>
+        <h4>Contact Infomation</b></h4>
+       <div><b> Work Phone: ext</b></div>
+        <div> <b>Mobile:</b></div>
+       <div><b>Home Adrress:</b></div>
+        <div><b>Other Emails:</b></div>
+         <div><b>Skype Name:</b></div>
+         </div>
+        <div class="stream-box">
+             <div class=" pull-right valign-top"> <a> Edit </a></div>
+         <h4>
+         Work History</h4>
+       <div> <b>From:       To: </b></div>
+        <div> <b>Company Name:</b></div>
+       <div> <b>Job Title:</b></div>
+        <div><b>Description:</b></div>
+            <div > <a> <i class="fa fa-plus"></i> Add more </a></div>
+        </div>
+        <div class="stream-box">
+             <div class=" pull-right valign-top"> <a> Edit </a></div>
+         <h4>Education</h4>
+       <div> <b>from to: </b> </div>
+        <div> <b>School Name:</b></div>
+       <div> <b>Degree/Diploma:</b></div>
+        <div><b>Description:</b></div>
+         <div > <a> <i class="fa fa-plus"></i> Add more </a></div>
+       </div>
+       
+       
+       
+       
+       
+      </div>
+      <br class="visible-xs">
+    </div>
+    <!--project--> 
+    
+    <!--end--> 
+  </div>
+</div>
+</div>
+
+
+<!-- Bootstrap core JavaScript  --> 
+<script type="text/javascript" src="../themes/admin/js/libs/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="../themes/admin/js/libs/bootstrap.min.js"></script> 
+
+<!-- Validation JS --> 
+<script type="text/javascript" src="/js/jquery.validationEngine-en.js"></script> 
+<script type="text/javascript" src="/js/jquery.validationEngine.js"></script> 
+
+<!-- Alertify JS --> 
+<script type="text/javascript" src="/js/alertify.js"></script> 
+
+<!-- App JS --> 
+<script type="text/javascript" src="../themes/admin/js/mvpready-core.js"></script> 
+<script type="text/javascript" src="../themes/admin/js/mvpready-admin.js"></script>
+</body>
+</html>
