@@ -61,51 +61,41 @@
 
   <div class="account-wrapper">
         <div class="account-body">
-            <h3>Welcome to 360notion™.</h3>
-            <h5>Please sign in.</h5>
-
-            <form id="login_form" action="/login" method="POST" class="form account-form" role="form">
-               
-               
-                <fieldset>
-                    <div class="form-group">
-                        <label for="email" class="placeholder-hidden">Email</label>
-                        <input type="text"
-                            class="form-control validate[required,custom[email]]"
-                            id="email"
-                            name="email"
-                            placeholder="Email">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="password" class="placeholder-hidden">Password</label>
-                        <input type="password"
-                            class="form-control validate[required,minSize[6],maxSize[32]]"
-                            id="password"
-                            name="password"
-                            placeholder="Password">
-                    </div>
-
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn btn-primary sign-in">
-                            Sign In &nbsp; 
-                        </button>
-                    </div>
-
-                    <div class="form-group clearfix">
-                        <div class=" text-center">
-                            <small><a href="/forgot">Forgot Password?</a></small>
+            <h2>Change Your Password</h2>
+                <div class="alert alert-success">
+                    Your password was successfully updated! <br>
+                    Please try logging in.
+                </div>
+                <form id="pwchange_form" action="/pwchange" method="POST" class="form account-form" role="form">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="password" class="placeholder-hidden">New Password</label>
+                            <input type="password"
+                                class="form-control validate[required,minSize[6],maxSize[32]]"
+                                id="password"
+                                name="password"
+                                placeholder="New Password"/>
                         </div>
-                    </div>
-              </fieldset>
-            </form>
+                        <div class="form-group">
+                            <label for="confirm_password" class="placeholder-hidden">Confirm Password</label>
+                            <input type="password"
+                                class="form-control validate[required,equals[password]]"
+                                id="confirm_password"
+                                name="confirm_password"
+                                placeholder="Confirm Password"/>
+                        </div>
+                        <div class="submit text-center">
+                            <button type="submit" class="btn btn-primary">
+                                <span>Change my password</span>
+                            </button>
+                        </div>
+                        <input type="hidden" name="email" value="{email}"/>
+                        <input type="hidden" name="hash" value="{hash}"/>
+                    </fieldset>
+                </form>
         </div>
-
-        <div class="account-footer">
-            <p>
-                Don't have an account? &nbsp;
-                <a href="/signup">Create an Account!</a>
-            </p>
+        <div>
+            Know your password? <a href="/login">Log in here</a>
         </div>
     </div>
     

@@ -96,14 +96,12 @@
   </div>
 </header>
 <!--end header-->
-
 <div class="container">
   <div class="row">
     <div class="col-md-3 col-sm-5">
-      <div class="profile-avatar"> <img src="../themes/landing/img/avatars/avatar-1-md.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
-      <div class="list-group"> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&nbsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&nbsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&nbsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}"> <i class="fa fa-group text-sidebar"></i> &nbsp;&nbsp;Friends <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}"> <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
+      <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-md.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
+      <div class="list-group"> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}"> <i class="fa fa-group text-sidebar"></i> &nbsp;Friends <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}"> <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
     </div>
-    
     <!--inbox-->
     <div class="col-md-6 col-sm-7 layout-main">
       <div class="pull-right btn-cm"> Compose Message </div>
@@ -115,8 +113,8 @@
           </ul>
         </Div>
         <div id="myTab2Content" class="tab-content">
-          <div id="inbox" class="tab-pane fade in active padding-box-center ">
-            <div>
+          <div id="inbox" class="tab-pane fade in active  ">
+            <div class="stream-box">
               <div class="row title-inbox text-center"> Unread Messages</div>
               <div class="row padding-box">
                 <div class="col-md-8 ">
@@ -147,7 +145,9 @@
                   <p> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
                 </div>
               </div>
-              <div class="padding-box-center title-inbox text-center"> History</div>
+            </div>
+            <div class="stream-box">
+              <div class=" title-inbox text-center"> History</div>
               <div class="row padding-box">
                 <div class="col-md-8 ">
                   <div class="row">
@@ -181,39 +181,41 @@
           
           <!--sent-->
           
-          <div id="sent" class="tab-pane fade active padding-box-center layout-main">
-            <div class="row padding-box ">
-              <div class="col-md-6 ">
-                <div class="row">
-                  <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                  <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                    <p class="inbox-subject">This is a subject line</p>
+          <div id="sent" class="tab-pane fade active  layout-main">
+            <div class="stream-box">
+              <div class="row padding-box ">
+                <div class="col-md-6 ">
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
+                      <p class="inbox-subject">This is a subject line</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class=" col-md-3"> <a>
-                <li class="fa fa-paperclip">&nbsp;&nbsp;Unread</li>
-                </a></div>
-              <div class="col-md-3 time">
-                <p><i class="fa fa-pencil"></i> &nbsp; Edit&nbsp; <i class=" fa fa-trash-o"></i> &nbsp;Delete</a> </p>
-                <p><i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012</p>
-              </div>
-            </div>
-            <div class="row padding-box ">
-              <div class="col-md-6 ">
-                <div class="row">
-                  <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                  <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                    <p class="inbox-subject">This is a subject line</p>
-                  </div>
+                <div class=" col-md-3"> <a>
+                  <li class="fa fa-paperclip">&nbsp;&nbsp;Unread</li>
+                  </a></div>
+                <div class="col-md-3 time">
+                  <p><i class="fa fa-pencil"></i> &nbsp; Edit&nbsp; <i class=" fa fa-trash-o"></i> &nbsp;Delete</a> </p>
+                  <p><i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012</p>
                 </div>
               </div>
-              <div class=" col-md-3"> <a>Opened
-                </li>
-                </a></div>
-              <div class="col-md-3 time"></a>
-                </p>
-                <p><i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012</p>
+              <div class="row padding-box ">
+                <div class="col-md-6 ">
+                  <div class="row">
+                    <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
+                      <p class="inbox-subject">This is a subject line</p>
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-md-3"> <a>Opened
+                  </li>
+                  </a></div>
+                <div class="col-md-3 time"></a>
+                  </p>
+                  <p><i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012</p>
+                </div>
               </div>
             </div>
           </div>
