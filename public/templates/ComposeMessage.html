@@ -102,132 +102,132 @@
     <div class="row">
       <div class="col-md-3 col-sm-5">
         <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
-      <div><form class="mainnav-form" role="">
-          <input class="form-control input-md" type="text" placeholder="Add your personal message">
+        <div>
+          <form class="mainnav-form" role="">
+            <input class="form-control input-md" type="text" placeholder="Add your personal message">
+            <button class="mainnav-form-btn btn-personal-message-post"> Post </button>
+          </form>
+        </div>
+        <div class="list-group padding-top"> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}"> <i class="fa fa-group text-sidebar"></i> &nbsp;Friends <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}"> <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
+      </div>
+      
+      <!--inbox-->
+      <div class="col-md-6 col-sm-7 layout-main">
+        <div class="pull-right btn-cm"> Compose Message </div>
+        <div>
+          <Div class="message-tab">
+            <ul id="myTab2" class="nav nav-pills">
+              <li class="active"> <a data-toggle="tab" href="#inbox">Inbox</a> </li>
+              <li> <a data-toggle="tab" href="#sent">Sent</a> </li>
+            </ul>
+          </Div>
+          <div id="myTab2Content" class="tab-content"> </div>
           
-        </form></div>
-      
-      <div class="list-group padding-top"> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}"> <i class="fa fa-group text-sidebar"></i> &nbsp;Friends <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}"> <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
-    
-       </div>
-      
-    
-    
-    <!--inbox-->
-    <div class="col-md-6 col-sm-7 layout-main">
-      <div class="pull-right btn-cm"> Compose Message </div>
-      <div>
-        <Div class="message-tab">
-          <ul id="myTab2" class="nav nav-pills">
-            <li class="active"> <a data-toggle="tab" href="#inbox">Inbox</a> </li>
-            <li> <a data-toggle="tab" href="#sent">Sent</a> </li>
-          </ul>
-        </Div>
-        <div id="myTab2Content" class="tab-content"> </div>
-        
-        <!--sent-->
-        
-        <div id="sent" class="tab-pane fade active  layout-main"> </div>
-        <!-- compose message-->
-        <div class="stream-box">
-          <form id="" action="" method="POST" role="form">
-            <fieldset>
-              <div class="title-inbox text-center">
-                <h4 class="" id="modal_label">Send a Message</h4>
-              </div>
-              <div class="send-message-padding ">
-                <div class="form-group">
-                  <input id="email"
+          <!--sent-->
+          
+          <div id="sent" class="tab-pane fade active  layout-main"> </div>
+          <!-- compose message-->
+          <div class="stream-box">
+            <form id="" action="" method="POST" role="form">
+              <fieldset>
+                <div class="title-inbox text-center">
+                  <h4 class="" id="modal_label">Send a Message</h4>
+                </div>
+                <div class="send-message-padding ">
+                  <div class="form-group">
+                    <input id="email"
                                     name="email"
                                     type="text"
                                     class="form-control validate[required,custom[email]]"
                                     placeholder="To: user@companyemail.com"/>
-                </div>
-                <div class="form-group">
-                  <input id="subject"
+                  </div>
+                  <div class="form-group">
+                    <input id="subject"
                                     name="subject"
                                     type="text"
                                     class="form-control validate[required,custom[email]]"
                                     placeholder="Subject:"/>
+                  </div>
+                  <div class="form-group">
+                    <label form="message">Message</label>
+                    <textarea class="form-control share-widget-textarea" rows="3" placeholder="Compose a mistake-proof message. Click on the button below to turn it into a snap message." tabindex="1"></textarea>
+                    <div class="row send-message-padding padding-top "> <a> <i class="fa fa-paperclip text-center"></i> &nbsp; Add Files</a></div>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label form="message">Message</label>
-                  <textarea class="form-control share-widget-textarea" rows="3" placeholder="Compose a mistake-proof message. Click on the button below to turn it into a snap message." tabindex="1"></textarea>
-                  <div class="row send-message-padding padding-top "> <a> <i class="fa fa-paperclip text-center"></i> &nbsp; Add Files</a></div>
+                <div class=" row send-message-padding  ">
+                  <div class="col-md-8 checkbox inline-block text-left">
+                    <li class="inline-block ui-tooltip">
+                      <label>
+                        <input  type="radio" value=""  >
+                        <a class="ui-tooltip" data-toggle="tooltip"data-original-title="Snap messages will delete 30 seconds after the recipients open them" >Snap Message </a> </label>
+                    </li>
+                    <li class="inline-block">
+                      <label>
+                        <input type="radio" value="">
+                        <a class="ui-tooltip zindex10" data-toggle="tooltip"data-original-title="Edit or delete the mistakes before the recipients opens them">Standard Message</a> </label>
+                    </li>
+                  </div>
+                  <div class="col-md-4 inline-block">
+                    <button type="button" class="btn btn-primary  btn-default" data-dismiss="modal">Cancel</button>
+                    &nbsp;
+                    <button type="submit" class="btn btn-primary  btn-default">Send</button>
+                  </div>
                 </div>
-              </div>
-              <div class=" row send-message-padding  ">
-                <div class="col-md-8 checkbox inline-block text-left">
-                  <li class="inline-block ui-tooltip">
-                    <label>
-                      <input  type="radio" value=""  >
-                      <a class="ui-tooltip" data-toggle="tooltip"data-original-title="Snap messages will delete 30 seconds after the recipients open them" >Snap Message </a> </label>
-                  </li>
-                  <li class="inline-block">
-                    <label>
-                      <input type="radio" value="">
-                      <a class="ui-tooltip zindex10" data-toggle="tooltip"data-original-title="Edit or delete the mistakes before the recipients opens them">Standard Message</a> </label>
-                  </li>
-                </div>
-                <div class="col-md-4 inline-block">
-                  <button type="button" class="btn btn-primary  btn-default" data-dismiss="modal">Cancel</button>
-                  &nbsp;
-                  <button type="submit" class="btn btn-primary  btn-default">Send</button>
-                </div>
-              </div>
-            </fieldset>
-          </form>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--chat-->
+      <div class="col-md-3 layout-main ">
+        <div class="stream-box">
+          <p class="title-sidebar "> Chat With Coworkers </p>
+          <p>
+          <div class="row chat-sidebar text-center">
+            <div class="text-center">
+              <form class="mainnav-form pull-right" role="search">
+                <input class="form-control input-md mainnav-search-query" type="text" placeholder="Search for coworker">
+                <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
+              </form>
+            </div>
+          </div>
+          <div class="row padding-chat">
+            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+          </div>
+          <div class="row padding-chat">
+            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+          </div>
+          <div class="row padding-chat">
+            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+          </div>
+          <a>See All Coworkers</a> </div>
+        <div id="note-box" class="text-center">
+          <h4> To Do List </h4>
+          <div>
+            <p class="text-left"> something to do here something to do here <a class="pull-right time"> &nbsp;2pm 15/9/2012 &nbsp; <i class="fa fa-trash-o"></i> </a> </p>
+          </div>
+          <div>
+            <p class="text-left"> something to do here something to do here <a class="pull-right time"> &nbsp;2pm 15/9/2012 &nbsp; <i class="fa fa-trash-o"></i> </a> </p>
+          </div>
+          <div>
+            <p class="text-left"> something to do here something to do here <a class="pull-right time"> &nbsp;2pm 15/9/2012 &nbsp; <i class="fa fa-trash-o"></i> </a> </p>
+          </div>
+          <div class="padding-top">
+            <p class=" text-right"> <a><i class="fa fa-pencil-square-o"></i>&nbsp;New Note</a>
+          </div>
         </div>
       </div>
     </div>
-    <!--chat-->
-    <div class="col-md-3 layout-main ">
-    <div class="stream-box">
-      <p class="title-sidebar "> Chat With Coworkers </p>
-      <p>
-      <div class="row chat-sidebar text-center">
-        <div class="text-center">
-          <form class="mainnav-form pull-right" role="search">
-            <input class="form-control input-md mainnav-search-query" type="text" placeholder="Search for coworker">
-            <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
-          </form>
-        </div>
-      </div>
-      <div class="row padding-chat">
-        <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-        <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
-          <p class="coworker-title">Marketing Manager</p>
-        </div>
-      </div>
-      <div class="row padding-chat">
-        <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-        <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
-          <p class="coworker-title">Marketing Manager</p>
-        </div>
-      </div>
-      <div class="row padding-chat">
-        <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-        <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
-          <p class="coworker-title">Marketing Manager</p>
-        </div>
-      </div>
-       <a>See All Coworkers</a> 
-      </div>
-       <div id="note-box" class="text-center">  <h4> To Do List </h4>
-       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
-       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
-       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
-       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
-       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
-       <p class="text-left" > <a class="text-left">&nbsp;&nbsp;</a> <a class="pull-right date"> New Note </a>    </p>
-       </div>
-      
-      
-    </div>
-    
-   
   </div>
-</div>
 </div>
 
 <!-- Bootstrap core JavaScript  --> 
