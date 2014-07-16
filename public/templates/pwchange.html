@@ -61,10 +61,10 @@
 
   <div class="account-wrapper">
         <div class="account-body">
-            <h2>Change Your Password</h2>
-                <div class="alert alert-success">
-                    Your password was successfully updated! <br>
-                    Please try logging in.
+            <h3>Change Your Password</h3>
+                <div class="">
+                   Password change successful. <br>
+               Please <a>Sign In </a>with your new password.
                 </div>
                 <form id="pwchange_form" action="/pwchange" method="POST" class="form account-form" role="form">
                     <fieldset>
@@ -85,8 +85,8 @@
                                 placeholder="Confirm Password"/>
                         </div>
                         <div class="submit text-center">
-                            <button type="submit" class="btn btn-primary">
-                                <span>Change my password</span>
+                            <button type="submit" class="btn btn-primary sign-in-up">
+                                <span>Change My Password</span>
                             </button>
                         </div>
                         <input type="hidden" name="email" value="{email}"/>
@@ -95,7 +95,7 @@
                 </form>
         </div>
         <div>
-            Know your password? <a href="/login">Log in here</a>
+            know your password? <a href="/login">Please Sign In</a>
         </div>
     </div>
     

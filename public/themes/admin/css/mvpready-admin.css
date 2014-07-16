@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	height: 350px;
 }
 .profile-avatar-img {
-	max-width: 100%;
+	max-width: 70%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -1906,7 +1906,7 @@ table.table thead .sorting, table.table thead .sorting_asc, table.table thead .s
 	margin-top: 0px;
 }
 .mainnav-search-query {
-	width: 120px;
+	width: 80px;
 }
 .mainnav-form-btn {
 	top: 2px;
@@ -2559,9 +2559,9 @@ form .required:after {
 	text-decoration: none;
 	border-bottom: 1px solid #6685a4;
 }
-.sign-in {
+.sign-in-up {
 	text-align: center;
-	width: 60%;
+	width: 70%;
 	height: 46px;
 	font-size: 20px;
 	margin: auto;
@@ -2871,4 +2871,13 @@ color:#4B473A;
 	padding-left: 0px;
 	padding-right: 0px;
 }
-.profile-line-height{ line-height:22px;}
+.profile-line-height{ line-height:30px;}
+.avatar-personal-info{ max-width:200px; height:auto;}
+.avatar-personal-info img{border: 1px solid #ddd;
+	border-radius: 10px; padding:2px;}
+.coworker-carousel-padding{ padding:10px;}
+.coworker-carousel-button{top:250px; left:150px; position:inherit;}
+.personal-message-icon { color:#CCC;}
+.personal-message-text{font-size:14px;}
+
+#note-box { background-color:#fbf8c5; border: 1px solid #ddd; width:100%;  padding: 15px; margin-top:15px;}

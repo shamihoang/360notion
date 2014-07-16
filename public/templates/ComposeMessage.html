@@ -97,12 +97,21 @@
 </header>
 <!--end header-->
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-3 col-sm-5">
-      <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-md.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
-      <div class="list-group"> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}"> <i class="fa fa-group text-sidebar"></i> &nbsp;Friends <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}"> <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
-    </div>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-5">
+        <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
+      <div><form class="mainnav-form" role="">
+          <input class="form-control input-md" type="text" placeholder="Add your personal message">
+          
+        </form></div>
+      
+      <div class="list-group padding-top"> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}"> <i class="fa fa-group text-sidebar"></i> &nbsp;Friends <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}"> <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
+    
+       </div>
+      
+    
     
     <!--inbox-->
     <div class="col-md-6 col-sm-7 layout-main">
@@ -173,6 +182,7 @@
     </div>
     <!--chat-->
     <div class="col-md-3 layout-main ">
+    <div class="stream-box">
       <p class="title-sidebar "> Chat With Coworkers </p>
       <p>
       <div class="row chat-sidebar text-center">
@@ -201,8 +211,21 @@
           <p class="coworker-title">Marketing Manager</p>
         </div>
       </div>
-      <div class="row chat-sidebar pull-right"> <a>See All Coworkers</a> </div>
+       <a>See All Coworkers</a> 
+      </div>
+       <div id="note-box" class="text-center">  <h4> To Do List </h4>
+       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
+       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
+       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
+       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
+       <p class="text-left" > <a class="text-left">this is a sample </a> <a class="pull-right date"> 3pm 12/12/2013  X </a>    </p>
+       <p class="text-left" > <a class="text-left">&nbsp;&nbsp;</a> <a class="pull-right date"> New Note </a>    </p>
+       </div>
+      
+      
     </div>
+    
+   
   </div>
 </div>
 </div>

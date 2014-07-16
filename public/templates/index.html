@@ -2,8 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
-
+<title>360notion</title>
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
 <link href="../themes/landing/css/font-awesome.min.css" rel="stylesheet">
@@ -21,619 +20,384 @@
 <body>
 <!--header-->
 <header class="navbar navbar-inverse" role="banner">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <a href="/" class="navbar-brand navbar-brand-img">
-                                 <img src="../themes/landing/img/logo.png" alt="Logo">
-                            </a>
-                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <i class="fa fa-bars"></i>
-                            </button>
-                        </div>
-
-                        <nav class="collapse navbar-collapse" role="navigation">
-                            <ul class="nav navbar-nav navbar-right mainnav-menu">
-                                <li {@eq key="/" value="{url}"}class="active"{/eq}>
-                                    <a href="/">Home</a>
-                                </li>
-                                <li {@eq key="/features" value="{url}"}class="active"{/eq}>
-                                    <a href="/features">Features</a>
-                                </li>
-                                <li {@eq key="/faq" value="{url}"}class="active"{/eq}>
-                                    <a href="/faq">FAQ</a>
-                                </li>
-                                <li {@eq key="/pricing" value="{url}"}class="active"{/eq}>
-                                    <a href="/pricing">Pricing</a>
-                                </li>   
-                              
-                                <li {@eq key="/login" value="{url}"}class="active"{/eq}>
-                                    <a href="/login">Log In</a>
-                                </li>
-                            </ul>
-
-                        
-                        </nav>
-                    </div>
-                </header>
+  <div class="container">
+    <div class="navbar-header"> <a href="/" class="navbar-brand navbar-brand-img"> <img src="../themes/landing/img/logo.png" alt="Logo"> </a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i> </button>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right mainnav-menu">
+        <li {@eq key="/" value="{url}"}class="active"{/eq}> <a href="/">Home</a> </li>
+        <li {@eq key="/features" value="{url}"}class="active"{/eq}> <a href="/features">Features</a> </li>
+        <li {@eq key="/faq" value="{url}"}class="active"{/eq}> <a href="/faq">FAQ</a> </li>
+        <li {@eq key="/pricing" value="{url}"}class="active"{/eq}> <a href="/pricing">Pricing</a> </li>
+        <li {@eq key="/login" value="{url}"}class="active"{/eq}> <a href="/login">Sign In</a> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 <!--end header-->
-    <div class="masthead">
-     <div class="masthead-pattern">
-     
-   			
-   			<div class="zindex1">
-        <div class="container zindex2">
-            <!-- carousel -->
-          
-            <div id="masthead-carousel" class="carousel masthead-carousel ">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-md-6 masthead-text animated fadeInUpBig text-center">
-                                <h1 class="masthead-title-thin"><b class=" masthead-title-big">social network </b>for your <b class=" masthead-title-big">company</b></h1>
-                                    <p class="masthead-text-">
-                                        Connect, collaborate, and share what matters within your company easily and securely. Your private 360notion™ network requires a company domain email address to Create an Account.
-                                    </p>
-                                <br>
-
-                                <div class="masthead-actions">
-                                    <a href="/features" class="btn btn-transparent btn-jumbo-new">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 masthead-img animated pulse">
-                                <form id="signup_form" action="/signup" method="POST" class="form masthead-form well" role="form">
-                                    <fieldset>
-                                        <div class="form-group form-control-bg">
-                                            <input type="text"
+<div class="masthead">
+  <div class="masthead-pattern">
+    <div class="zindex1">
+      <div class="container zindex2"> 
+        <!-- carousel -->
+        
+        <div id="masthead-carousel" class="carousel masthead-carousel ">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                <div class="col-md-6 masthead-text animated fadeInUpBig text-center">
+                  <h1 class="masthead-title-thin"><b class=" masthead-title-big">social network </b>for your <b class=" masthead-title-big">company</b></h1>
+                  <p class="masthead-text-"> Connect, collaborate, and share what matters within your company easily and securely. Your private 360notion™ network requires a company domain email address to Create an Account. </p>
+                  <br>
+                  <div class="masthead-actions"> <a href="/features" class="btn btn-transparent btn-jumbo-new"> Learn More </a> </div>
+                </div>
+                <div class="col-md-6 masthead-img animated pulse">
+                  <form id="signup_form" action="/signup" method="POST" class="form masthead-form well" role="form">
+                    <fieldset>
+                      <div class="form-group form-control-bg">
+                        <input type="text"
                                                 name="organization"
                                                 placeholder="Company Name"
                                                 class="form-control validate[required]">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="email"
+                      </div>
+                      <div class="form-group">
+                        <input type="email"
                                                 id="email"
                                                 name="email"
                                                 placeholder="Company Email Address"
                                                 class="form-control validate[required,custom[email]]">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text"
+                      </div>
+                      <div class="form-group">
+                        <input type="text"
                                                 id="name"
                                                 name="name"
                                                 placeholder="Full Name"
                                                 class="form-control validate[required]">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="password"
+                      </div>
+                      <div class="form-group">
+                        <input type="password"
                                                 id="password"
                                                 name="password"
                                                 placeholder="Password"
                                                 class="form-control validate[required,minSize[6],maxSize[32]]">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="password"
+                      </div>
+                      <div class="form-group">
+                        <input type="password"
                                                 id="confirm_password"
                                                 name="confirm_password"
                                                 placeholder="Confirm Password"
                                                 class="form-control validate[required,equals[password]]">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <button type="submit" class="btn btn-secondary-new btn-jumbo-new btn-block">Get Started Today!</button>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-6 masthead-text animated fadeInLeftBig text-center">
-                                <h1 class="masthead-title">snap messages</h1>
-
-                                <p class="masthead-text-">
-                                    Delete what you share 30 seconds after the recipient opens them. 
-                                    Sharing sensitive or personal content has never been safer.
-                                </p>
-
-                                <br>
-
-                                <div class="masthead-actions">
-                                    <a href="/features" class="btn btn-transparent btn-jumbo-new">
-                                        Learn More
-                                    </a>
-
-                                    <a href="/signup" class="btn btn-transparent btn-jumbo-new">
-                                        Create an Account
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 masthead-img animated fadeInRightBig  ">
-                                <img src="../themes/landing/img/masthead/ipad.png" alt="slide2" class="img-responsive" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-md-6 masthead-text animated fadeInrightBig text-center" >
-                                <h1 class="masthead-title">mistake-proof messages</h1>
-
-                                <p class="masthead-text-">
-                                   Reduce the unnecessary pressure when sending anything that may contain mistakes. Preventing stress and burnout has never been easier.
-                                </p>
-
-                                <br>
-
-                                <div class="masthead-actions">
-                                    <a href="/features" class="btn btn-transparent btn-jumbo-new">
-                                        Learn More
-                                    </a>
-
-                                    <a href="/signup" class="btn btn-transparent btn-jumbo-new">
-                                        Create an Account
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 masthead-img animated fadeInUpBig">
-                                <img src="../themes/landing/img/masthead/mobile.png" alt="slide2" class="img-responsive" />     
-                            </div>
-                             
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="row">
-                                <div class="col-md-6 masthead-text animated fadeInDownBig text-center">
-                                    <h1 class="masthead-title">360-degree feedback</h1>
-                                    <p class="masthead-text-">
-                                        Evaluate coworkers using a technique called 360-degree feedback. Implementing a 360-degree feedback system effectively using video/files can lead to dynamic and positive change.
-                                    </p>
-                                    <br>
-                                    <div class="masthead-actions">
-                                        <a href="/features" class="btn btn-transparent btn-jumbo-new">
-                                            Learn More
-                                        </a>
-                                        <a href="/signup" class="btn btn-transparent btn-jumbo-new">
-                                            Create an Account
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 masthead-img animated fadeInUpBig">
-                                 <img src="../themes/landing/img/masthead/360degreefb.png" alt="slide3" class="img-responsive" />
-                                </div>
-                                
-                        </div>
-                    </div>
-                 
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-secondary-new btn-jumbo-new btn-block">Get Started Today!</button>
+                      </div>
+                    </fieldset>
+                  </form>
                 </div>
-
-                <div class="carousel-controls">
-                    <a class="carousel-control left" href="#masthead-carousel" data-slide="prev">&lsaquo;</a>
-                    <a class="carousel-control right" href="#masthead-carousel" data-slide="next">&rsaquo;</a>
-                </div>
+              </div>
             </div>
-          
-				</div>
-               <div class="masthead-cloud zindex3"></div>   
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6 masthead-text animated fadeInLeftBig text-center">
+                  <h1 class="masthead-title">snap messages</h1>
+                  <p class="masthead-text-"> Delete what you share 30 seconds after the recipient opens them. 
+                    Sharing sensitive or personal content has never been safer. </p>
+                  <br>
+                  <div class="masthead-actions"> <a href="/features" class="btn btn-transparent btn-jumbo-new"> Learn More </a> <a href="/signup" class="btn btn-transparent btn-jumbo-new"> Create an Account </a> </div>
+                </div>
+                <div class="col-md-6 masthead-img animated fadeInRightBig  "> <img src="../themes/landing/img/masthead/ipad.png" alt="slide2" class="img-responsive" /> </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6 masthead-text animated fadeInrightBig text-center" >
+                  <h1 class="masthead-title">mistake-proof messages™</h1>
+                  <p class="masthead-text-"> Reduce the unnecessary pressure when sending anything that may contain mistakes. Preventing stress and burnout has never been easier. </p>
+                  <br>
+                  <div class="masthead-actions"> <a href="/features" class="btn btn-transparent btn-jumbo-new"> Learn More </a> <a href="/signup" class="btn btn-transparent btn-jumbo-new"> Create an Account </a> </div>
+                </div>
+                <div class="col-md-6 masthead-img animated fadeInUpBig"> <img src="../themes/landing/img/masthead/mobile.png" alt="slide2" class="img-responsive" /> </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6 masthead-text animated fadeInDownBig text-center">
+                  <h1 class="masthead-title">360-degree feedback</h1>
+                  <p class="masthead-text-"> Evaluate coworkers using a technique called 360-degree feedback. Implementing a 360-degree feedback system effectively using video/files can lead to dynamic and positive change. </p>
+                  <br>
+                  <div class="masthead-actions"> <a href="/features" class="btn btn-transparent btn-jumbo-new"> Learn More </a> <a href="/signup" class="btn btn-transparent btn-jumbo-new"> Create an Account </a> </div>
+                </div>
+                <div class="col-md-6 masthead-img animated fadeInUpBig"> <img src="../themes/landing/img/masthead/360degreefb.png" alt="slide3" class="img-responsive" /> </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls"> <a class="carousel-control left" href="#masthead-carousel" data-slide="prev">&lsaquo;</a> <a class="carousel-control right" href="#masthead-carousel" data-slide="next">&rsaquo;</a> </div>
         </div>
-        
-    	</div>
+      </div>
+      <div class="masthead-cloud zindex3"></div>
     </div>
-<!--end-->
+  </div>
+</div>
+<!--end--> 
 <!--about 360notion™-->
 
-    <div class="content">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-push-6 text-center">
-                    <h4 class="content-title title-size text-center">
-                      <span>What is 360notion™</span>
-                    </h4>
-                    <p class="text-center">
-                        Whether you are a startup or a big enterprise, you need to engage with your coworkers in order to 
-                        get things done. After creating a 360notion™ network for your company, you can: 
-                    </p>
-                    <br>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <ul class="icons-list">
-                                <li>
-                                    <i class="icon-li fa fa-check"></i>
-                                    Share status updates
-                                </li>
-                               <li> <i class="icon-li fa fa-check text-primary"></i>
-                                  Communicate and share based on context
-                                </li>
-                                <li>
-                                    <i class="icon-li fa fa-check text-primary"></i>
-                                    Privately chat with coworkers
-                                </li>
-                                <li>
-                                    <i class="icon-li fa fa-check text-primary"></i>
-                                    Safely share and store files and intellectual property
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <ul class="icons-list">
-                                <li>
-                                    <i class="icon-li fa fa-check text-primary"></i>
-                                    Conduct 360-degree evaluations
-                                </li>
-                                <li>
-                                    <i class="icon-li fa fa-check text-primary"></i>
-                                    Control your network with admin functions
-                                </li>
-                                <li>
-                                    <i class="icon-li fa fa-check text-primary"></i>
-                                    and more value-added functions…
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <br>
-                    <a href="/signup" class="btn btn-default">I Want to Create an Account</a>
-                    <br><br><br>
-                </div>
-
-                <div class="col-sm-6 col-sm-pull-6 text-center">
-                    <br><br>
-                    <img src="../themes/landing/img/devices/macbook.png" class="img-responsive" alt="Macbook">
-                </div>
-            </div>
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-6 text-center">
+        <h4 class="content-title title-size text-center"> <span>What is 360notion™</span> </h4>
+        <p class="text-center large-text "> Whether you are a startup or a big enterprise, you need to engage with your coworkers in order to 
+          get things done. After creating a 360notion™ network for your company, you can: </p>
+        <br>
+        <div class="row">
+          <div class="col-sm-6 large-text ">
+            <ul class="icons-list">
+              <li> <i class="icon-li fa fa-check"></i> Share status updates </li>
+              <li> <i class="icon-li fa fa-check text-primary"></i> Communicate and share based on context </li>
+              <li> <i class="icon-li fa fa-check text-primary"></i> Privately chat with coworkers </li>
+              <li> <i class="icon-li fa fa-check text-primary"></i> Safely share and store files and intellectual property </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 large-text ">
+            <ul class="icons-list">
+              <li> <i class="icon-li fa fa-check text-primary"></i> Conduct 360-degree evaluations </li>
+              <li> <i class="icon-li fa fa-check text-primary"></i> Control your network with admin functions </li>
+              <li> <i class="icon-li fa fa-check text-primary"></i> and more value-added functions… </li>
+            </ul>
+          </div>
         </div>
-        </div>
-          <div class="row-divider"></div>
-          
- <!--end about 360notion™-->    
+        <br>
+        <a href="/signup" class="btn btn-default btn-jumbo-new">I Want to Create an Account</a> <br>
+        <br>
+        <br>
+      </div>
+      <div class="col-sm-6 col-sm-pull-6 text-center"> <br>
+        <br>
+        <img src="../themes/landing/img/devices/macbook.png" class="img-responsive" alt="Macbook"> </div>
+    </div>
+  </div>
+</div>
+<div class="row-divider"></div>
+
+<!--end about 360notion™--> 
 <!-- new bg-->
 <div class="why-choose360notion-bg">
- 
-    <div class="content">
-        <div class="container">
-            <h4 class="content-title title-size text-center">
-                <span>Why choose 360notion™ for your company?</span>
-            </h4>
-            <br>
-            <div class="row">
-                <div class="mini-feature">
-                   
+  <div class="content">
+    <div class="container">
+      <h4 class="content-title title-size text-center"> <span>Why choose 360notion™ for your company?</span> </h4>
+      <br>
+      <div class="row">
+        <div class="mini-feature">
+          <div class="mini-feature-text">
+            <div> <i class="fa fa-globe mini-feature-icon-new "></i> </div>
+            <h5 class="mini-feature-title">Wide Browser Support</h5>
+            <p class="large-text"> 360notion™ is secure and mobile-friendly with a sharp display on a wide variety of mobile devices. 
+              360-degree feedback with video takes full advantage of the built in cameras in mobile devices. </p>
+          </div>
+        </div>
+        <div class="mini-feature">
+          <div class="mini-feature-text">
+            <div> <i class="fa fa-dashboard mini-feature-icon-new"></i> </div>
+            <h5 class="mini-feature-title">Accurate Dashboard Interface</h5>
+            <p class="large-text"> Our dashboard lets you see a summary of what is happening inside your entire network in a glance. </p>
+          </div>
+        </div>
+        <div class="mini-feature">
+          <div class="mini-feature-text">
+            <div> <i class="fa fa-lock  mini-feature-icon-new "></i> </div>
+            <h5 class="mini-feature-title">Secure End-to-End Encryption</h5>
+            <p class="large-text"> We protect each company's 360notion™ network with end-to-end 2048-bit SSL encryption. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-                    <div class="mini-feature-text">
-                   <div> <i class="fa fa-globe mini-feature-icon-new "></i> </div>
-                        <h5 class="mini-feature-title">Wide Browser Support</h5>            
-                        <p>
-                            360notion™ is secure and mobile-friendly with a sharp display on a wide variety of mobile devices. 
-                            360-degree feedback with video takes full advantage of the built in cameras in mobile devices. 
-                        </p>
-                    </div>
-                </div>
-
-                <div class="mini-feature">
-                 
-
-                    <div class="mini-feature-text">
-                    <div> <i class="fa fa-dashboard mini-feature-icon-new"></i> </div>
-                        <h5 class="mini-feature-title">Accurate Dashboard Interface</h5>
-                        <p>
-                            Our dashboard lets you see a summary of what is happening inside your entire network in a glance.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="mini-feature">
-                  
-
-                    <div class="mini-feature-text">
-                    <div> <i class="fa fa-lock  mini-feature-icon-new "></i> </div>
-                        <h5 class="mini-feature-title">Secure End-to-End Encryption</h5>
-                        <p>
-                            We protect each company's 360notion™ network with end-to-end 2048-bit SSL encryption.
-                        </p>
-                    </div>
-                </div>
-            </div>
-       </div> 
-           </div>
-       </div>    
-      
 <!-- end why choose-->
 <div class="backgound-color">
- <div class="content">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4 class="content-title title-size text-center">
-                        <span>Latest News</span>
-                    </h4>
-
-                    <div class="recent-news">
-                        
-                            <div class="recent-news-item clearfix">
-                                <div class="recent-news-item-date">
-                                    18<span>May</span>
-                                </div>
-                                <div class="recent-news-item-description">
-                                    <h5 class="recent-news-item-title">
-                                        <a href="{.url}" title="{.title}">Lorem ipsum dolor sit amet</a>
-                                    </h5>
-                                    <div class="recent-news-item-excerpt">
-                                      <p>Today we will be talking about 360notion.com's development.</p>
-<a href="/post/360notion™-development">Read more →</a>
-                                    </div>
-                                </div>
-                            </div>
-                        <div class="recent-news-item clearfix">
-                                <div class="recent-news-item-date">
-                                    18<span>May</span>
-                                </div>
-                                <div class="recent-news-item-description">
-                                    <h5 class="recent-news-item-title">
-                                        <a href="{.url}" title="{.title}">Lorem ipsum dolor sit amet</a>
-                                    </h5>
-                                    <div class="recent-news-item-excerpt">
-                                       <p>Today we will be talking about 360notion.com's development.</p>
-<a href="/post/360notion™-development">Read more →</a>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    <br class="visible-xs">
-                </div>
-
-                <div class="col-sm-6">
-                    <h4 class="content-title title-size text-center">
-                      <span>Testimonials</span>
-
-                      <a class="btn btn-default btn-sm carousel-prev" href="#clients-carousel" data-slide="prev">&lsaquo;</a>
-                      <a class="btn btn-default btn-sm carousel-next" href="#clients-carousel" data-slide="next">&rsaquo;</a>
-                    </h4>
-
-                    <div id="clients-carousel" class="carousel slide" data-interval="0">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="testimonial">
-                                    <p class="testimonial-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sed, nulla, provident porro quaerat aperiam eum tempore fugiat dicta obcaecati itaque adipisci perspiciatis unde voluptatibus architecto vitae reiciendis distinctio incidunt! Tempore quae impedit velit voluptatum consequuntur cupiditate.
-                                    </p>
-
-                                    <div class="testimonials-arrow"></div>
-
-                                    <div class="testimonial-author">
-                                        <div class="testimonial-image"><img alt="" src="../themes/landing/img/avatars/avatar-1-lg.jpg"></div>
-                                        <div class="testimonial-author-info">
-                                            <h5><a href="#">Rod Howard</a></h5> Jumpstart Themes
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="testimonial">
-                                    <p class="testimonial-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sed, nulla, provident porro quaerat aperiam eum tempore fugiat dicta obcaecati itaque adipisci perspiciatis unde voluptatibus architecto vitae reiciendis distinctio incidunt! Tempore quae impedit velit voluptatum consequuntur cupiditate.
-                                    </p>
-
-                                    <div class="testimonials-arrow"></div>
-
-                                    <div class="testimonial-author">
-                                      <div class="testimonial-image"><img alt="" src="../themes/landing/img/avatars/avatar-2-lg.jpg"></div>
-
-                                      <div class="testimonial-author-info">
-                                        <h5><a href="#">Nikita Williams</a></h5> Nikita Chanel
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h4 class="content-title title-size text-center"> <span>Latest News</span> </h4>
+          <div class="recent-news">
+            <div class="recent-news-item clearfix">
+              <div class="recent-news-item-date"> 18<span>May</span> </div>
+              <div class="recent-news-item-description">
+                <h5 class="recent-news-item-title"> <a href="{.url}" title="{.title}">Lorem ipsum dolor sit amet</a> </h5>
+                <div class="recent-news-item-excerpt">
+                  <p>Today we will be talking about 360notion.com's development.</p>
+                  <a href="/post/360notion™-development">Read more →</a> </div>
+              </div>
             </div>
+            <div class="recent-news-item clearfix">
+              <div class="recent-news-item-date"> 18<span>May</span> </div>
+              <div class="recent-news-item-description">
+                <h5 class="recent-news-item-title"> <a href="{.url}" title="{.title}">Lorem ipsum dolor sit amet</a> </h5>
+                <div class="recent-news-item-excerpt">
+                  <p>Today we will be talking about 360notion.com's development.</p>
+                  <a href="/post/360notion™-development">Read more →</a> </div>
+              </div>
+            </div>
+          </div>
+          <br class="visible-xs">
+        </div>
+        <div class="col-sm-6">
+          <h4 class="content-title title-size text-center"> <span>Testimonials</span> <a class="btn btn-default btn-sm carousel-prev" href="#clients-carousel" data-slide="prev">&lsaquo;</a> <a class="btn btn-default btn-sm carousel-next" href="#clients-carousel" data-slide="next">&rsaquo;</a> </h4>
+          <div id="clients-carousel" class="carousel slide" data-interval="0">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="testimonial">
+                  <p class="testimonial-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sed, nulla, provident porro quaerat aperiam eum tempore fugiat dicta obcaecati itaque adipisci perspiciatis unde voluptatibus architecto vitae reiciendis distinctio incidunt! Tempore quae impedit velit voluptatum consequuntur cupiditate. </p>
+                  <div class="testimonials-arrow"></div>
+                  <div class="testimonial-author">
+                    <div class="testimonial-image"><img alt="" src="../themes/landing/img/avatars/avatar-1-lg.jpg"></div>
+                    <div class="testimonial-author-info">
+                      <h5><a href="#">Rod Howard</a></h5>
+                      Jumpstart Themes </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial">
+                  <p class="testimonial-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sed, nulla, provident porro quaerat aperiam eum tempore fugiat dicta obcaecati itaque adipisci perspiciatis unde voluptatibus architecto vitae reiciendis distinctio incidunt! Tempore quae impedit velit voluptatum consequuntur cupiditate. </p>
+                  <div class="testimonials-arrow"></div>
+                  <div class="testimonial-author">
+                    <div class="testimonial-image"><img alt="" src="../themes/landing/img/avatars/avatar-2-lg.jpg"></div>
+                    <div class="testimonial-author-info">
+                      <h5><a href="#">Nikita Williams</a></h5>
+                      Nikita Chanel </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-             
-            </div>
-            
-   <!---->
+  </div>
   
-   <div class="content">
-        <div class="container">
-          
-
-            <div class="carousel-container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h4 class="content-title title-size text-center">
-                          <span>They use 360notion™</span>
-
-                          <a class="btn btn-default btn-sm carousel-prev" href="#" data-slide="prev">&lsaquo;</a>
-                          <a class="btn btn-default btn-sm carousel-next" href="#" data-slide="next">&rsaquo;</a>
-                        </h4>
-                        <ul class="clients-list">
-                            <li>
-                                <img src="../themes/landing/img/clients/logo1-grayscale.png" class="img-responsive" alt="Client Logo">
-                            </li>
-                            <li>
-                                <img src="../themes/landing/img/clients/logo2-grayscale.png" class="img-responsive" alt="Client Logo">
-                            </li>
-                            <li>
-                                <img src="../themes/landing/img/clients/logo3-grayscale.png" class="img-responsive" alt="Client Logo">
-                            </li>
-                            <li>
-                                <img src="../themes/landing/img/clients/logo4-grayscale.png" class="img-responsive" alt="Client Logo">
-                            </li>
-                            <li>
-                                <img src="../themes/landing/img/clients/logo5-grayscale.png" class="img-responsive" alt="Client Logo">
-                            </li>
-                            <li>
-                                <img src="../themes/landing/img/clients/logo6-grayscale.png" class="img-responsive" alt="Client Logo">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!---->
+  
+  <div class="content">
+    <div class="container">
+      <div class="carousel-container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4 class="content-title title-size text-center"> <span>They use 360notion™</span> <a class="btn btn-default btn-sm carousel-prev" href="#" data-slide="prev">&lsaquo;</a> <a class="btn btn-default btn-sm carousel-next" href="#" data-slide="next">&rsaquo;</a> </h4>
+            <ul class="clients-list">
+              <li> <img src="../themes/landing/img/clients/logo1-grayscale.png" class="img-responsive" alt="Client Logo"> </li>
+              <li> <img src="../themes/landing/img/clients/logo2-grayscale.png" class="img-responsive" alt="Client Logo"> </li>
+              <li> <img src="../themes/landing/img/clients/logo3-grayscale.png" class="img-responsive" alt="Client Logo"> </li>
+              <li> <img src="../themes/landing/img/clients/logo4-grayscale.png" class="img-responsive" alt="Client Logo"> </li>
+              <li> <img src="../themes/landing/img/clients/logo5-grayscale.png" class="img-responsive" alt="Client Logo"> </li>
+              <li> <img src="../themes/landing/img/clients/logo6-grayscale.png" class="img-responsive" alt="Client Logo"> </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-        </div>
-    </div>
-    <!--footer-->
-    
-     <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <h4 class="title-size text-center">
-                               About Us
-                            </h4>
-                            <p class="About-Us text-footer text-center">        <i class="icon-li fa fa-quote-left about-us-icon"></i>&nbsp;&nbsp;360notion™ was founded on a simple idea, that people should be engaged with the company they are a part. 
-                            To do this, the boardroom, break room, meeting room and file room should be centralized and remain private.&nbsp;&nbsp; <i class="icon-li fa fa-quote-right about-us-icon "></i>
-                            <small class="help-block text-center text-footer">
-                                -Joel Goslar, Founder and CEO
-                            </small> </p>
-                        </div>
+  </div>
+</div>
+</div>
+<!--footer-->
 
-                        <div class="col-sm-3">
-                           <h4 class="title-size text-center">
-                                Stay Connected
-                            </h4>
-
-                            <p class="text-footer text-center">
-                               Add us on Facebook or follow us on Twitter
-                            </p>
-
-                            <br>
-
-                            <ul class="footer-social-link text-footer text-center">
-                                <li>
-                                    <a href="https://www.facebook.com/360notion™"
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h4 class="title-size text-center"> About Us </h4>
+        <p class="About-Us text-footer text-center"> <i class="icon-li fa fa-quote-left about-us-icon"></i>&nbsp;&nbsp;360notion™ was founded on a simple idea, that people should be engaged with the company they are a part. 
+          To do this, the boardroom, break room, meeting room and file room should be centralized and remain private.&nbsp;&nbsp; <i class="icon-li fa fa-quote-right about-us-icon "></i> <small class="help-block text-center text-footer"> -Joel Goslar, Founder and CEO </small> </p>
+      </div>
+      <div class="col-sm-3">
+        <h4 class="title-size text-center"> Stay Connected </h4>
+        <br>
+        <ul class="footer-social-link text-footer text-center">
+          <li> <a href="https://www.facebook.com/360notion™"
                                         target="_blank"
                                         class="ui-tooltip"
                                         title="Facebook"
-                                        data-placement="bottom">
-                                        <i class="fa fa-facebook text-footer"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/360notion™"
+                                        data-placement="bottom"> <i class="fa fa-facebook text-footer"></i> </a> </li>
+          <li> <a href="https://twitter.com/360notion™"
                                         target="_blank"
                                         class="ui-tooltip"
                                         title="Twitter"
-                                        data-placement="bottom">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <h4 class="title-size text-center">
-                              Stay Updated
-                            </h4>
-
-                            <div class="subscribe-form text-footer text-center">
-                                <p >Get emails about new features and future updates.</p>
-
-                                <form id="subscribe_form" action="/subscribe" method="POST" class="form" role="form">
-                                    <fieldset>
-                                        <div class="form-group text-center">
-                                            <input type="text"
+                                        data-placement="bottom"> <i class="fa fa-twitter"></i> </a> </li>
+          <li> <a href="https://pinterest.com/360notion™"
+                                        target="_blank"
+                                        class="ui-tooltip"
+                                        title="Pinterest"
+                                        data-placement="bottom"> <i class="fa fa-pinterest-square"></i> </a> </li>
+          <li> <a href="https://tumblr.com/360notion™"
+                                        target="_blank"
+                                        class="ui-tooltip"
+                                        title="tumblr"
+                                        data-placement="bottom"> <i class="fa fa-tumblr"></i> </a> </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h4 class="title-size text-center"> Stay Updated </h4>
+        <div class="subscribe-form text-footer text-center">
+          <p >Get emails about new features and future updates.</p>
+          <form id="subscribe_form" action="/subscribe" method="POST" class="form" role="form">
+            <fieldset>
+              <div class="form-group text-center">
+                <input type="text"
                                                 class="form-control validate[required,custom[email]]"
                                                 id="newsletter_email"
                                                 name="newsletter_email"
                                                 placeholder="Email Address">
-                                        </div>
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-transparent">Notify me</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <p class="subscribe-thanks"> Thanks for subscribing! </p>
+      </div>
+      <div class="col-sm-3 text-footer text-center">
+        <h4 class="title-size text-center"> Get In Touch </h4>
+        <p> 1201 Orange St Ste 600 <br>
+          Wilmington, DE 19801 </p
 
-                                        <div class="form-group text-center">
-                                            <button type="submit" class="btn btn-transparent">Notify me</button>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
+                                >
+        <p> +1 302-415-1226 </p>
+        <p> <a href="mailto:admin@myabuy.com" class="footer-link">admin@myabuy.com</a> </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<footer class="copyright-new">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6"> <a class="footer-link" href="mailto:admin@myabuy.com">Careers </a>&nbsp;|&nbsp;<a href="#" class="footer-link" >Terms of Service</a> </div>
+      <div class="col-sm-6"> Copyright &copy; 2014 Myabuy LLC. </div>
+    </div>
+  </div>
+</footer>
 
-                            <p class="subscribe-thanks">
-                                Thanks for subscribing!
-                            </p>
-                        </div>
+<!-- Bootstrap core JavaScript  --> 
+<script type="text/javascript" src="../themes/landing/js/libs/jquery-1.10.2.js"></script> 
+<script type="text/javascript" src="../themes/landing/js/libs/bootstrap.js"></script> 
+<script type="text/javascript" src="../themes/landing/js/plugins/timeago/jquery.timeago.js"></script> 
 
-
-                        <div class="col-sm-3 text-footer text-center">
-                            <h4 class="title-size text-center">
-                               Get In Touch
-                            </h4>
-
-                            
-                                <p>
-                                    
-                                    1201 Orange St Ste 600 <br>
-                                    Wilmington, DE 19801
-                                </p
-
-                                ><p>
-                                 
-                                    +1 302-415-1226
-                                </p>
-
-                                <p>
-                               
-                                    <a href="mailto:admin@myabuy.com" class="footer-link">admin@myabuy.com</a>
-                                </p>
-                          
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-
-        <footer class="copyright-new">
-            <div class="container">
-                 <div class="row">
-                    <div class="col-sm-6">
-                         <a class="footer-link" href="mailto:admin@myabuy.com">Careers </a>&nbsp;|&nbsp;<a href="#" class="footer-link" >Terms of Service</a>
-                    </div>
-                     <div class="col-sm-6">
-                        Copyright &copy; 2014 Myabuy LLC. 
-                    </div>
-            </div>
-            </div>
-            
-        </footer>
-        
-        
-            
- <!-- Bootstrap core JavaScript  -->
-        <script type="text/javascript" src="../themes/landing/js/libs/jquery-1.10.2.js"></script>
-        <script type="text/javascript" src="../themes/landing/js/libs/bootstrap.js"></script>
-
-        <script type="text/javascript" src="../themes/landing/js/plugins/timeago/jquery.timeago.js"></script>
-
-        <!--[if lt IE 9]>
+<!--[if lt IE 9]>
             <script type="text/javascript" src="../themes/landing/js/libs/excanvas.compiled.js"></script>
-        <![endif]-->
+        <![endif]--> 
 
-        <!-- Validation JS -->
-        <script type="text/javascript" src="../js/jquery.validationEngine-en.js"></script>
-        <script type="text/javascript" src="../js/jquery.validationEngine.js"></script>
+<!-- Validation JS --> 
+<script type="text/javascript" src="../js/jquery.validationEngine-en.js"></script> 
+<script type="text/javascript" src="../js/jquery.validationEngine.js"></script> 
 
-        <!-- Alertify JS -->
-        <script type="text/javascript" src="../js/alertify.js"></script>
+<!-- Alertify JS --> 
+<script type="text/javascript" src="../js/alertify.js"></script> 
 
-        <!-- App JS -->
-        <script type="text/javascript" src="../themes/landing/js/mvpready-core.js"></script>
-        <script type="text/javascript" src="../themes/landing/js/mvpready-landing.js"></script>
+<!-- App JS --> 
+<script type="text/javascript" src="../themes/landing/js/mvpready-core.js"></script> 
+<script type="text/javascript" src="../themes/landing/js/mvpready-landing.js"></script>
 </body>
-
-    
 </html>

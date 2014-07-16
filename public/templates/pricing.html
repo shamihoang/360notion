@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>pricing</title>
-
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
 <link href="../themes/landing/css/font-awesome.min.css" rel="stylesheet">
@@ -21,316 +20,217 @@
 <body>
 <!--header-->
 <header class="navbar navbar-inverse" role="banner">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <a href="/" class="navbar-brand navbar-brand-img">
-                                 <img src="../themes/landing/img/logo.png" alt="Logo">
-                            </a>
-                            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <i class="fa fa-bars"></i>
-                            </button>
-                        </div>
-
-                        <nav class="collapse navbar-collapse" role="navigation">
-                            <ul class="nav navbar-nav navbar-right mainnav-menu">
-                                <li {@eq key="/" value="{url}"}class="active"{/eq}>
-                                    <a href="/">Home</a>
-                                </li>
-                                <li {@eq key="/features" value="{url}"}class="active"{/eq}>
-                                    <a href="/features">Features</a>
-                                </li>
-                                <li {@eq key="/faq" value="{url}"}class="active"{/eq}>
-                                    <a href="/faq">FAQ</a>
-                                </li>
-                                <li {@eq key="/pricing" value="{url}"}class="active"{/eq}>
-                                    <a href="/pricing">Pricing</a>
-                                </li>   
-                              
-                                <li {@eq key="/login" value="{url}"}class="active"{/eq}>
-                                    <a href="/login">Log In</a>
-                                </li>
-                            </ul>
-
-                        
-                        </nav>
-                    </div>
-                </header>
+  <div class="container">
+    <div class="navbar-header"> <a href="/" class="navbar-brand navbar-brand-img"> <img src="../themes/landing/img/logo.png" alt="Logo"> </a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i> </button>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right mainnav-menu">
+        <li {@eq key="/" value="{url}"}class="active"{/eq}> <a href="/">Home</a> </li>
+        <li {@eq key="/features" value="{url}"}class="active"{/eq}> <a href="/features">Features</a> </li>
+        <li {@eq key="/faq" value="{url}"}class="active"{/eq}> <a href="/faq">FAQ</a> </li>
+        <li {@eq key="/pricing" value="{url}"}class="active"{/eq}> <a href="/pricing">Pricing</a> </li>
+        <li {@eq key="/login" value="{url}"}class="active"{/eq}> <a href="/login">Sign In</a> </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 <!--end header-->
 
-  <div class="why-choose360notion-bg">
+<div class="why-choose360notion-bg">
   <div >
-        <div class="container masthead-text-title">
-            <h1 class="masthead-subtitle text-center ">
-                <b class="masthead-title-big">pricing</b>
-            </h1>
-        </div>
-    </div>
-	
-    <div class="content">
-        <div class="container">
-            <div class="text-center">
-                <h2>Start your 14-day free trial today!</h2>
-                <h4>No sign-up fees. No credit card required. No long-term commitments.</h4>
-
-                <br><br><br><br>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="pricing-plan">
-                                <div class="pricing-header">
-                                    <h3 class="pricing-plan-title">Starter</h3>
-                                    <p class="pricing-plan-label">For Startups</p>
-                                </div>
-
-                                <div class="pricing-plan-price">
-                                    <span class="pricing-plan-amount">$0</span> mo. / member
-                                </div>
-
-                                <ul class="pricing-plan-details">
-                                    <li><strong>3</strong> Members max.</li>
-                                    <li><strong>15 MB</strong> Storage Limit</li>
-                                </ul>
-                                <a href="/signup" class="btn btn-primary">Choose Plan</a>
-                            </div>
-                        </div>
-
-
-                        <div class="col-sm-4">
-                            <div class="pricing-plan">
-                                <div class="pricing-plan-ribbon-secondary ui-tooltip" title="" data-original-title="Best Value!">
-                                    <i class="fa fa-star"></i>
-                                </div>
-
-                                <div class="pricing-header">
-                                    <h3 class="pricing-plan-title">Mega</h3>
-                                    <p class="pricing-plan-label">For small/medium size companies</p>
-                                </div>
-
-                                <div class="pricing-plan-price">
-                                    <span class="pricing-plan-amount">$30</span> mo. / member
-                                </div>
-
-                                <ul class="pricing-plan-details">
-                                    <li><strong>3 to 50</strong> Members</li>
-                                    <li><strong>Unlimited Storage</strong>  </li>
-                                </ul>
-
-                                <a href="/signup" class="btn btn-primary">Choose Plan</a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="pricing-plan">
-                                <div class="pricing-header">
-                                    <h3 class="pricing-plan-title">Premium</h3>
-                                    <p class="pricing-plan-label">For large companies</p>
-                                </div>
-
-                                <div class="pricing-plan-price">
-                                    <span class="pricing-plan-amount">$25</span> mo. / member
-                                </div>
-
-                                <ul class="pricing-plan-details">
-                                    <li><strong>51</strong> Members or more</li>
-                                    <li><strong>Unlimited Storage</strong>  </li>
-                                </ul>
-
-                                <a href="/signup" class="btn btn-primary">Choose Plan</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br><br>
-
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <h3 class="content-title title-size text-center" >
-                        <span>The Starter, Mega and Premium Plans All Come With</span>
-                    </h3>
-                </div>
-            
-                <div class="col-md-3 col-sm-6">
-                    <ul class="icons-list">
-                        <li><i  class="icon-li fa fa-check-square text-primary text-primary"></i> Personal Profile</li>
-                        <li><i  class="icon-li fa fa-check-square text-primary text-primary"></i> Chat Messaging</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <ul class="icons-list">
-                        <li><i  class="icon-li fa fa-check-square text-primary"></i> File Sharing and Storage</li>
-                        <li><i  class="icon-li fa fa-check-square text-primary"></i> 360-Degree Feedback Wizard</li>
-                 </ul>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <ul class="icons-list">
-                        <li><i  class="icon-li fa fa-check-square text-primary"></i> Mistake-Proof Messaging</li>
-                        <li><i  class="icon-li fa fa-check-square text-primary"></i> Snap Messaging</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-                    <ul class="icons-list">
-                        <li><i  class="icon-li fa fa-check-square text-primary"></i> Fast Customer Service</li>
-                        <li><i  class="icon-li fa fa-check-square text-primary"></i> Technical Support</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <div class="container masthead-text-title">
+      <h1 class="masthead-subtitle text-center "> <b class="masthead-title-big">pricing</b> </h1>
     </div>
   </div>
-    <!--footer-->
-  
-         <footer class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <h4 class="title-size text-center">
-                               About Us
-                            </h4>
-                            <p class="About-Us text-footer text-center">        <i class="icon-li fa fa-quote-left about-us-icon"></i>&nbsp;&nbsp;360notion™ was founded on a simple idea, that people should be engaged with the company they are a part of. 
-                            To do this, the boardroom, break room, meeting room and file room should be centralized and remain private.&nbsp;&nbsp; <i class="icon-li fa fa-quote-right about-us-icon "></i>
-                            <small class="help-block text-center text-footer">
-                                -Joel Goslar, Founder and CEO
-                            </small> </p>
-                        </div>
+  <div class="content">
+    <div class="container">
+      <div class="text-center">
+        <h2>Start your 14-day free trial today!</h2>
+        <h4>No hidden costs, no long-term contracts, cancel anytime</h4>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="pricing-plan">
+                <div class="pricing-header">
+                  <h3 class="pricing-plan-title">Starter</h3>
+                  <p class="pricing-plan-label">For Startups</p>
+                </div>
+                <div class="pricing-plan-price"> <span class="pricing-plan-amount">$0</span> mo. / member </div>
+                <ul class="pricing-plan-details">
+                  <li><strong>3</strong> Members max.</li>
+                  <li><strong>15 MB</strong> Storage Limit</li>
+                </ul>
+                <a href="/signup" class="btn btn-primary">Choose Plan</a> </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="pricing-plan">
+                <div class="pricing-plan-ribbon-secondary ui-tooltip" title="" data-original-title="Best Value!"> <i class="fa fa-star"></i> </div>
+                <div class="pricing-header">
+                  <h3 class="pricing-plan-title">Mega</h3>
+                  <p class="pricing-plan-label">For Small/Medium Size Companies</p>
+                </div>
+                <div class="pricing-plan-price"> <span class="pricing-plan-amount">$30</span> mo. / member </div>
+                <ul class="pricing-plan-details">
+                  <li><strong>3 to 50</strong> Members</li>
+                  <li><strong>Unlimited Storage</strong> </li>
+                </ul>
+                <a href="/signup" class="btn btn-primary">Choose Plan</a> </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="pricing-plan">
+                <div class="pricing-header">
+                  <h3 class="pricing-plan-title">Premium</h3>
+                  <p class="pricing-plan-label">For Large Companies</p>
+                </div>
+                <div class="pricing-plan-price"> <span class="pricing-plan-amount">$25</span> mo. / member </div>
+                <ul class="pricing-plan-details">
+                  <li><strong>51</strong> Members or more</li>
+                  <li><strong>Unlimited Storage</strong> </li>
+                </ul>
+                <a href="/signup" class="btn btn-primary">Choose Plan</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h3 class="content-title title-size text-center" > <span>All Starter, Mega and Premium Plans Come With</span> </h3>
+        </div>
+        <div class="col-md-4 feature-text" >
+          <ul class="icons-list">
+            <li><i  class="icon-li fa fa-check-square text-primary text-primary"></i> Personal and Business Profiles
+</li>
+            <li><i  class="icon-li fa fa-check-square text-primary text-primary"></i> Chat Messaging</li>
+             <li><i  class="icon-li fa fa-check-square text-primary"></i> Internal File Sharing and Storage</li>
+          </ul>
+        </div>
+        <div class="col-md-4 feature-text">
+          <ul class="icons-list">
+           
+            <li><i  class="icon-li fa fa-check-square text-primary"></i> 360-Degree Feedback Wizard</li>
+                      <li><i  class="icon-li fa fa-check-square text-primary"></i>Mistake-Proof” Messaging™</li>
+            <li><i  class="icon-li fa fa-check-square text-primary"></i> “Snap” Messaging</li>
+          </ul>
+        </div>
+        <div class="col-md-4 feature-text">
+          <ul class="icons-list">
+<li><i  class="icon-li fa fa-check-square text-primary"></i> Fast Customer Service</li>
+            <li><i  class="icon-li fa fa-check-square text-primary"></i> Admin control over your network</li>
+            <li><i  class="icon-li fa fa-check-square text-primary"></i> Technical Support</li>
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!--footer-->
 
-                        <div class="col-sm-3">
-                           <h4 class="title-size text-center">
-                                Stay Connected
-                            </h4>
-
-                            <p class="text-footer text-center">
-                               Add us on Facebook or follow us on Twitter
-                            </p>
-
-                            <br>
-
-                            <ul class="footer-social-link text-footer text-center">
-                                <li>
-                                    <a href="https://www.facebook.com/360notion™"
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h4 class="title-size text-center"> About Us </h4>
+        <p class="About-Us text-footer text-center"> <i class="icon-li fa fa-quote-left about-us-icon"></i>&nbsp;&nbsp;360notion™ was founded on a simple idea, that people should be engaged with the company they are a part of. 
+          To do this, the boardroom, break room, meeting room and file room should be centralized and remain private.&nbsp;&nbsp; <i class="icon-li fa fa-quote-right about-us-icon "></i> <small class="help-block text-center text-footer"> -Joel Goslar, Founder and CEO </small> </p>
+      </div>
+      <div class="col-sm-3">
+        <h4 class="title-size text-center"> Stay Connected </h4>
+        <br>
+        <ul class="footer-social-link text-footer text-center">
+          <li> <a href="https://www.facebook.com/360notion™"
                                         target="_blank"
                                         class="ui-tooltip"
                                         title="Facebook"
-                                        data-placement="bottom">
-                                        <i class="fa fa-facebook text-footer"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/360notion™"
+                                        data-placement="bottom"> <i class="fa fa-facebook text-footer"></i> </a> </li>
+          <li> <a href="https://twitter.com/360notion™"
                                         target="_blank"
                                         class="ui-tooltip"
                                         title="Twitter"
-                                        data-placement="bottom">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <h4 class="title-size text-center">
-                              Stay Updated
-                            </h4>
-
-                            <div class="subscribe-form text-footer text-center">
-                                <p >Get emails about new features and future updates.</p>
-
-                                <form id="subscribe_form" action="/subscribe" method="POST" class="form" role="form">
-                                    <fieldset>
-                                        <div class="form-group text-center">
-                                            <input type="text"
+                                        data-placement="bottom"> <i class="fa fa-twitter"></i> </a> </li>
+          <li> <a href="https://pinterest.com/360notion™"
+                                        target="_blank"
+                                        class="ui-tooltip"
+                                        title="Pinterest"
+                                        data-placement="bottom"> <i class="fa fa-pinterest-square"></i> </a> </li>
+          <li> <a href="https://tumblr.com/360notion™"
+                                        target="_blank"
+                                        class="ui-tooltip"
+                                        title="tumblr"
+                                        data-placement="bottom"> <i class="fa fa-tumblr"></i> </a> </li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h4 class="title-size text-center"> Stay Updated </h4>
+        <div class="subscribe-form text-footer text-center">
+          <p >Get emails about new features and future updates.</p>
+          <form id="subscribe_form" action="/subscribe" method="POST" class="form" role="form">
+            <fieldset>
+              <div class="form-group text-center">
+                <input type="text"
                                                 class="form-control validate[required,custom[email]]"
                                                 id="newsletter_email"
                                                 name="newsletter_email"
                                                 placeholder="Email Address">
-                                        </div>
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-transparent">Notify me</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <p class="subscribe-thanks"> Thanks for subscribing! </p>
+      </div>
+      <div class="col-sm-3 text-footer text-center">
+        <h4 class="title-size text-center"> Get In Touch </h4>
+        <p> 1201 Orange St Ste 600 <br>
+          Wilmington, DE 19801 </p
 
-                                        <div class="form-group text-center">
-                                            <button type="submit" class="btn btn-transparent">Notify me</button>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
+                                >
+        <p> +1 302-415-1226 </p>
+        <p> <a href="mailto:admin@myabuy.com" class="footer-link">admin@myabuy.com</a> </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<footer class="copyright-new">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6"> <a class="footer-link" href="mailto:admin@myabuy.com">Careers </a>&nbsp;|&nbsp;<a href="#" class="footer-link" >Terms of Service</a> </div>
+      <div class="col-sm-6"> Copyright &copy; 2014 Myabuy LLC. </div>
+    </div>
+  </div>
+</footer>
 
-                            <p class="subscribe-thanks">
-                                Thanks for subscribing!
-                            </p>
-                        </div>
+<!-- Bootstrap core JavaScript  --> 
+<script type="text/javascript" src="../themes/landing/js/libs/jquery-1.10.2.js"></script> 
+<script type="text/javascript" src="../themes/landing/js/libs/bootstrap.js"></script> 
+<script type="text/javascript" src="../themes/landing/js/plugins/timeago/jquery.timeago.js"></script> 
 
-
-                        <div class="col-sm-3 text-footer text-center">
-                            <h4 class="title-size text-center">
-                               Get In Touch
-                            </h4>
-
-                            
-                                <p>
-                                    
-                                    1201 Orange St Ste 600 <br>
-                                    Wilmington, DE 19801
-                                </p
-
-                                ><p>
-                                 
-                                    +1 302-415-1226
-                                </p>
-
-                                <p>
-                               
-                                    <a href="mailto:admin@myabuy.com" class="footer-link">admin@myabuy.com</a>
-                                </p>
-                          
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-
-        <footer class="copyright-new">
-            <div class="container">
-                 <div class="row">
-                    <div class="col-sm-6">
-                         <a class="footer-link" href="mailto:admin@myabuy.com">Careers </a>&nbsp;|&nbsp;<a href="#" class="footer-link" >Terms of Service</a>
-                    </div>
-                     <div class="col-sm-6">
-                        Copyright &copy; 2014 Myabuy LLC. 
-                    </div>
-            </div>
-            </div>
-            
-        </footer>
-        
-        
-            
- <!-- Bootstrap core JavaScript  -->
-        <script type="text/javascript" src="../themes/landing/js/libs/jquery-1.10.2.js"></script>
-        <script type="text/javascript" src="../themes/landing/js/libs/bootstrap.js"></script>
-
-        <script type="text/javascript" src="../themes/landing/js/plugins/timeago/jquery.timeago.js"></script>
-
-        <!--[if lt IE 9]>
+<!--[if lt IE 9]>
             <script type="text/javascript" src="../themes/landing/js/libs/excanvas.compiled.js"></script>
-        <![endif]-->
+        <![endif]--> 
 
-        <!-- Validation JS -->
-        <script type="text/javascript" src="../js/jquery.validationEngine-en.js"></script>
-        <script type="text/javascript" src="../js/jquery.validationEngine.js"></script>
+<!-- Validation JS --> 
+<script type="text/javascript" src="../js/jquery.validationEngine-en.js"></script> 
+<script type="text/javascript" src="../js/jquery.validationEngine.js"></script> 
 
-        <!-- Alertify JS -->
-        <script type="text/javascript" src="../js/alertify.js"></script>
+<!-- Alertify JS --> 
+<script type="text/javascript" src="../js/alertify.js"></script> 
 
-        <!-- App JS -->
-        <script type="text/javascript" src="../themes/landing/js/mvpready-core.js"></script>
-        <script type="text/javascript" src="../themes/landing/js/mvpready-landing.js"></script>
+<!-- App JS --> 
+<script type="text/javascript" src="../themes/landing/js/mvpready-core.js"></script> 
+<script type="text/javascript" src="../themes/landing/js/mvpready-landing.js"></script>
 </body>
-
-    
 </html>
