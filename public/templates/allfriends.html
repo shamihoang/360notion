@@ -138,173 +138,157 @@
         </div>
         <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a>  </div>
       </div>
-      
       <!--inbox-->
-      <div class="col-md-6 col-sm-7 layout-main">
-        <div class="pull-right "> <a class="btn-cm" href="ComposeMessage.html">Compose Message</a> </div>
-        <div>
-          <Div class="message-tab">
-            <ul id="myTab2" class="nav nav-pills">
-              <li class="active"> <a data-toggle="tab" href="#inbox">Inbox</a> </li>
-              <li> <a data-toggle="tab" href="#sent">Sent</a> </li>
-            </ul>
-          </Div>
-          <div id="myTab2Content" class="tab-content">
-            <div id="inbox" class="tab-pane fade in active  ">
-             <div id="table-1_filter" class="dataTables_filter padding-top">
-<label>
-<input class="form-control input-sm" type="text" aria-controls="" placeholder="search for messages...">
-</label>
-</div>
-              <div class="stream-box">
-                <div class="row title-inbox text-center"> Unread Messages</div>
-                <div class="row padding-box">
-                  <div class="col-md-8 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4  ">
-                    <p> <a><i class="fa fa-lock text-sidebar"></i>&nbsp;
-                      Unlock to view </a></p>
-                    <p class="time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
-                  </div>
-                </div>
-                <div class="row padding-box">
-                  <div class="col-md-8 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4  ">
-                    <p> <a><i class="fa fa-eye"></i> &nbsp;View</a></p>
-                    <p class="time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
-                  </div>
-                </div>
-              </div>
-              <div class="stream-box">
-                <div class=" title-inbox text-center"> Message History</div>
-                <div class="row padding-box">
-                  <div class="col-md-8 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4  ">
-                    <p> <a><i class="fa fa-eye"></i> &nbsp;View &nbsp; <i class=" fa fa-trash-o"></i> &nbsp;Delete</a></p>
-                    <p class="time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
-                  </div>
-                </div>
-                <div class="row padding-box">
-                  <div class="col-md-8 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ">
-                    <p> <a><i class="fa fa-eye"></i> &nbsp;View &nbsp; <i class=" fa fa-trash-o"></i> &nbsp;Delete</a></p>
-                    <p class=" time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!--sent-->
-            
-            <div id="sent" class="tab-pane fade active padding-top">
-              <div id="table-1_filter" class="dataTables_filter">
-<label>
-<input class="form-control input-sm" type="text" aria-controls="" placeholder="search for sent messages...">
-</label>
-</div>
-              <div class="stream-box">
-                <div class=" title-inbox text-center"> Sent Messages</div>
-                <div class="row padding-box ">
-                  <div class="col-md-6 ">
-                
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-md-3"> <a>
-                    <li class="fa fa-paperclip">&nbsp;&nbsp;Unread</li>
-                    </a></div>
-                  <div class="col-md-3 ">
-                    <p><a><i class="fa fa-pencil"></i>&nbsp;Edit &nbsp;<i class=" fa fa-trash-o"></i> &nbsp;Delete</a> </p>
-                    <p class="time"><i class="fa fa-clock-o "></i> &nbsp;2pm 15/9/2012</p>
-                  </div>
-                </div>
-                <div class="row padding-box ">
-                  <div class="col-md-6 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-md-3"> <a>Opened
-                    </li>
-                    </a></div>
-                  <div class="col-md-3 time"></a>
-                    </p>
-                    <p><i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--chat-->
-      <div class="col-md-3 layout-main ">
-        <div class="stream-box">
-          <p class="title-sidebar "> Chat With Coworkers </p>
-          <p>
-          <div class="row chat-sidebar text-center">
+      <div class="col-md-9 col-sm-8">
+         <h4 class="title-heading text-center" > all coworkers</h4>
+        
+          <div class="row text-center">
             <div class="text-center">
               <form class="mainnav-form pull-right" role="search">
-                <input class="form-control input-md mainnav-search-query" type="text" placeholder="Search for coworker">
+                <input class="form-control input-md mainnav-search-query" type="text" placeholder="Search for Coworker...">
                 <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
               </form>
             </div>
           </div>
-          <div class="row padding-chat">
-            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
+           <hr>
+      <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
               <p class="coworker-title">Marketing Manager</p>
             </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
           </div>
-          <div class="row padding-chat">
-            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
+      
+     <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
               <p class="coworker-title">Marketing Manager</p>
             </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
           </div>
-          <div class="row padding-chat">
-            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
+       <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
               <p class="coworker-title">Marketing Manager</p>
             </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
           </div>
-          <a>See All Coworkers</a> </div>
-        
-      </div>
+       <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+       <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+       <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+      
+   <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+      
+   <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+      
+   <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+      
+   <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+      
+   <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+      
+   <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+      
+   <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+      
+   <div class="row  coworker-box inline-block">
+      <div>
+            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
+              <p class="coworker-title">Marketing Manager</p>
+            </div>
+            </div>
+            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+          </div>
+      
+  
+  
     </div>
   </div>
 </div>

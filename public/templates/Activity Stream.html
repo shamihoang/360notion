@@ -72,17 +72,48 @@
               <div class="pull-left"> Alerts </div>
             </li>
             <li class="noticebar-empty">
-              <h4 class="noticebar-empty-title">No alerts here.</h4>
-              <p class="noticebar-empty-text">Check out what other makers are doing on Explore!</p>
+              <h4 class="noticebar-empty-title">You have no alerts.
+</h4>
+              <p class="noticebar-empty-text">See what your colleagues are doing.</p>
             </li>
           </ul>
         </li>
+         <li class="dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> 
+         
+     
+         <i class="fa fa-user big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Invite new members&nbsp;</span> <span class="badge-plus"><i class="fa fa-plus"></i></span> 
+        </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="">
+              <div class=" text-center padding-top"> <h3>Invite More Coworkers</h3></div>
+            </li>
+            <li >
+            <div class="padding">
+              <div class="form-group padding-top">
+                        
+                        <input type="email"
+                            class="form-control validate[required,equals[password]]"
+                            id=""
+                            name=""
+                            placeholder="name@companyemailaddress.com">
+                    </div>
+                    <div class="">
+            <a><i class="fa fa-plus padding remove_icon"></i>Add More Coworkers</a>
+           </div>
+           <div class="btn btn-primary pull-right">Invite</div>
+           </div>
+            </li>
+          </ul>
+        </li>
+        
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown navbar-profile"> <a class="padding-top-home" href="/dashboard">Home</a> </li>
         <li class="dropdown navbar-profile"> <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> <img src="../themes/landing/img/avatars/avatar-1-xs.jpg" class="navbar-profile-avatar" alt="Profile Picture"> <span class="navbar-profile-label">rod@rod.me &nbsp;</span> <i class="fa fa-caret-down"></i> </a>
           <ul class="dropdown-menu" role="menu">
-            <li> <a href="/dashboard/settings"> <i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings </a> </li>
+            <li> <a href="Profile.html"> <i class="fa fa-user"></i> &nbsp;&nbsp;My Profile </a> </li>
+            <li class="divider"></li>
+             <li> <a href="/dashboard/settings"> <i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings </a> </li>
             <li class="divider"></li>
             <li> <a href="#" onclick="this.childNodes[0].submit()">
               <form action="/logout" method="POST">
@@ -102,13 +133,10 @@
     <div class="row">
       <div class="col-md-3 col-sm-5">
         <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
-        <div>
-          <form class="mainnav-form" role="">
-            <input class="form-control input-md" type="text" placeholder="Add your personal message">
-            <button class="mainnav-form-btn btn-personal-message-post"> Post </button>
-          </form>
+        <div class="text-center">
+          <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
         </div>
-        <div class="list-group padding-top"> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/messages" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="/dashboard/files" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/friends" class="list-group-item {@eq key="/dashboard/friends" value="{url}"}current{/eq}"> <i class="fa fa-group text-sidebar"></i> &nbsp;Friends <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="/dashboard/profile" class="list-group-item {@eq key="/dashboard/profile" value="{url}"}current{/eq}"> <i class="fa fa-user text-sidebar"></i> &nbsp;&nbsp;My Profile <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
+        <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a>  </div>
       </div>
       
       <!--inbox-->
@@ -116,8 +144,8 @@
         <h4 class="title-heading text-center">Activity Stream</h4>
         <div class="share-widget clearfix"> 
           <!-- Post an Idea -->
-          <div id="post_idea_container" class="fb-container">
-            <textarea class="form-control share-widget-textarea" rows="3" placeholder="Enter a 360-degree feedback question" tabindex="1"></textarea>
+ <div id="post_idea_container" class="fb-container">
+            <textarea class="form-control share-widget-textarea" rows="5" placeholder="Ask a 360-degree Feedback Question…" tabindex="1"></textarea>
           </div>
           <!-- -->
           <div class="box-border">
@@ -265,7 +293,7 @@
         <p>
         <div class="row text-center suggested-coworker-box">
           <div class="row  pull-right suggested-coworker-close"> <a href="#"> <i class="fa fa-times"> </i> Close </a> </div>
-          <div class="text-left"><a class="">Preview</a> &nbsp; &nbsp;<a class=""> Follow</a> </div>
+          
           <div class="coworker-carousel-padding "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
           <div class="row coworker-carousel-button">
             <div class="col-md-6 text-left"><a class="btn btn-primary" href="#clients-carousel" data-slide="prev">&lsaquo;</a></div>
@@ -274,13 +302,13 @@
           <div class=" coworker-profile">
             <p class="  text-center"><a class="coworker-name">Lizzel Harison</a> </p>
             <p class=" text-center coworker-title ">Project Manager</p>
-            <p class=" text-center personal-message-text"> <i class="icon-li fa fa-quote-left personal-message-icon "></i>&nbsp; this is personal message &nbsp;<i class="icon-li fa fa-quote-right personal-message-icon "></i> </p>
+         
             <p class="profile-detail"> <b>Education:</b> University of Washington, Michael G. Foster School of Business</a> </p>
             <p class="profile-detail"> <b>Top Skills:</b> Customer service</p>
-            <p class="profile-detail text-center"> <a>See full profile</a> </p>
+            
           </div>
-          <div class="suggested-coworker-footer"> &nbsp;
-            <div > <a class=" btn btn-primary" >Add Coworker</a> </div>
+          <div > 
+            <a class=" btn btn-primary" href="coworker-Profile.html" >See Full Profile</a> 
           </div>
         </div>
       </div>
