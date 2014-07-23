@@ -1789,22 +1789,22 @@ a.footer-link:hover, a.footer-link:focus {
 /* placeholder color*/
 .form-control::-moz-placeholder {
    color:#000;font-weight:bold;
-   opacity:100%;;
+   opacity:70%;;
 }
 ::-webkit-input-placeholder {
- color:#000;font-weight:bold; opacity:90%;
+ color:#000;font-weight:bold; opacity:70%;
 }
 ::-moz-placeholder {
- color:#000;font-weight:bold; opacity:90%;
+ color:#000;font-weight:bold; opacity:70%;
 } /* firefox 19+ */
 :-ms-input-placeholder {
- color:#000;font-weight:bold; opacity:90%;
+ color:#000;font-weight:bold; opacity:70%;
 } /* ie */
 input:-moz-placeholder {
-color:#000;font-weight:bold;opacity:90%;
+color:#000;font-weight:bold;opacity:70%;
 }
 #placeholder::-moz-placeholder {
- color:#000;font-weight:bold; opacity:90%;}
+ color:#000;font-weight:bold; opacity:70%;}
 
 /* !Testimonials */
 /* ----------------------------------------------- */
