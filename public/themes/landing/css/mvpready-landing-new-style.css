@@ -63,6 +63,7 @@ body {
 	min-height: 50px;
 	padding: 20px;
 }
+.ask-question-footer{ padding-bottom:15px;}
 /* !Buttons */
 /* ----------------------------------------------- */
 .btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger, .btn-secondary, .btn-tertiary, .btn-facebook, .btn-twitter {
@@ -868,36 +869,9 @@ p {
 }
 /* !Pricing plans */
 /* ----------------------------------------------- */
-.Checkout-badge-active {
- padding-right:15px;
- padding-left:15px;
-  padding-top:10px;
-   padding-bottom:10px;
-   text-align:center;
-	height:40px;
-	width:40px;
-	font-size: 18px;
-	color:#FFF;
-	background-color:#F0AD06;
-	border-radius:10px;
-	line-height:40px;
-
-}
-.Checkout-badge {
-	 padding-right:15px;
- padding-left:15px;
-  padding-top:10px;
-   padding-bottom:10px;
-   text-align:center;
-	height:40px;
-	width:40px;
-	font-size: 18px;
-	color:#FFF;
-	border-radius:10px;
-	line-height:40px;
-	background-color:#999;
-}
+.promontion-code{ max-width:200px; display:inline-block;}
 .billing-form{ min-width:250px; text-align:left; width:70%;}
+.date-form{ width:80px; display:inline-block;}
 .pricing-plan {
 	position: relative;
 	display: block;
@@ -1812,6 +1786,26 @@ a.footer-link:hover, a.footer-link:focus {
 .clients-list li:hover {
 	opacity: 1;
 }
+/* placeholder color*/
+.form-control::-moz-placeholder {
+   color:#000;font-weight:bold;
+   opacity:100%;;
+}
+::-webkit-input-placeholder {
+ color:#000;font-weight:bold; opacity:90%;
+}
+::-moz-placeholder {
+ color:#000;font-weight:bold; opacity:90%;
+} /* firefox 19+ */
+:-ms-input-placeholder {
+ color:#000;font-weight:bold; opacity:90%;
+} /* ie */
+input:-moz-placeholder {
+color:#000;font-weight:bold;opacity:90%;
+}
+#placeholder::-moz-placeholder {
+ color:#000;font-weight:bold; opacity:90%;}
+
 /* !Testimonials */
 /* ----------------------------------------------- */
 .testimonial-text {
@@ -2047,6 +2041,7 @@ a:hover, a:focus {
 .form-control-bg {
 	background-color: #fffae5;
 }
+
 .pattern-section {
 	width: 100%;
 	height: auto;
@@ -2065,6 +2060,8 @@ a:hover, a:focus {
 .padding-left {
 	padding-left: 30px;
 }
+.padding-top{padding-top:15px;}
+
 .zindex10 {
 	bottom: 0;
 	position: absolute;

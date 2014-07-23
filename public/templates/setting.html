@@ -127,121 +127,163 @@
 </header>
 <!--end header-->
 
- 
-<div class="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-5">
-        <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
-        <div class="text-center">
-          <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
-        </div>
-        <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
-      </div>
-      <!--inbox-->
-      <div class="col-md-6 col-sm-7 layout-main">
-        <div class="pull-right btn-cm"> Compose Message </div>
-        <div>
-          <Div class="message-tab">
-            <ul id="myTab2" class="nav nav-pills">
-              <li class="active"> <a data-toggle="tab" href="#inbox">Inbox</a> </li>
-              <li> <a data-toggle="tab" href="#sent">Sent</a> </li>
-            </ul>
-          </Div>
-          <div id="myTab2Content" class="tab-content"> </div>
-          
-          <!--sent-->
-          
-          <div id="sent" class="tab-pane fade active layout-main"> </div>
-          <!-- compose message-->
-          <div class="stream-box">
-            <form id="" action="" method="POST" role="form">
-              <fieldset>
-                <div class="title-inbox text-center">
-                  <h4 class="" id="modal_label">Send a Message</h4>
+ <div class="content">
+        <div class="container">
+            <div class="layout layout-stack-sm layout-main-right">
+                <div class="col-sm-3 layout-sidebar">
+                    <div class="nav-layout-sidebar-skip">
+                        <strong>Tab Navigation</strong> / <a href="#settings-content">Skip to Content</a> 
+                    </div>
+
+                    <ul id="myTab" class="nav nav-layout-sidebar nav-stacked">
+                       
+
+                       
+                        <li>
+                            <a href="#password-change" data-toggle="tab">
+                           <i class="fa fa-lock"></i>
+                           Change your Password
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#notification" data-toggle="tab">
+                            <i class="fa fa-bullhorn"></i>
+  Notifications 
+                            </a>
+                        </li>
+
+                        
+                    </ul>
                 </div>
-                <div class="send-message-padding ">
-                  <div class="form-group">
-                    <input id="email"
-                                    name="email"
-                                    type="text"
-                                    class="form-control validate[required,custom[email]]"
-                                    placeholder="To: user@companyemail.com"/>
-                  </div>
-                  <div class="form-group">
-                    <input id="subject"
-                                    name="subject"
-                                    type="text"
-                                    class="form-control validate[required,custom[email]]"
-                                    placeholder="Subject:"/>
-                  </div>
-                  <div class="form-group">
-                    <label form="message">Message</label>
-                    <textarea class="form-control share-widget-textarea" rows="6" placeholder="Compose a mistake-proof message™. Click on 'Snap Message' button to send it as a snap message. Snap messages will delete 30 seconds after the recipients open them." tabindex="1"></textarea>
-                    <div class="row send-message-padding padding-top "> <a> <i class="fa fa-paperclip text-center"></i> &nbsp; Add Files</a></div>
-                  </div>
-                </div>
-                <div class=" row send-message-padding ">
-                  <div class="col-md-8 checkbox inline-block text-left">
-                    <li class="inline-block ui-tooltip">
-                      <label>
-                        <input type="radio" value="" >
-                        <a class="ui-tooltip" data-toggle="tooltip"data-original-title="Snap messages will delete 30 seconds after the recipients open them" >Snap Message </a> </label>
-                    </li>
-                    <li class="inline-block">
-                      <label>
-                        <input type="radio" value="">
-                        <a class="ui-tooltip zindex10" data-toggle="tooltip"data-original-title="Edit or delete the mistakes before the recipients opens them">Mistake-free Message™</a> </label>
-                    </li>
-                  </div>
-                  <div class="col-md-4 inline-block">
-                    <button type="button" class="btn btn-primary btn-default" data-dismiss="modal">Cancel</button>
-                    &nbsp;
-                    <button type="submit" class="btn btn-primary btn-default">Send</button>
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!--chat-->
-      <div class="col-md-3 layout-main ">
-        <div class="stream-box">
-          <p class="title-sidebar "> Chat With Coworkers </p>
-          <p>
-          <div class="row chat-sidebar text-center">
-            <div class="text-center">
-              <form class="mainnav-form pull-right" role="search">
-                <input class="form-control input-md mainnav-search-query" type="text" placeholder="Search for coworker">
-                <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
-              </form>
-            </div>
-          </div>
-          <div class="row padding-chat">
-            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-          </div>
-          <div class="row padding-chat">
-            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-          </div>
-          <div class="row padding-chat">
-            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-          </div>
-          <a>See All Coworkers</a> </div>
-      </div>
-    </div>
-  </div>
+
+                <div class="col-sm-9 layout-main">
+                    <div class="tab-content stacked-content">
+                        
+
+                       
+                        
+
+                        <div class="tab-pane fade active in" id="password-change">
+                            <h3 class="text-center"> Change Password</h3>
+<br>
+<br>
+<form class="form-horizontal" action="./page-settings.html">
+<div class="form-group">
+<label class="col-md-3">Old Password</label>
+<div class="col-md-7">
+<input class="form-control" type="password" name="old-password">
 </div>
-  
+</div>
+<hr>
+<div class="form-group">
+<label class="col-md-3">New Password</label>
+<div class="col-md-7">
+<input class="form-control" type="password" name="new-password-1">
+</div>
+</div>
+<div class="form-group">
+<label class="col-md-3">New Password Confirm</label>
+<div class="col-md-7">
+<input class="form-control" type="password" name="new-password-2">
+</div>
+</div>
+<div class="form-group">
+<div class="col-md-7 col-md-push-3">
+<button class="btn btn-primary" type="submit">Save Changes</button>
+<button class="btn btn-default" type="reset">Cancel</button>
+</div>
+</div>
+</form>
+</div>
+
+                        <div class="tab-pane fade feature-text" id="notification">
+                            <h3 class=" text-center">
+Notification Settings
+</h3>
+
+<br>
+<form class="form form-horizontal" action="./page-settings.html">
+<div class="form-group">
+<label class="col-md-3">What You Get Notified About</label>
+<div class="col-md-7">
+<div class="checkbox">
+<label>
+<input type="checkbox" checked="" value="">
+Activity that involves you
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" checked="" value="">
+New messages
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" value="">
+Received new files
+</label>
+
+</div>
+<div class="checkbox">
+<label>
+</div>
+</div>
+</div>
+
+<div class="form-group">
+<label class="col-md-3">How You Get Notifications</label>
+<div class="col-md-7">
+<div class="checkbox">
+<label>
+<input type="checkbox" checked="" value="">
+on your emails
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" checked="" value="">
+on the 360notion™ dashboard
+</label>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" value="">
+show up as alerts on your phone
+</label>
+
+</div>
+<div class="checkbox">
+<label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label class="col-md-3">Email for Notifications</label>
+<div class="col-md-7">
+<select class="form-control" name="email_notifications">
+<option value="1">john@mvpready.com</option>
+<option value="2">mary@mvpready.com</option>
+<option value="3">chris@mvpready.com</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<div class="col-md-7 col-md-push-3">
+<button class="btn btn-primary" type="submit">Save Changes</button>
+<button class="btn btn-default" type="reset">Cancel</button>
+</div>
+</div>
+</form>
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <!-- Bootstrap core JavaScript  --> 
 <script type="text/javascript" src="../themes/admin/js/libs/jquery-1.10.2.min.js"></script> 
