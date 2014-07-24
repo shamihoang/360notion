@@ -72,40 +72,33 @@
               <div class="pull-left"> Alerts </div>
             </li>
             <li class="noticebar-empty">
-              <h4 class="noticebar-empty-title">You have no alerts.
-</h4>
+              <h4 class="noticebar-empty-title">You have no alerts. </h4>
               <p class="noticebar-empty-text">See what your colleagues are doing.</p>
             </li>
           </ul>
         </li>
-         <li class="dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> 
-         
-     
-         <i class="fa fa-user big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Invite new members&nbsp;</span> <span class="badge-plus"><i class="fa fa-plus"></i></span> 
-        </a>
+        <li class="dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Invite new members&nbsp;</span> <span class="badge-plus"><i class="fa fa-plus"></i></span> </a>
           <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
             <li class="">
-              <div class=" text-center padding-top"> <h3>Invite More Coworkers</h3></div>
+              <div class=" text-center padding-top">
+                <h3>Invite More Coworkers</h3>
+              </div>
             </li>
             <li >
-            <div class="padding">
-              <div class="form-group padding-top">
-                        
-                        <input type="email"
+              <div class="padding">
+                <div class="form-group padding-top">
+                  <input type="email"
                             class="form-control validate[required,equals[password]]"
                             id=""
                             name=""
                             placeholder="name@companyemailaddress.com">
-                    </div>
-                    <div class="">
-            <a><i class="fa fa-plus padding remove_icon"></i>Add More Coworkers</a>
-           </div>
-           <div class="btn btn-primary pull-right">Invite</div>
-           </div>
+                </div>
+                <div class=""> <a><i class="fa fa-plus padding remove_icon"></i>Add More Coworkers</a> </div>
+                <div class="btn btn-primary pull-right">Invite</div>
+              </div>
             </li>
           </ul>
         </li>
-        
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown navbar-profile"> <a class="padding-top-home" href="/dashboard">Home</a> </li>
@@ -113,7 +106,7 @@
           <ul class="dropdown-menu" role="menu">
             <li> <a href="Profile.html"> <i class="fa fa-user"></i> &nbsp;&nbsp;My Profile </a> </li>
             <li class="divider"></li>
-             <li> <a href="/dashboard/settings"> <i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings </a> </li>
+            <li> <a href="/dashboard/settings"> <i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings </a> </li>
             <li class="divider"></li>
             <li> <a href="#" onclick="this.childNodes[0].submit()">
               <form action="/logout" method="POST">
@@ -129,166 +122,69 @@
 <!--end header-->
 
 <div class="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-5">
-        <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
-        <div class="text-center">
-          <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
-        </div>
-        <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a>  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-5">
+      <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
+      <div class="text-center">
+        <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
       </div>
-      <!--inbox-->
-      <div class="col-md-9 col-sm-8">
-         <h4 class="title-heading text-center" > all coworkers</h4>
-        
-          <div class="row text-center">
-            <div class="text-center">
-              <form class="mainnav-form pull-right" role="search">
-                <input class="form-control input-md mainnav-search-query" type="text" placeholder="Search for Coworker...">
-                <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
-              </form>
-            </div>
-          </div>
-           <hr>
-      <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-     <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-       <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-       <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-       <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-       <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-   <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-   <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-   <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-   <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-   <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-   <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-   <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-   <div class="row  coworker-box inline-block">
-      <div>
-            <div class="col-xs-6 col-lg-4 coworker-image text-left "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel Harison</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-            </div>
-            <div class="pull-left padding"><b><a href="#">View Full Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
-          </div>
-      
-  
-  
+      <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
+    </div>
+    <!--inbox-->
+    <div class="col-md-9 col-sm-8">
+      <h4 class="title-heading text-center" > all coworkers</h4>
+      <div class="row text-center">
+        <div class="text-center padding">
+          <form class="mainnav-form pull-right" role="search">
+            <input class="form-control input-md mainnav-search-query" type="text" placeholder="Search for Coworker...">
+            <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="row  coworker-box inline-block text-center">
+        <div class=" all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+      </div>
+      <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+      </div>
+      <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+      </div>
+         <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+      </div>
+         <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+      </div>
+         <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+      </div>
     </div>
   </div>
 </div>

@@ -355,7 +355,7 @@ body {
 .btn-jumbo {
 	padding: 10px 20px;
 	font-size: 18px;
-	
+	width:100%;
 }
 /* !Badges */
 /* ----------------------------------------------- */
@@ -1787,24 +1787,27 @@ a.footer-link:hover, a.footer-link:focus {
 	opacity: 1;
 }
 /* placeholder color*/
+.form-control::-webkit-input-placeholder {
+    color: #212121; opacity:70%;
+}
 .form-control::-moz-placeholder {
-   color:#000;font-weight:bold;
+   color:#212121;font-weight:bold;
    opacity:70%;;
 }
 ::-webkit-input-placeholder {
- color:#000;font-weight:bold; opacity:70%;
+ color:#212121;font-weight:bold; opacity:70%;
 }
 ::-moz-placeholder {
- color:#000;font-weight:bold; opacity:70%;
+ color:#212121;font-weight:bold; opacity:70%;
 } /* firefox 19+ */
 :-ms-input-placeholder {
- color:#000;font-weight:bold; opacity:70%;
+ color:#212121;font-weight:bold; opacity:70%;
 } /* ie */
 input:-moz-placeholder {
-color:#000;font-weight:bold;opacity:70%;
+color:#212121;font-weight:bold;opacity:70%;
 }
 #placeholder::-moz-placeholder {
- color:#000;font-weight:bold; opacity:70%;}
+ color:#212121;font-weight:bold; opacity:70%;}
 
 /* !Testimonials */
 /* ----------------------------------------------- */
