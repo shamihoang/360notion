@@ -131,7 +131,7 @@
 <div class="content">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-5">
+      <div class="col-md-3">
         <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
         <div class="text-center">
           <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
@@ -139,7 +139,7 @@
         <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
       </div>
       <!--inbox-->
-      <div class="col-md-6 col-sm-7 layout-main">
+      <div class="col-md-6 layout-main">
         <div class="pull-right btn-cm"> Compose Message </div>
         <div>
           <Div class="message-tab">
@@ -213,8 +213,8 @@
           <p>
           <div class="row chat-sidebar text-center">
             <div class="text-center">
-              <form class="mainnav-form pull-right" role="search">
-                <input class="form-control input-md mainnav-search-query" type="text" placeholder="Search for coworker">
+              <form class="mainnav-form chat-corworker-form text-center" role="search">
+                <input class="form-control input-md " type="text" placeholder="Search for coworker">
                 <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
               </form>
             </div>
@@ -260,5 +260,9 @@
 <!-- App JS --> 
 <script type="text/javascript" src="../themes/admin/js/mvpready-core.js"></script> 
 <script type="text/javascript" src="../themes/admin/js/mvpready-admin.js"></script>
+
+<!-- App JS -->
+        <script type="text/javascript" src="../themes/landing/js/mvpready-core.js"></script>
+        <script type="text/javascript" src="../themes/landing/js/mvpready-landing.js"></script>
 </body>
 </html>
