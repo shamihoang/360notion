@@ -63,6 +63,15 @@ body {
 	min-height: 50px;
 	padding: 20px;
 }
+.error-code {
+    font-size: 150px;
+
+    font-weight: 500;
+    line-height: 0.7em;
+    vertical-align: top;
+}
+.error-search-box{ width:50%; margin:auto;}
+.padding-error{ padding:20px;}
 .ask-question-footer{ padding-bottom:15px;}
 /* !Buttons */
 /* ----------------------------------------------- */
@@ -2091,3 +2100,4 @@ a:hover, a:focus {
 	position: absolute;
 	z-index: 10;
 }
+
