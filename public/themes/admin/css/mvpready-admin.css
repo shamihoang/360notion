@@ -1285,14 +1285,14 @@ opacity:1;
 	display: inline-block;
 	width: 2em;
 	padding: 5px 0;
-	color: #aaa;
+	color: #f0ad08;
 	font-size: 22px;
 	text-align: center;
 	border: 1px solid transparent;
 }
 .share-widget-types a:hover {
 	text-decoration: none;
-	color: #666634;
+	color: #f0ad08;
 	background-color: #fff;
 	border-color: #ccc;
 	border-top-right-radius: 4px;
