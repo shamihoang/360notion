@@ -2042,17 +2042,7 @@ a:hover, a:focus {
 .title-size {
 	font-size: 28px;
 }
-.btn-primary {
-	background-image: linear-gradient(to bottom, #666634 0%, #666634 100%);
-	background-repeat: repeat-x;
-	border-color: #666634;
-}
-.btn-primary {
- .btn-primary {
- background-image: linear-gradient(to bottom, #666634 0%, #666634 100%);
- background-repeat: repeat-x;
- border-color: #666634;
-}
+
 .btn-primary {
 	background-color: #666634;
 	color: #ffffff;
@@ -2065,9 +2055,7 @@ a:hover, a:focus {
 .text-white {
 	color: #FFF;
 }
-.col-md-6 {
-	width: 75%;
-}
+
 .text-footer {
 	color: #4b473a;
 }
