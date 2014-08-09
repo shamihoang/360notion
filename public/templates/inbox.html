@@ -131,7 +131,7 @@
 <div class="content">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-5">
+      <div class="col-md-3">
         <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
         <div class="text-center">
           <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
@@ -140,7 +140,7 @@
       </div>
       
       <!--inbox-->
-      <div class="col-md-6 col-sm-7 layout-main">
+      <div class="col-md-6 layout-main">
         <div class="pull-right "> <a class="btn-cm" href="ComposeMessage.html">Compose Message</a> </div>
         <div>
           <Div class="message-tab">
@@ -152,9 +152,12 @@
           <div id="myTab2Content" class="tab-content">
             <div id="inbox" class="tab-pane fade in active  ">
              <div id="table-1_filter" class="dataTables_filter padding-top">
-<label>
-<input class="form-control input-sm" type="text" aria-controls="" placeholder="search for messages...">
-</label>
+ <div class="text-center">
+              <form class="mainnav-form chat-corworker-form text-center" role="search">
+                <input class="form-control input-md " type="text" placeholder="Search for messages">
+                <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
+              </form>
+            </div>
 </div>
               <div class="stream-box">
                 <div class="row title-inbox text-center"> Unread Messages</div>
@@ -225,9 +228,12 @@
             
             <div id="sent" class="tab-pane fade active padding-top">
               <div id="table-1_filter" class="dataTables_filter">
-<label>
-<input class="form-control input-sm" type="text" aria-controls="" placeholder="search for sent messages...">
-</label>
+<div class="text-center">
+              <form class="mainnav-form chat-corworker-form text-center" role="search">
+                <input class="form-control input-md " type="text" placeholder="Search for sent messages">
+                <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
+              </form>
+            </div>
 </div>
               <div class="stream-box">
                 <div class=" title-inbox text-center"> Sent Messages</div>
@@ -272,16 +278,23 @@
         </div>
       </div>
       <!--chat-->
-      <div class="col-md-3 layout-main ">
+      <div class="col-md-3 ">
+      
         <div class="stream-box">
+          
           <p class="title-sidebar "> Chat With Coworkers </p>
           <p>
           <div class="row chat-sidebar text-center">
             <div class="text-center">
-              <form class="mainnav-form pull-right" role="search">
-                <input class="form-control input-md mainnav-search-query" type="text" placeholder="Search for coworker">
+              <form class="mainnav-form chat-corworker-form text-center" role="search">
+                <input class="form-control input-md " type="text" placeholder="Search for coworker">
                 <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
               </form>
+            </div>
+          </div>
+          <div class="row chat-sidebar text-center">
+            <div class="text-center">
+            
             </div>
           </div>
           <div class="row padding-chat">
@@ -298,6 +311,7 @@
               <p class="coworker-title">Marketing Manager</p>
             </div>
           </div>
+         
           <div class="row padding-chat">
             <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
             <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>

@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	float: right;
 	margin-top: 5px;
 	color: #bbb;
+	
 }
 .list-group .list-group-item .badge {
 	margin-top: 2px;
@@ -139,6 +140,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .list-group .list-group-item .list-group-chevron + .badge {
 	margin-right: 10px;
 }
+.list-group {font-size:16px; font-weight:bold;}
 .clear {
 	clear: both;
 }
@@ -321,12 +323,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background-color: #fff;
 }
 .btn-default {
-	background-image: -webkit-linear-gradient(top, #ffffff 0%, #e0e0e0 100%);
-	background-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
- filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
- filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-	background-repeat: repeat-x;
-	border-color: #dbdbdb;
+	font-size: 18px;
+
+	background-color:#E4E4E4;
 	border-color: #ccc;
 }
 .btn-default:hover, .btn-default:focus {
@@ -833,6 +832,7 @@ opacity:1;
 	margin-right: 6px;
 }
 .nav-pills > li > a {
+	font-size:18px;
 	padding: 10px 15px;
 	color: #444;
 	background-color: #eee;
@@ -1347,6 +1347,7 @@ opacity:1;
 .feed-item .feed-content .thumbnail {
 	max-width: 100%;
 }
+.feed-content{padding-bottom:10px;}
 .feed-item .feed-actions {
 	padding: 10px 10px;
 	margin-top: 2em;
@@ -2418,6 +2419,7 @@ html, body {
 	margin: 0 auto;
 	text-align: center;
 }
+
 .account-wrapper .row > div {
 	margin-bottom: 1em;
 }
@@ -2463,6 +2465,9 @@ html, body {
 	width: 450px;
 	padding: 60px 0;
 }
+.social-plan
+{width: 650px;
+	}
 .account-wrapper .row > div {
 	margin-bottom: 0;
 }
@@ -2591,16 +2596,17 @@ a:hover, a:focus {
 	text-decoration: none;
 }
 .btn-cm {
+	font-size:18px;
 	background-color: #666634;
 	border-radius: 5px;
 	color: #ffffff;
-	padding: 8px;
+	padding: 10px;
 }
 .btn-cm:hover, .btn-cm:focus {
 	background-color: #4d4d28;
 	border-radius: 5px;
 	color: #FFF;
-	padding: 8px;
+	padding: 10px;
 }
 .btn-personal-message-post {
 	height: 30px;
@@ -2641,6 +2647,7 @@ a:hover, a:focus {
 .list-group-item:hover {
 	color: #666634;
 }
+
 .title-heading {
 	padding-top: 50px;
 	padding-bottom: 20px;
@@ -2677,6 +2684,7 @@ a:hover, a:focus {
 	height: 50px;
 	padding: 1px;
 	width: 50px;
+	position:relative;
 }
 .coworker-image {
 	width: 60px;
@@ -3023,3 +3031,13 @@ opacity:70%;
 .chat-box-buttons a, chat-box-buttons a:hover, chat-box-buttons.active, chat-box-buttons:focus {
 	color: #FFF;
 }
+.training-time{
+    display: inline-block;
+
+	padding:5px;
+}
+.training-correct-answer
+{ border-radius:0px; height:25px; border:none; background-color:#F5F5F5;}
+.answer-textbox{ max-width:560px; margin:auto;}
+.activity-image-big { max-width:500px; border: 1px solid #ddd; border-radius:5px; text-align:center;}
+.activity-image-thumb { max-width:150px; padding:2px; display:inline-table; border: 1px solid #ddd; border-radius:5px;}
