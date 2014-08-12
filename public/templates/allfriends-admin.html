@@ -101,7 +101,7 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown navbar-profile"> <a class="padding-top-home" href="Activity Stream.html">Home</a> </li>
+        <li class="dropdown navbar-profile"> <a class="padding-top-home" href="/dashboard">Home</a> </li>
         <li class="dropdown navbar-profile"> <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> <img src="../themes/landing/img/avatars/avatar-1-xs.jpg" class="navbar-profile-avatar" alt="Profile Picture"> <span class="navbar-profile-label">rod@rod.me &nbsp;</span> <i class="fa fa-caret-down"></i> </a>
           <ul class="dropdown-menu" role="menu">
             <li> <a href="Profile.html"> <i class="fa fa-user"></i> &nbsp;&nbsp;My Profile </a> </li>
@@ -122,156 +122,86 @@
 <!--end header-->
 
 <div class="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-5">
-        <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
-        <div class="text-center">
-          <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
-        </div>
-        <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-5">
+      <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
+      <div class="text-center">
+        <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
       </div>
-      <!-- end left sidebar-->
-      <div class="col-md-9 col-sm-8 profile-line-height">
-        <h4 class="title-heading text-center">settings</h4>
-        <div class="stream-box">
-          <div class="tab-pane fade active in" id="password-change">
-            <h3 class="text-center"> Change Your Password</h3>
-            <br>
-            <br>
-            <form class="form-horizontal" action="./page-settings.html">
-              <div class="form-group">
-                <label class="col-md-3">current password</label>
-                <div class="col-md-7">
-                  <input class="form-control" type="password" name="old-password">
-                </div>
-              </div>
-              <hr>
-              <div class="form-group">
-                <label class="col-md-3">enter your new password</label>
-                <div class="col-md-7">
-                  <input class="form-control" type="password" name="new-password-1">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="col-md-3">enter your new password again</label>
-                <div class="col-md-7">
-                  <input class="form-control" type="password" name="new-password-2">
-                </div>
-              </div>
-              <div class="form-group padding-top">
-                <div class="col-md-7 col-md-push-3 text-center padding-top">
-                  <button class="btn btn-primary" type="submit">Save Changes</button>
-                  <button class="btn btn-primary" type="reset">Cancel</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-        
-      
-        <div class="stream-box">
-          <h3 class=" text-center"> Receive Notifications </h3>
-          <br>
-          <form class="form-horizontal" action="./page-settings.html">
-          <div class="padding"><b> what do you want to receive notifications on?</b> </div>
-          <div class="text-center">
-            <div class="checkbox padding">
-              <label>
-                <input type="checkbox" checked="" value="">
-                mentions you in an activity</label>
-            </div>
-            <div class="checkbox padding">
-              <label>
-                <input type="checkbox" checked="" value="">
-                sends you a new message</label>
-            </div>
-            <div class="checkbox padding">
-              <label>
-                <input type="checkbox" value="">
-                received new files </label>
-            </div>
-          </div>
-          <div class="padding"><b>show notifications
-</b></div>
-          <div class="text-center">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" checked="" value="">
-                360notion™ dashboard </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="">
-            phone </label>
-            </div>
-          </div>
-          <div class="form-group text-center padding">
-            <div class="col-md-7 col-md-push-3 padding-top">
-              <button class="btn btn-primary" type="submit">Save Changes</button>
-              <button class="btn btn-primary" type="reset">Cancel</button>
-            </div>
-            </form>
-          </div>
-        </div>
-        
-         <div class="stream-box">
-          <h3 class=" text-center"> Receive Alerts</h3>
-          <br>
-          <form class="form-horizontal" action="./page-settings.html">
-          <div class="padding"><b>get alerts on my 360notion™ and phone when someone</b> </div>
-          <div class="text-center">
-            <div class="checkbox padding">
-              <label>
-                <input type="checkbox" checked="" value="">
-             adds or removes a job skill</label>
-            </div>
-            <div class="checkbox padding">
-              <label>
-                <input type="checkbox" checked="" value="">
-              changes a job title</label>
-            </div>
-            <div class="checkbox padding">
-              <label>
-                <input type="checkbox" value="">
-                changes a relationship status</label>
-                 </label>
-            </div>
-             <div class="checkbox padding">
-              <label>
-              
-                <input type="checkbox" value="">
-                moves to a new department</label>
-            </div>
-          </div>
-          <div class="padding"><b>show notifications
-</b></div>
-          <div class="text-center">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" checked="" value="">
-               360notion™ Dashboard </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="">
-                phone </label>
-            </div>
-          </div>
-          <div class="form-group text-center padding">
-            <div class="col-md-7 col-md-push-3 padding-top">
-              <button class="btn btn-primary" type="submit">Save Changes</button>
-              <button class="btn btn-primary" type="reset">Cancel</button>
-            </div>
-            </form>
-          </div>
-        </div>
-        <br class=" padding-top">
-      </div>
-      <!--project--> 
-      
-      <!--end--> 
+      <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
     </div>
+    <!--inbox-->
+    <div class="col-md-9 col-sm-8">
+      <h4 class="title-heading text-center" > all coworkers</h4>
+      <div class="row text-center">
+        <div class="text-center padding">
+          <form class="mainnav-form pull-right" role="search">
+            <input class="form-control input-md mainnav-search-query search-form" type="text" placeholder="Search for Coworker...">
+            <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="row  coworker-box inline-block text-center">
+        <div class=" all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+      
+      <div><a>Remove from network</a></div>
+       <div><a>Make an admin </a></div>
+      </div>
+      <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+              <div><a>Remove from network</a></div>
+              <div><a>Make an admin </a></div>
+      </div>
+      <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+             <div><a>Remove from network</a></div>
+             <div><a>Make an admin </a></div>
+      </div>
+         <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+             <div><a>Remove from network</a></div>
+             <div><a>Make an admin </a></div>
+      </div>
+         <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+              <div><a>Remove from network</a></div>
+              <div><a>Make an admin </a></div>
+      </div>
+         <div class="row  coworker-box inline-block text-center">
+        <div class="all-coworker text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+        <div class=""> <a class="coworker-name">Lizzel Harison</a>
+          <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div><b><a href="#">View Profile</a>&nbsp;&nbsp; <a>Send Message</a></b></div>
+              <div><a>Remove from network</a></div>
+              <div><a>Make an admin </a></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Bootstrap core JavaScript  --> 
 <script type="text/javascript" src="../themes/admin/js/libs/jquery-1.10.2.min.js"></script> 
