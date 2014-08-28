@@ -366,6 +366,16 @@ body {
 	font-size: 18px;
 	width:100%;
 }
+.btn-checkout {
+	background-color:#f0ad08;
+	color: #ffffff;
+}
+.btn-checkout:hover, .btn-checkout:focus {
+	background-color:#f0ad08;
+	background-position: 0px 0px;
+	
+}
+
 /* !Badges */
 /* ----------------------------------------------- */
 .badge {
@@ -1151,6 +1161,10 @@ p {
 	display: inline !important;
 }
 
+.navbar-nav > li > a {
+	line-height:25px;
+    padding-top: 15px;
+}
 @media (min-width: 768px) {
 .navbar-collapse {
 	padding-right: 0;
@@ -1209,15 +1223,14 @@ p {
 	-webkit-font-smoothing: antialiased;
 }
 .navbar {
-	min-height: 60px;
+
 	border-bottom: none;
 }
 .navbar-inverse .navbar-toggle {
 	height: 60px;
 }
 .navbar-inverse .navbar-nav > li > a {
-	padding-top: 20px;
-	padding-bottom: 20px;
+
 	font-weight: 600;
 	border-bottom: 1px solid transparent;
 }
@@ -1262,7 +1275,7 @@ p {
 	border: none;
 }
 .masthead-form {
-	width: 90%;
+	width: 100%;
 	padding-bottom: 6px;
 	margin: 0 auto 4em;
 	text-align: left;

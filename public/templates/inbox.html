@@ -72,40 +72,33 @@
               <div class="pull-left"> Alerts </div>
             </li>
             <li class="noticebar-empty">
-              <h4 class="noticebar-empty-title">You have no alerts.
-</h4>
+              <h4 class="noticebar-empty-title">You have no alerts. </h4>
               <p class="noticebar-empty-text">See what your colleagues are doing.</p>
             </li>
           </ul>
         </li>
-         <li class="dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> 
-         
-     
-         <i class="fa fa-user big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Invite new members&nbsp;</span> <span class="badge-plus"><i class="fa fa-plus"></i></span> 
-        </a>
+        <li class="dropdown"> <a href="./invitefriends.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Invite new members&nbsp;</span> <span class="badge-plus"><i class="fa fa-plus"></i></span> </a>
           <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
             <li class="">
-              <div class=" text-center padding-top"> <h3>Invite More Coworkers</h3></div>
+              <div class=" text-center padding-top">
+                <h3>Invite More Coworkers</h3>
+              </div>
             </li>
             <li >
-            <div class="padding">
-              <div class="form-group padding-top">
-                        
-                        <input type="email"
+              <div class="padding">
+                <div class="form-group padding-top">
+                  <input type="email"
                             class="form-control validate[required,equals[password]]"
                             id=""
                             name=""
                             placeholder="name@companyemailaddress.com">
-                    </div>
-                    <div class="">
-            <a><i class="fa fa-plus padding remove_icon"></i>Add More Coworkers</a>
-           </div>
-           <div class="btn btn-primary pull-right">Invite</div>
-           </div>
+                </div>
+                <div class=""> <a><i class="fa fa-plus padding remove_icon"></i>Add More Coworkers</a> </div>
+                <div class="btn btn-primary pull-right">Invite</div>
+              </div>
             </li>
           </ul>
         </li>
-        
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown navbar-profile"> <a class="padding-top-home" href="/dashboard">Home</a> </li>
@@ -113,7 +106,7 @@
           <ul class="dropdown-menu" role="menu">
             <li> <a href="Profile.html"> <i class="fa fa-user"></i> &nbsp;&nbsp;My Profile </a> </li>
             <li class="divider"></li>
-             <li> <a href="/dashboard/settings"> <i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings </a> </li>
+            <li> <a href="/dashboard/settings"> <i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings </a> </li>
             <li class="divider"></li>
             <li> <a href="#" onclick="this.childNodes[0].submit()">
               <form action="/logout" method="POST">
@@ -129,290 +122,291 @@
 <!--end header-->
 
 <div class="content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
-        <div class="text-center">
-          <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
-        </div>
-        <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a>  </div>
-      </div>
-      
-      <!--inbox-->
-      <div class="col-md-6 layout-main">
-        <div class="pull-right "> <a class="btn-cm" href="ComposeMessage.html">Compose Message</a> </div>
-        <div>
-          <Div class="message-tab">
-            <ul id="myTab2" class="nav nav-pills">
-              <li class="active"> <a data-toggle="tab" href="#inbox">Inbox</a> </li>
-              <li> <a data-toggle="tab" href="#sent">Sent</a> </li>
-            </ul>
-          </Div>
-          <div id="myTab2Content" class="tab-content">
-            <div id="inbox" class="tab-pane fade in active  ">
-             <div id="table-1_filter" class="dataTables_filter padding-top">
- <div class="text-center">
-              <form class="mainnav-form chat-corworker-form text-center" role="search">
-                <input class="form-control input-md " type="text" placeholder="Search for messages">
-                <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
-              </form>
-            </div>
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+  <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
+  <div class="text-center">
+    <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
+  </div>
+  <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
 </div>
-              <div class="stream-box">
-                <div class="row title-inbox text-center"> Unread Messages</div>
-                <div class="row padding-box">
-                  <div class="col-md-8 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4  ">
-                    <p> <a><i class="fa fa-lock text-sidebar"></i>&nbsp;
-                      Unlock to view </a></p>
-                    <p class="time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
-                  </div>
-                </div>
-                <div class="row padding-box">
-                  <div class="col-md-8 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4  ">
-                    <p> <a><i class="fa fa-eye"></i> &nbsp;View</a></p>
-                    <p class="time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
-                  </div>
-                </div>
-              </div>
-              <div class="stream-box">
-                <div class=" title-inbox text-center"> Message History</div>
-                <div class="row padding-box">
-                  <div class="col-md-8 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4  ">
-                    <p> <a><i class="fa fa-eye"></i> &nbsp;View &nbsp; <i class=" fa fa-trash-o"></i> &nbsp;Delete</a></p>
-                    <p class="time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
-                  </div>
-                </div>
-                <div class="row padding-box">
-                  <div class="col-md-8 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4 ">
-                    <p> <a><i class="fa fa-eye"></i> &nbsp;View &nbsp; <i class=" fa fa-trash-o"></i> &nbsp;Delete</a></p>
-                    <p class=" time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <!--sent-->
-            
-            <div id="sent" class="tab-pane fade active padding-top">
-              <div id="table-1_filter" class="dataTables_filter">
-<div class="text-center">
-              <form class="mainnav-form chat-corworker-form text-center" role="search">
-                <input class="form-control input-md " type="text" placeholder="Search for sent messages">
-                <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
-              </form>
-            </div>
-</div>
-              <div class="stream-box">
-                <div class=" title-inbox text-center"> Sent Messages</div>
-                <div class="row padding-box ">
-                  <div class="col-md-6 ">
-                
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-md-3"> <a>
-                    <li class="fa fa-paperclip">&nbsp;&nbsp;Unread</li>
-                    </a></div>
-                  <div class="col-md-3 ">
-                    <p><a><i class="fa fa-pencil"></i>&nbsp;Edit &nbsp;<i class=" fa fa-trash-o"></i> &nbsp;Delete</a> </p>
-                    <p class="time"><i class="fa fa-clock-o "></i> &nbsp;2pm 15/9/2012</p>
-                  </div>
-                </div>
-                <div class="row padding-box ">
-                  <div class="col-md-6 ">
-                    <div class="row">
-                      <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
-                      <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
-                        <p class="inbox-subject">This is a subject line</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class=" col-md-3"> <a>Opened
-                    </li>
-                    </a></div>
-                  <div class="col-md-3 time"></a>
-                    </p>
-                    <p><i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+<!--inbox-->
+<div class="col-md-6 layout-main">
+  <div class="pull-right "> <a class="btn-cm" href="ComposeMessage.html">Compose Message</a> </div>
+  <div>
+    <Div class="message-tab">
+      <ul id="myTab2" class="nav nav-pills">
+        <li class="active"> <a data-toggle="tab" href="#inbox">Inbox</a> </li>
+        <li> <a data-toggle="tab" href="#sent">Sent</a> </li>
+      </ul>
+    </Div>
+    <div id="myTab2Content" class="tab-content">
+      <div id="inbox" class="tab-pane fade in active  ">
+        <div id="table-1_filter" class="dataTables_filter padding-top">
+          <div class="text-center">
+            <form class="mainnav-form chat-corworker-form text-center" role="search">
+              <input class="form-control input-md " type="text" placeholder="Search for messages">
+              <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
+            </form>
           </div>
         </div>
-      </div>
-      <!--chat-->
-      <div class="col-md-3 ">
-      
         <div class="stream-box">
-          
-          <p class="title-sidebar "> Chat With Coworkers </p>
-          <p>
-          <div class="row chat-sidebar text-center">
-            <div class="text-center">
-              <form class="mainnav-form chat-corworker-form text-center" role="search">
-                <input class="form-control input-md " type="text" placeholder="Search for coworker">
-                <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
-              </form>
+          <div class="row title-inbox text-center"> Unread Messages</div>
+          <div class="row padding-box">
+            <div class="col-md-8 ">
+              <div class="row">
+                <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
+                <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
+                  <p class="inbox-subject">This is a subject line</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4  ">
+              <p> <a><i class="fa fa-lock text-sidebar"></i>&nbsp;
+                Unlock to view </a></p>
+              <p class="time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
             </div>
           </div>
-          <div class="row chat-sidebar text-center">
-            <div class="text-center">
-            
+          <div class="row padding-box">
+            <div class="col-md-8 ">
+              <div class="row">
+                <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
+                <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
+                  <p class="inbox-subject">This is a subject line</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4  ">
+              <p> <a><i class="fa fa-eye"></i> &nbsp;View</a></p>
+              <p class="time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
             </div>
           </div>
-          <div class="row padding-chat">
-            <div class="col-xs-6 col-lg-4 coworker-image text-center demo-section"> <a data-toggle="modal" data-target="#question_modal"><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></a></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
-              <p class="coworker-title">Marketing Manager</p>
+        </div>
+        <div class="stream-box">
+          <div class=" title-inbox text-center"> Message History</div>
+          <div class="row padding-box">
+            <div class="col-md-8 ">
+              <div class="row">
+                <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
+                <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
+                  <p class="inbox-subject">This is a subject line</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4  ">
+              <p> <a><i class="fa fa-eye"></i> &nbsp;View &nbsp; <i class=" fa fa-trash-o"></i> &nbsp;Delete</a></p>
+              <p class="time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
             </div>
           </div>
-          
-          
-          <div class="row padding-chat">
-            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
-              <p class="coworker-title">Marketing Manager</p>
+          <div class="row padding-box">
+            <div class="col-md-8 ">
+              <div class="row">
+                <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
+                <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
+                  <p class="inbox-subject">This is a subject line</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <p> <a><i class="fa fa-eye"></i> &nbsp;View &nbsp; <i class=" fa fa-trash-o"></i> &nbsp;Delete</a></p>
+              <p class=" time"> <i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012 </p>
             </div>
           </div>
-         
-          <div class="row padding-chat">
-            <div class="col-xs-6 col-lg-4 coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel</a>
-              <p class="coworker-title">Marketing Manager</p>
-            </div>
-          </div>
-          <a>See All Coworkers</a> </div>
-        
-      </div>
-      
-<div class="modal fade" id="question_modal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
-<div class=" center-block">
-<div class="content">
-
-<div class="chat-container">
-       <div class="chat-box-top">
-          <div class="padding chat-box-buttons"> David Harison  <a class="chat-box-buttons pull-right"> <i class=" fa fa-minus"></i>&nbsp; &nbsp; <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></a></div>
-          </div>
-      <div class="chat-box">
-     <div class="chat-box-message-odd">
-          <div class="activity-stream activity-stream-idea ">
-            <div class="pull-right time"> 12:30:40 am </div>
-            <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="feed-subject">
-              <p> <a href="javascript:;">Shami Hoang</a>  says</p>
-            </div>
-            <div class="chat-box-message">
-              <ul class="icons-list">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-                  parturient montes.
-              </ul>
-            </div>
-          </div>
-          </div>
-          
-          
-      <div >
-     <div class="chat-box-message-even">
-          <div class="activity-stream activity-stream-idea ">
-            <div class="pull-right time"> 12:30:40 am </div>
-            <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="feed-subject">
-              <p> <a href="javascript:;">David Harison</a>  says</p>
-            </div>
-            <div class="chat-box-message">
-              <ul class="icons-list">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-                  parturient montes.
-              </ul>
-            </div>
-          </div>
-          </div>
-          
-        <div >
-     <div class="chat-box-message-odd">
-          <div class="activity-stream activity-stream-idea ">
-            <div class="pull-right time"> 12:30:40 am </div>
-            <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
-            <div class="feed-subject">
-              <p> <a href="javascript:;">Shami Hoang</a>  says</p>
-            </div>
-            <div class="chat-box-message">
-              <ul class="icons-list">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-                  parturient montes.
-              </ul>
-            </div>
-          </div>
-          </div>
-          
-          <div class=" chat-box-compose">
-            
-            <div class="feed-subject">
-              <textarea class="form-control "  placeholder="" tabindex="1"> </textarea>
-              <a class="comment-attach-file"> <i class="fa fa-paperclip"></i> </a> </div>
- <div class="padding-top"><li class="inline-block ui-tooltip">
-                      <label>
-                        <input type="radio" value="" >
-                        <a class="ui-tooltip" data-toggle="tooltip"data-original-title="Snap messages will delete 30 seconds after the recipients open them" >Snap Message </a> </label>
-                    </li>
-                    <li class="inline-block">
-                      <label>
-                        <input type="radio" value="">
-                        <a class="ui-tooltip zindex10" data-toggle="tooltip"data-original-title="Edit or delete the mistakes before the recipients opens them">Mistake-proof Message™</a> </label>
-                    </li></div>
-          </div>
-         
         </div>
       </div>
-</div>
-</div>
-</div>
-
+      
+      <!--sent-->
+      
+      <div id="sent" class="tab-pane fade active padding-top">
+        <div id="table-1_filter" class="dataTables_filter">
+          <div class="text-center">
+            <form class="mainnav-form chat-corworker-form text-center" role="search">
+              <input class="form-control input-md " type="text" placeholder="Search for sent messages">
+              <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
+            </form>
+          </div>
+        </div>
+        <div class="stream-box">
+          <div class=" title-inbox text-center"> Sent Messages</div>
+          <div class="row padding-box ">
+            <div class="col-md-6 ">
+              <div class="row">
+                <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
+                <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
+                  <p class="inbox-subject">This is a subject line</p>
+                </div>
+              </div>
+            </div>
+            <div class=" col-md-3"> <a>
+              <li class="fa fa-paperclip">&nbsp;&nbsp;Unread</li>
+              </a></div>
+            <div class="col-md-3 ">
+              <p><a><i class="fa fa-pencil"></i>&nbsp;Edit &nbsp;<i class=" fa fa-trash-o"></i> &nbsp;Delete</a> </p>
+              <p class="time"><i class="fa fa-clock-o "></i> &nbsp;2pm 15/9/2012</p>
+            </div>
+          </div>
+          <div class="row padding-box ">
+            <div class="col-md-6 ">
+              <div class="row">
+                <div class="col-xs-6 col-lg-4 coworker-image "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/> </div>
+                <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name">Lizzel </a>
+                  <p class="inbox-subject">This is a subject line</p>
+                </div>
+              </div>
+            </div>
+            <div class=" col-md-3"> <a>Opened
+              </li>
+              </a></div>
+            <div class="col-md-3 time"></a>
+              </p>
+              <p><i class="fa fa-clock-o"></i> &nbsp;2pm 15/9/2012</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
   </div>
 </div>
+<!--chat-->
+<div class="col-md-3 ">
+<div class="stream-box">
+<p class="title-sidebar "> Chat With Coworkers </p>
+<p>
+<div class="row chat-sidebar text-center">
+  <div class="text-center">
+    <form class="mainnav-form chat-corworker-form text-center" role="search">
+      <input class="form-control input-md " type="text" placeholder="Search for coworker">
+      <button class="btn btn-sm mainnav-form-btn"> <i class="fa fa-search"></i> </button>
+    </form>
+  </div>
+</div>
+<div class="row chat-sidebar ">
+  <div> 
+<div>
 
+  <section class="popup-section">
+
+    <div class="col-xs-6 col-lg-4 coworker-image text-center "><a href="#styledModal" data-toggle="modal"><img  src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></a></div>
+    <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name" href="#styledModal" data-toggle="modal">Lizzel</a>
+      <p class="coworker-title">Marketing Manager</p>
+    </div> 
+  </section>
+  
+   <section class="popup-section">
+
+    <div class="col-xs-6 col-lg-4 coworker-image text-center "><a href="#styledModal" data-toggle="modal"><img  src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></a></div>
+    <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name" href="#styledModal" data-toggle="modal">Lizzel</a>
+      <p class="coworker-title">Marketing Manager</p>
+    </div> 
+  </section>
+    <section class="popup-section">
+
+    <div class="col-xs-6 col-lg-4 coworker-image text-center "><a href="#styledModal" data-toggle="modal"><img  src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></a></div>
+    <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name" href="#styledModal" data-toggle="modal">Lizzel</a>
+      <p class="coworker-title">Marketing Manager</p>
+    </div> 
+  </section>
+    <section class="popup-section">
+
+    <div class="col-xs-6 col-lg-4 coworker-image text-center "><a href="#styledModal" data-toggle="modal"><img  src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></a></div>
+    <div class="col-xs-12 col-sm-6 col-lg-8"> <a class="coworker-name" href="#styledModal" data-toggle="modal">Lizzel</a>
+      <p class="coworker-title">Marketing Manager</p>
+    </div> 
+  </section>
+  
+<div id="styledModal" class="modal modal-styled fade" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" aria-hidden="true" data-dismiss="modal" type="button">×</button>
+        <h5 class="modal-title"> David Harrison </h5>
+      </div>
+      <div class="modal-body">
+        <div >
+          <div class="chat-box-message-odd">
+            <div class="activity-stream activity-stream-idea ">
+              <div class="pull-right time"> 12:30:40 am </div>
+              <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+              <div class="feed-subject">
+                <p> <a href="javascript:;">Shami Hoang</a> says</p>
+              </div>
+              <div class="chat-box-message">
+                <ul class="icons-list">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+                  parturient montes.
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div >
+            <div class="chat-box-message-even">
+              <div class="activity-stream activity-stream-idea ">
+                <div class="pull-right time"> 12:30:40 am </div>
+                <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+                <div class="feed-subject">
+                  <p> <a href="javascript:;">David Harison</a> says</p>
+                </div>
+                <div class="chat-box-message">
+                  <ul class="icons-list">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+                    parturient montes.
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div >
+              <div class="chat-box-message-odd">
+                <div class="activity-stream activity-stream-idea ">
+                  <div class="pull-right time"> 12:30:40 am </div>
+                  <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+                  <div class="feed-subject">
+                    <p> <a href="javascript:;">Shami Hoang</a> says</p>
+                  </div>
+                  <div class="chat-box-message">
+                    <ul class="icons-list">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+                      parturient montes.
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class=" chat-box-compose">
+                <div class="feed-subject">
+                  <textarea class="form-control "  placeholder="" tabindex="1"> </textarea>
+                  <a class="comment-attach-file"> <i class="fa fa-paperclip"></i> </a> </div>
+                <div class="padding-top">
+                  <li class="inline-block ui-tooltip">
+                    <label>
+                      <input type="radio" value="" >
+                      <a class="ui-tooltip" data-toggle="tooltip"data-original-title="Snap messages will delete 30 seconds after the recipients open them" >Snap Message </a> </label>
+                  </li>
+                  <li class="inline-block">
+                    <label>
+                      <input type="radio" value="">
+                      <a class="ui-tooltip zindex10" data-toggle="tooltip"data-original-title="Edit or delete the mistakes before the recipients opens them">Mistake-proof Message™</a> </label>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+  <div ><a>See All Coworkers</a> </div>
+  </div>
+ 
+</div>
 
 <!-- Bootstrap core JavaScript  --> 
 <script type="text/javascript" src="../themes/admin/js/libs/jquery-1.10.2.min.js"></script> 
@@ -427,9 +421,9 @@
 
 <!-- App JS --> 
 <script type="text/javascript" src="../themes/admin/js/mvpready-core.js"></script> 
-<script type="text/javascript" src="../themes/admin/js/mvpready-admin.js"></script>
-<!-- App JS -->
-        <script type="text/javascript" src="../themes/landing/js/mvpready-core.js"></script>
-        <script type="text/javascript" src="../themes/landing/js/mvpready-landing.js"></script>
+<script type="text/javascript" src="../themes/admin/js/mvpready-admin.js"></script> 
+<!-- App JS --> 
+<script type="text/javascript" src="../themes/landing/js/mvpready-core.js"></script> 
+<script type="text/javascript" src="../themes/landing/js/mvpready-landing.js"></script>
 </body>
 </html>

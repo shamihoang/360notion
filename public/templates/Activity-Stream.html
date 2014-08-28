@@ -1,0 +1,371 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>...</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="{author}">
+<link rel="stylesheet" href="../themes/admin/css/FB-style.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="../themes/admin/css/font-awesome.min.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../themes/admin/css/bootstrap.min.css">
+
+<!-- Validation CSS -->
+<link rel="stylesheet" href="/css/validationEngine.jquery.css"/>
+
+<!-- Alertify -->
+<link rel="stylesheet" href="/css/alertify.core.css"/>
+<link rel="stylesheet" href="/css/alertify.bootstrap3.css"/>
+
+<!-- App CSS -->
+<link rel="stylesheet" href="../themes/admin/css/mvpready-admin.css">
+<link rel="stylesheet" href="../themes/admin/css/mvpready-flat.css">
+<link rel="stylesheet" href="/css/dashboard.css"/>
+
+<!-- HTML5 shim -->
+<!--[if lt IE 9]>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+<link rel="shortcut icon" href="../themes/img/favicon.ico">
+</head>
+
+<body>
+<!--header-->
+<header class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-cog"></i> </button>
+      <img src="../themes/admin/img/logo.png" alt="360notion-Logo"/> </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav noticebar navbar-left">
+        <li class="dropdown"> <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Notifications&nbsp;</span> <span class="badge badge-primary">3</span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="nav-header">
+              <div class="pull-left"> </div>
+              <div class="pull-right"> <a href="javascript:;">Mark as Read</a> </div>
+            </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <i class="fa fa-cloud-upload text-success"></i> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">Templates Synced</strong> <span class="noticebar-item-text">20 Templates have been synced to the Mashon Demo instance.</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 12 minutes ago</span> </span> </a> </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <i class="fa fa-ban text-danger"></i> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">Sync Error</strong> <span class="noticebar-item-text">5 Designs have been failed to be synced to the Mashon Demo instance.</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 20 minutes ago</span> </span> </a> </li>
+            <li class="noticebar-menu-view-all"> <a href="./page-notifications.html">View All Notifications</a> </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-envelope big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Messages&nbsp;</span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="nav-header">
+              <div class="pull-left"> </div>
+              <div class="pull-right"> <a href="javascript:;">New Message</a> </div>
+            </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <img src="../themes/admin/img/avatars/avatar-1-md.jpg" style="width: 50px" alt=""> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">New Message</strong> <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 20 minutes ago</span> </span> </a> </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <img src="../themes/admin/img/avatars/avatar-2-md.jpg" style="width: 50px" alt=""> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">New Message</strong> <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 5 hours ago</span> </span> </a> </li>
+            <li class="noticebar-menu-view-all"> <a href="./page-notifications.html">View All Messages</a> </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-exclamation-triangle big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Alerts&nbsp;</span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="nav-header">
+              <div class="pull-left"> Alerts </div>
+            </li>
+            <li class="noticebar-empty">
+              <h4 class="noticebar-empty-title">You have no alerts. </h4>
+              <p class="noticebar-empty-text">See what your colleagues are doing.</p>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Invite new members&nbsp;</span> <span class="badge-plus"><i class="fa fa-plus"></i></span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="">
+              <div class=" text-center padding-top">
+                <h3>Invite More Coworkers</h3>
+              </div>
+            </li>
+            <li >
+              <div class="padding">
+                <div class="form-group padding-top">
+                  <input type="email"
+                            class="form-control validate[required,equals[password]]"
+                            id=""
+                            name=""
+                            placeholder="name@companyemailaddress.com">
+                </div>
+                <div class=""> <a><i class="fa fa-plus padding remove_icon"></i>Add More Coworkers</a> </div>
+                <div class="btn btn-primary pull-right">Invite</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown navbar-profile"> <a class="padding-top-home" href="/dashboard">Home</a> </li>
+        <li class="dropdown navbar-profile"> <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> <img src="../themes/landing/img/avatars/avatar-1-xs.jpg" class="navbar-profile-avatar" alt="Profile Picture"> <span class="navbar-profile-label">rod@rod.me &nbsp;</span> <i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu" role="menu">
+            <li> <a href="Profile.html"> <i class="fa fa-user"></i> &nbsp;&nbsp;My Profile </a> </li>
+            <li class="divider"></li>
+            <li> <a href="settings.html"> <i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings </a> </li>
+            <li class="divider"></li>
+            <li> <a href="#" onclick="this.childNodes[0].submit()">
+              <form action="/logout" method="POST">
+                <i class="fa fa-sign-out"></i> &nbsp;&nbsp;Log Out
+              </form>
+              </a> </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--end header-->
+
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
+        <div class="text-center">
+          <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
+        </div>
+        <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
+      </div>
+      
+      <!--inbox-->
+      <div class="col-md-6 center-column-padding">
+        <h4 class="title-heading text-center">Activity Stream</h4>
+        <div class="share-widget clearfix"> 
+          <!-- Post an Idea -->
+          <div id="post_idea_container" class="fb-container">
+            <textarea class="form-control share-widget-textarea" rows="5" placeholder="Ask a 360-degree Feedback Question…" tabindex="1"></textarea>
+          </div>
+          <!-- -->
+          <div class="box-border">
+            <div id="possible_answer"> 1. Possible answer </div>
+            <div class="add-possible-answer"> <i class="fa fa-plus padding remove_icon"></i>Add possible answer </div>
+            <div class="add-possible-answer"> <i class="fa fa-plus padding remove_icon"></i>Add open-ended answer </div>
+            <div class=" add-possible-answer">
+            <div class="row padding-bottom">
+              <div class="col-md-4 text-center"><i class="fa fa-question padding feedback360_icon icon-color"></i>Ask new question </div>
+              <div class="col-md-4 text-center"> <i class="fa fa-paperclip padding feedback360_icon icon-color"></i>Attach file</div>
+              <div class="col-md-4 text-center"> <i class="fa fa-video-camera padding feedback360_icon icon-color"></i>Attach video</div>
+            </div>
+            </div>
+            <div  id="feedback360"  > </div>
+            <div id="announcement" >
+              <div class="announcement_list"> <i class="fa fa-users entirecompany_icon padding icon-color"></i>Entire Company <i class="fa fa-times padding remove_icon"></i> </div>
+              <div class="announcement_list"> ntthuy@gmail.com <i class="fa fa-times padding remove_icon"></i> </div>
+              <div class="inline-block" > <i class="fa fa-plus padding remove_icon"></i>Add Coworkers </div>
+            </div>
+          </div>
+          <!-- --> 
+          <!-- Post an Image -->
+          <div id="post_image_container" class="fb-container hidden">
+            <textarea class="form-control share-widget-textarea" rows="3" placeholder="What do you want to share?" tabindex="1"></textarea>
+            <div class="upload-file">
+              <div class="upload-file-details"> <img class="image-preview" src="{@imgUrl key="{user.avatarKey}"/}" width="40" height="40"/>
+                <p>File name</p>
+                <p class="upload-message">File attached successfully
+                
+                <p> 
+              </div>
+              <div class="fa fa-times close remove-icon-upload"></div>
+            </div>
+          </div>
+          
+          <!-- Upload a File -->
+          <div id="upload_file_container" class="fb-container hidden">
+            <textarea class="form-control share-widget-textarea" rows="3" placeholder="What do you want to share?" tabindex="1"></textarea>
+          </div>
+          
+          <!-- Ask a Question -->
+          <div id="ask_question_container" class="fb-container hidden">
+            <textarea class="form-control share-widget-textarea" rows="3" placeholder="Conduct 360-degree feedback" tabindex="1"></textarea>
+          </div>
+          <div class="share-widget-actions">
+            <div class="pull-right"> <a class="btn btn-primary btn-sm" tabindex="2">Post</a> </div>
+            <div class="share-widget-types pull-left"> <a href="#" class="fa fa-lightbulb-o ui-tooltip box-post-idea active" title="Post an Idea" data-open="#post_idea_container"></a> <a href="#" class="fa fa-picture-o ui-tooltip box-post-image" title="Post an Image" data-open="#post_image_container"></a> <a href="#" class="fa fa-paperclip ui-tooltip box-post-file" title="Upload a File" data-open="#upload_file_container"></a> <a href="#" class="fa fa-rotate-left ui-tooltip box-post-idea active" title="Conduct 360-degree feedback" data-open="#post_idea_container"></a> &nbsp;&nbsp; </div>
+            
+            <!----> 
+          </div>
+        </div>
+        <div class="stream-box">
+          <div class="activity-stream activity-stream-idea">
+            <div class="pull-right btn-group demo-element  padding"> <a class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-cog  " ></i></a> <ul class="dropdown-menu" role="menu">
+<li>
+<a href="javascript:;">Hide Conversation</a>
+</li>
+<li>
+<a href="javascript:;">Follow Conversation</a>
+</li>
+<li>
+<a href="javascript:;">Add As Favorite</a>
+</li>
+
+
+</ul> </div>
+            <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <p> <a href="javascript:;">Shami Hoang</a> shared the following idea with the <a> Entire Company</a>,<a> David Harison and 3 other people</a> </p>
+            </div>
+            <div class="feed-content">
+              <ul class="icons-list">
+                <li> <i class="icon-li fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+                  parturient montes. </li>
+              </ul>
+            </div>
+          </div>
+          <div class="activity-actions"> <a class="" href="javascript:;"> <i class="fa fa-thumbs-up icon-color"></i> 123 </a>&nbsp; <a class="" href="javascript:;"> <i class="fa fa-comment-o icon-color"></i> 29 </a>&nbsp; <a class="icon-color" href="javascript:;"> Share </a> <a class="pull-right" href="javascript:;"> <i class="fa fa-clock-o icon-color"></i> 2 days ago </a></div>
+          <div> <a class="" href="javascript:;"> View 5 more comments </a>&nbsp; </div>
+          <div class="activity-stream activity-stream-idea">
+            <div class="feed-image coworker-image-comment text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <p> <a href="javascript:;">Shami Hoang</a>&nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. massa. Cum sociis natoque penatibus et magnis dis parturient montes. </p>
+            </div>
+            <div class="feed-content">
+              <p class="activity-actions"> <a>Like</a>&nbsp; <a> Reply </a></p>
+            </div>
+          </div>
+          <div class="activity-stream activity-stream-idea">
+            <div class="feed-image coworker-image-comment text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <textarea class="form-control "  placeholder="" tabindex="1"> </textarea>
+              <a class="comment-attach-file"> <i class="fa fa-paperclip"></i> </a> </div>
+          </div>
+        </div>
+        <br class="visible-xs">
+        <div class="stream-box">
+          <div class="activity-stream activity-stream-idea">
+            <div class="pull-right"> <a ><i class="fa fa-cog"></i></a> </div>
+            <div class="feed-image coworker-image text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <p> <a href="javascript:;">Shami Hoang</a>&nbsp;shared the following 360-degree feedback question with <a>  [Recipient Full Name] </a><a>and 3 other people</a> </p>
+            </div>
+            <div class="feed-content">
+              <ul class="icons-list">
+                <li> Which color do you like the most?</li>
+                <li> Answer 1: Pink </li>
+                <li class="inline-block">
+                  <div class="row  progress-bar-padding">
+                    <div class="progress progress-sm">
+                      <div class="progress-bar progress-bar-primary" style="width:20%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar"> </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="inline-block "> </li>
+                <li> Answer 2: Blue </li>
+                <li class="inline-block">
+                  <div class="row  progress-bar-padding">
+                    <div class="progress progress-sm">
+                      <div class="progress-bar progress-bar-primary" style="width:70%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar"> </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="inline-block "> </li>
+                <li> Answer 3: Green</li>
+                <li class="inline-block">
+                  <div class="row  progress-bar-padding">
+                    <div class="progress progress-sm">
+                      <div class="progress-bar progress-bar-primary" style="width:90%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar"> </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="inline-block "> </li>
+              </ul>
+            </div>
+          </div>
+          <div class="activity-actions"> <a class="" href="javascript:;"> <i class="fa fa-thumbs-up icon-color"></i> 123 </a>&nbsp; <a class="" href="javascript:;"> <i class="fa fa-comment-o icon-color"></i> 29 </a>&nbsp; <a class="" href="javascript:;"> Share </a>&nbsp; &nbsp; <a class="" href="javascript:;">300 Total Votes</a> <a class="pull-right" href="javascript:;"> <i class="fa fa-clock-o icon-color"></i> 2 days ago </a></div>
+          <div> <a class="" href="javascript:;"> View 5 more comments </a>&nbsp; </div>
+          <div class="activity-stream activity-stream-idea">
+            <div class="feed-image coworker-image-comment text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <p> <a href="javascript:;">Shami Hoang</a>&nbsp; &nbsp; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. massa. Cum sociis natoque penatibus et magnis dis parturient montes. </p>
+            </div>
+            <div class="feed-content">
+              <p class=""> <a>Like</a>&nbsp; <a> Reply </a></p>
+            </div>
+          </div>
+          <div class="activity-stream activity-stream-idea">
+            <div class="feed-image coworker-image-comment text-center "><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></div>
+            <div class="feed-subject">
+              <textarea class="form-control "  placeholder="" tabindex="1"> </textarea>
+              <a class="comment-attach-file"> <i class="fa fa-paperclip"></i> </a> </div>
+          </div>
+        </div>
+      </div>
+      <!--chat-->
+      <div class="col-md-3 layout-main ">
+        <p>
+        <div class="row text-center suggested-coworker-box">
+          <div class="row  pull-right suggested-coworker-close"> <a href="#"> <i class="fa fa-times"> </i> Close </a> </div>
+          <div class="coworker-carousel-padding "><a data-toggle="modal" data-target="#coworker_modal"><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></a></div>
+          <div class="row coworker-carousel-button">
+            <div class="col-md-6 text-left"><a class="btn btn-primary" href="#clients-carousel" data-slide="prev">&lsaquo;</a></div>
+            <div class="col-md-6"><a class=" pull-right btn btn-primary" href="#clients-carousel" data-slide="next">&rsaquo;</a> </div>
+          </div>
+          <div class=" coworker-profile">
+            <p class="  text-center"><a class="coworker-name">Lizzel Harison</a> </p>
+            <p class=" text-center coworker-title ">Project Manager</p>
+            <p class="profile-detail"> <b>Education:</b> University of Washington, Michael G. Foster School of Business</a> </p>
+            <p class="profile-detail"> <b>Top Skills:</b> Customer service</p>
+          </div>
+          <div > <a class=" btn btn-primary" href="coworker-Profile.html" >Preview Coworker</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="coworker_modal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form id="question_form" action="/faq" method="POST" role="form">
+        <fieldset>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="modal_label"> <img class="coworker-preview-image" src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/>&nbsp; &nbsp;Lizzel Harison&nbsp;</h4>
+        </div>
+      </form>
+      <div class="coworker-preview">
+       
+          <p> <a  class="coworker-name" href="javascript:;">Lizzel Harison</a> shared an idea to <a> Entire Company</a>,<a> David Harison and 3 other people</a> </p> 
+          <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
+        
+      </div>
+      
+       <div class="coworker-preview">
+       
+          <p> <a  class="coworker-name" href="javascript:;">Lizzel Harison</a> </p> 
+          <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
+        
+      </div>
+       <div class="coworker-preview">
+       
+          <p> <a class="coworker-name" href="javascript:;">Lizzel Harison</a> posted a file <a> David Harison and 3 other people</a> </p> 
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
+        
+      </div>
+      <hr>
+      <div class="text-center"> <a class="btn btn-primary" href="javascript:;">Add as Friend</a> <a class="btn btn-primary" href="javascript:;">Send Message</a> </div>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript  --> 
+<script type="text/javascript" src="../themes/admin/js/libs/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="../themes/admin/js/libs/bootstrap.min.js"></script> 
+
+<!-- Validation JS --> 
+<script type="text/javascript" src="/js/jquery.validationEngine-en.js"></script> 
+<script type="text/javascript" src="/js/jquery.validationEngine.js"></script> 
+
+<!-- Alertify JS --> 
+<script type="text/javascript" src="/js/alertify.js"></script> 
+
+<!-- App JS --> 
+<script type="text/javascript" src="../themes/admin/js/mvpready-core.js"></script> 
+<script type="text/javascript" src="../themes/admin/js/mvpready-admin.js"></script>
+</body>
+</html>

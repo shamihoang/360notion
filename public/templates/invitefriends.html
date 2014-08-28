@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>...</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="{author}">
+<link rel="stylesheet" href="../themes/admin/css/FB-style.css">
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="../themes/admin/css/font-awesome.min.css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../themes/admin/css/bootstrap.min.css">
+
+<!-- Validation CSS -->
+<link rel="stylesheet" href="/css/validationEngine.jquery.css"/>
+
+<!-- Alertify -->
+<link rel="stylesheet" href="/css/alertify.core.css"/>
+<link rel="stylesheet" href="/css/alertify.bootstrap3.css"/>
+
+<!-- App CSS -->
+<link rel="stylesheet" href="../themes/admin/css/mvpready-admin.css">
+<link rel="stylesheet" href="../themes/admin/css/mvpready-flat.css">
+<link rel="stylesheet" href="/css/dashboard.css"/>
+
+<!-- HTML5 shim -->
+<!--[if lt IE 9]>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script type="text/javascript" src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+<link rel="shortcut icon" href="../themes/img/favicon.ico">
+</head>
+
+<body>
+<!--header-->
+<header class="navbar navbar-inverse" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-cog"></i> </button>
+      <img src="../themes/admin/img/logo.png" alt="360notion-Logo"/> </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav noticebar navbar-left">
+        <li class="dropdown"> <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Notifications&nbsp;</span> <span class="badge badge-primary">3</span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="nav-header">
+              <div class="pull-left"> </div>
+              <div class="pull-right"> <a href="javascript:;">Mark as Read</a> </div>
+            </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <i class="fa fa-cloud-upload text-success"></i> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">Templates Synced</strong> <span class="noticebar-item-text">20 Templates have been synced to the Mashon Demo instance.</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 12 minutes ago</span> </span> </a> </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <i class="fa fa-ban text-danger"></i> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">Sync Error</strong> <span class="noticebar-item-text">5 Designs have been failed to be synced to the Mashon Demo instance.</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 20 minutes ago</span> </span> </a> </li>
+            <li class="noticebar-menu-view-all"> <a href="./page-notifications.html">View All Notifications</a> </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-envelope big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Messages&nbsp;</span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="nav-header">
+              <div class="pull-left"> </div>
+              <div class="pull-right"> <a href="javascript:;">New Message</a> </div>
+            </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <img src="../themes/admin/img/avatars/avatar-1-md.jpg" style="width: 50px" alt=""> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">New Message</strong> <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 20 minutes ago</span> </span> </a> </li>
+            <li> <a href="./page-notifications.html" class="noticebar-item"> <span class="noticebar-item-image"> <img src="../themes/admin/img/avatars/avatar-2-md.jpg" style="width: 50px" alt=""> </span> <span class="noticebar-item-body"> <strong class="noticebar-item-title">New Message</strong> <span class="noticebar-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span> <span class="noticebar-item-time"><i class="fa fa-clock-o"></i> 5 hours ago</span> </span> </a> </li>
+            <li class="noticebar-menu-view-all"> <a href="./page-notifications.html">View All Messages</a> </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="./page-notifications.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-exclamation-triangle big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Alerts&nbsp;</span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="nav-header">
+              <div class="pull-left"> Alerts </div>
+            </li>
+            <li class="noticebar-empty">
+              <h4 class="noticebar-empty-title">You have no alerts. </h4>
+              <p class="noticebar-empty-text">See what your colleagues are doing.</p>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="./invitefriends.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user big-font"></i> <span class="navbar-visible-collapsed">&nbsp;Invite new members&nbsp;</span> <span class="badge-plus"><i class="fa fa-plus"></i></span> </a>
+          <ul class="dropdown-menu noticebar-menu noticebar-hoverable" role="menu">
+            <li class="">
+              <div class=" text-center padding-top">
+                <h3>Invite More Coworkers</h3>
+              </div>
+            </li>
+            <li >
+              <div class="padding">
+                <div class="form-group padding-top">
+                  <input type="email"
+                            class="form-control validate[required,equals[password]]"
+                            id=""
+                            name=""
+                            placeholder="name@companyemailaddress.com">
+                </div>
+                <div class=""> <a><i class="fa fa-plus padding remove_icon"></i>Add More Coworkers</a> </div>
+                <div class="btn btn-primary pull-right">Invite</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown navbar-profile"> <a class="padding-top-home" href="/dashboard">Home</a> </li>
+        <li class="dropdown navbar-profile"> <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;"> <img src="../themes/landing/img/avatars/avatar-1-xs.jpg" class="navbar-profile-avatar" alt="Profile Picture"> <span class="navbar-profile-label">rod@rod.me &nbsp;</span> <i class="fa fa-caret-down"></i> </a>
+          <ul class="dropdown-menu" role="menu">
+            <li> <a href="Profile.html"> <i class="fa fa-user"></i> &nbsp;&nbsp;My Profile </a> </li>
+            <li class="divider"></li>
+            <li> <a href="settings.html"> <i class="fa fa-cogs"></i> &nbsp;&nbsp;Settings </a> </li>
+            <li class="divider"></li>
+            <li> <a href="#" onclick="this.childNodes[0].submit()">
+              <form action="/logout" method="POST">
+                <i class="fa fa-sign-out"></i> &nbsp;&nbsp;Log Out
+              </form>
+              </a> </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--end header-->
+
+<div class="content">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-5">
+      <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
+      <div class="text-center">
+        <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
+      </div>
+      <div class="list-group padding-top"> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-asterisk text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="Activity Stream.html" class="list-group-item {@eq key="/dashboard" value="{url}"}current{/eq}"> <i class="fa fa-home text-sidebar"></i> &nbsp;&thinsp;&thinsp;&thinsp;My Activity Stream <i class="fa fa-chevron-right list-group-chevron"></i> </a> <a href="inbox.html" class="list-group-item {@eq key="/dashboard/messages" value="{url}"}current{/eq}"> <i class="fa fa-envelope text-sidebar"></i> &nbsp;&thinsp;Messages <i class="fa fa-chevron-right list-group-chevron"></i> <span class="badge">3</span> </a> <a href="files.html" class="list-group-item {@eq key="/dashboard/files" value="{url}"}current{/eq}"> <i class="fa fa-paperclip text-sidebar"></i> &nbsp;&nbsp;Files <i class="fa fa-chevron-right list-group-chevron"></i> </a> </div>
+    </div>
+    <!--inbox-->
+    <div class="col-md-9 col-sm-8">
+      <h4 class="title-heading text-center" >  invite friends</h4>
+      <div class=" text-left">
+       
+         
+           Add colleagues and start collaborating
+       
+      </div>
+      <hr>
+      <div class="padding">
+                <div class="form-group padding-top">
+                  <input type="email"
+                            class="form-control validate[required,equals[password]]"
+                            id=""
+                            name=""
+                            placeholder="name@companyemail.com">
+                </div>
+                <div class=""> <a><i class="fa fa-plus padding remove_icon"></i>Add More Coworkers</a> </div>
+                <div class="btn btn-primary pull-right">Invite</div>
+              </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript  --> 
+<script type="text/javascript" src="../themes/admin/js/libs/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="../themes/admin/js/libs/bootstrap.min.js"></script> 
+
+<!-- Validation JS --> 
+<script type="text/javascript" src="/js/jquery.validationEngine-en.js"></script> 
+<script type="text/javascript" src="/js/jquery.validationEngine.js"></script> 
+
+<!-- Alertify JS --> 
+<script type="text/javascript" src="/js/alertify.js"></script> 
+
+<!-- App JS --> 
+<script type="text/javascript" src="../themes/admin/js/mvpready-core.js"></script> 
+<script type="text/javascript" src="../themes/admin/js/mvpready-admin.js"></script>
+</body>
+</html>

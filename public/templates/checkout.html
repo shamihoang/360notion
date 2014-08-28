@@ -22,17 +22,8 @@
 <header class="navbar navbar-inverse" role="banner">
   <div class="container">
     <div class="navbar-header"> <a href="/" class="navbar-brand navbar-brand-img"> <img src="../themes/landing/img/logo.png" alt="Logo"> </a>
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i> </button>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"><i class="fa fa-bars"></i> </button>
     </div>
-    <nav class="collapse navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav navbar-right mainnav-menu">
-        <li {@eq key="/" value="{url}"}class="active"{/eq}> <a href="/">Home</a> </li>
-        <li {@eq key="/features" value="{url}"}class="active"{/eq}> <a href="/features">Features</a> </li>
-        <li {@eq key="/faq" value="{url}"}class="active"{/eq}> <a href="/faq">FAQ</a> </li>
-        <li {@eq key="/pricing" value="{url}"}class="active"{/eq}> <a href="/pricing">Pricing</a> </li>
-        <li {@eq key="/login" value="{url}"}class="active"{/eq}> <a href="/login">Sign In</a> </li>
-      </ul>
-    </nav>
   </div>
 </header>
 <!--end header-->
@@ -82,7 +73,7 @@
 </div>
 
   <div class="row-divider">
-    <input id="name" class="form-control promontion-code" type="text" data-required="true" name="name">  <a class="btn btn-primary padding-top">Apply</a>
+    <input id="name" class="form-control promontion-code" type="text" data-required="true" name="name">  <a class="btn  btn-checkout">Apply</a>
    <p></p>
      </div>
 
@@ -90,9 +81,9 @@
 
     <p class="row-divider"></p>
     <div class="row text-center">
-      <h3>Enter Your Billing Information</h3>
+      <strong><h3>Enter Your Billing Information</h3>
      <p> 360notion.com accepts all major credit & debit cards. All payments are secure with 256-bit encryption.</br> If you have any questions, please contact customer service at admin@myabuy.com</p>
-
+</strong>
    <br></br> 
     <div class="col-xs-6 "><div class=" billing-form">
 <div class="form-group">
@@ -190,7 +181,7 @@
 </div>
 <div class="form-group">
  <div class="form-group">
-                        <a href="checkout-cont.html" type="submit" class="btn btn-primary btn-jumbo">Continue Checkout</a>
+                        <a href="checkout-cont.html" type="submit" class="btn btn-jumbo btn-checkout">Continue Checkout</a>
                       </div>
                       
                       <!-- Begin DigiCert site seal HTML and JavaScript -->
@@ -215,38 +206,13 @@ var __dcid = __dcid || [];__dcid.push(["DigiCertClickID_IoDwFwRX", "5", "l", "wh
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-md-4">
         <h4 class="title-size text-center"> About Us </h4>
         <p class="About-Us text-footer text-center"> <i class="icon-li fa fa-quote-left about-us-icon"></i>&nbsp;&nbsp;360notion™ was founded on a simple idea, that people should be engaged with the company they are a part. 
           To do this, the boardroom, break room, meeting room and file room should be centralized and remain private.&nbsp;&nbsp; <i class="icon-li fa fa-quote-right about-us-icon "></i> <small class="help-block text-center text-footer"> -Joel Goslar, Founder and CEO </small> </p>
       </div>
-      <div class="col-sm-3">
-        <h4 class="title-size text-center"> Stay Connected </h4>
-        <br>
-        <ul class="footer-social-link text-footer text-center">
-          <li> <a href="https://www.facebook.com/360notion™"
-                                        target="_blank"
-                                        class="ui-tooltip"
-                                        title="Facebook"
-                                        data-placement="bottom"> <i class="fa fa-facebook text-footer"></i> </a> </li>
-          <li> <a href="https://twitter.com/360notion™"
-                                        target="_blank"
-                                        class="ui-tooltip"
-                                        title="Twitter"
-                                        data-placement="bottom"> <i class="fa fa-twitter"></i> </a> </li>
-          <li> <a href="https://pinterest.com/360notion™"
-                                        target="_blank"
-                                        class="ui-tooltip"
-                                        title="Pinterest"
-                                        data-placement="bottom"> <i class="fa fa-pinterest-square"></i> </a> </li>
-          <li> <a href="https://tumblr.com/360notion™"
-                                        target="_blank"
-                                        class="ui-tooltip"
-                                        title="tumblr"
-                                        data-placement="bottom"> <i class="fa fa-tumblr"></i> </a> </li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
+      
+      <div class="col-md-4">
         <h4 class="title-size text-center"> Stay Updated </h4>
         <div class="subscribe-form text-footer text-center">
           <p >Get emails about new features and future updates.</p>
@@ -267,7 +233,7 @@ var __dcid = __dcid || [];__dcid.push(["DigiCertClickID_IoDwFwRX", "5", "l", "wh
         </div>
         <p class="subscribe-thanks"> Thanks for subscribing! </p>
       </div>
-      <div class="col-sm-3 text-footer text-center">
+      <div class="col-md-4 text-footer text-center">
         <h4 class="title-size text-center"> Get In Touch </h4>
         <p> 1201 Orange St Ste 600 <br>
           Wilmington, DE 19801 </p
@@ -282,8 +248,8 @@ var __dcid = __dcid || [];__dcid.push(["DigiCertClickID_IoDwFwRX", "5", "l", "wh
 <footer class="copyright-new">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6"> <a class="footer-link" href="mailto:admin@myabuy.com">Careers </a>&nbsp;|&nbsp;<a href="#" class="footer-link" >Terms of Service</a> </div>
-      <div class="col-sm-6"> Copyright &copy; 2014 Myabuy LLC. </div>
+     
+Copyright &copy; 2014 Myabuy LLC. 
     </div>
   </div>
 </footer>
