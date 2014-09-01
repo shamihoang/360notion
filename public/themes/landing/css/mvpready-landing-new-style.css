@@ -2102,3 +2102,35 @@ a:hover, a:focus {
 	z-index: 10;
 }
 
+.form-group {
+    position: relative;
+}
+.form-group .parsley-success .parsley-error-list {
+    display: none !important;
+}
+.form-group .parsley-error-list {
+    background: none repeat scroll 0 0 #b94a48;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block !important;
+    font-size: 12px;
+    font-weight: 600;
+    list-style: none outside none;
+    margin: 0;
+    padding: 2px 10px;
+    position: relative;
+    top: 0;
+}
+.form-group .parsley-error-list:after {
+    border-bottom: 6px solid #b94a48;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 3px;
+    position: absolute;
+    top: -6px;
+}
+.form-horizontal .form-group span.error {
+    margin-left: 15px;
+}

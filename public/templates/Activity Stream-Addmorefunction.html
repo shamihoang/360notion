@@ -124,7 +124,7 @@
 <div class="content">
   <div class="container">
     <div class="row">
-      <div class="col-md-3 col-sm-5">
+      <div class="col-md-3">
         <div class="profile-avatar padding-top"> <img src="../themes/landing/img/avatars/avatar-1-lg.jpg" class="profile-avatar-img thumbnail" alt="Profile Picture"> </div>
         <div class="text-center">
           <h5><a href="allfriend.html">123 Coworkers in Your Network</a></h5>
@@ -133,7 +133,7 @@
       </div>
       
       <!--inbox-->
-      <div class="col-md-6 col-sm-7 center-column-padding">
+      <div class="col-md-6">
         <h4 class="title-heading text-center">Activity Stream</h4>
         <div class="share-widget clearfix"> 
           <!-- Post an Idea -->
@@ -380,55 +380,115 @@
         </div>
       </div>
       <!--chat-->
-      <div class="col-md-3 layout-main ">
-        <p>
-        <div class="row text-center suggested-coworker-box">
-          <div class="row  pull-right suggested-coworker-close"> <a href="#"> <i class="fa fa-times"> </i> Close </a> </div>
-          <div class="coworker-carousel-padding "><a data-toggle="modal" data-target="#coworker_modal"><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></a></div>
-          <div class="row coworker-carousel-button">
-            <div class="col-md-6 text-left"><a class="btn btn-primary" href="#clients-carousel" data-slide="prev">&lsaquo;</a></div>
-            <div class="col-md-6"><a class=" pull-right btn btn-primary" href="#clients-carousel" data-slide="next">&rsaquo;</a> </div>
+      <div class="col-md-3 layout-main  ">
+<div class="suggested-coworker-box">
+<div id="accordion-help" class="panel-group accordion-simple">
+<div >
+  <div > <a data-toggle="collapse" data-parent="#accordion-help" href="#coworker-preview">
+    <h3 class=" text-center">
+    <span>Coworker Directory</span> </a> </div>
+  <div id="coworker-preview" class="panel-collapse in"> <a data-toggle="collapse" data-parent="#accordion-help" href="#coworker-preview" class="coworker-preview-close"> <i class="fa fa-times"> </i> Close </a></a> 
+    <!--caroulsel-->
+    <div>
+      <h4 class=" padding-error"><a class="btn btn-primary carousel-prev" href="#clients-carousel" data-slide="prev">&lsaquo;</a> <a class="btn btn-primary carousel-next  pull-right" href="#clients-carousel" data-slide="next">&rsaquo;</a> </h4>
+      <div id="clients-carousel" class="carousel slide" data-interval="0">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="testimonial">
+              <div>
+                <div class=" text-center ">
+                  <div class="coworker-carousel-padding "><a data-toggle="modal" data-target="#coworker_modal"><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></a></div>
+                  <div class=" coworker-profile">
+                    <p class="  text-center"><a class="coworker-name">Lizzel Harison</a> </p>
+                    <p class=" text-center coworker-title ">Project Manager</p>
+                    <p class="profile-detail"> <b>Education:</b> University of Washington, Michael G. Foster School of Business</a> </p>
+                    <p class="profile-detail"> <b>Top Skills:</b> Customer service</p>
+                  </div>
+                  <div > <a class=" btn btn-primary" href="coworker-Profile.html" >Preview Coworker</a> </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class=" coworker-profile">
-            <p class="  text-center"><a class="coworker-name">Lizzel Harison</a> </p>
-            <p class=" text-center coworker-title ">Project Manager</p>
-            <p class="profile-detail"> <b>Education:</b> University of Washington, Michael G. Foster School of Business</a> </p>
-            <p class="profile-detail"> <b>Top Skills:</b> Customer service</p>
+          <div class="item">
+            <div class="testimonial">
+              <div>
+                <div class="text-center ">
+                  <div class="coworker-carousel-padding "><a data-toggle="modal" data-target="#coworker_modal"><img src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/></a></div>
+                  <div class=" coworker-profile">
+                    <p class="  text-center"><a class="coworker-name">Lizzel Harison</a> </p>
+                    <p class=" text-center coworker-title ">Project Manager</p>
+                    <p class="profile-detail"> <b>Education:</b> University of Washington, Michael G. Foster School of Business</a> </p>
+                    <p class="profile-detail"> <b>Top Skills:</b> Customer service</p>
+                  </div>
+                  <div > <a class=" btn btn-primary" href="coworker-Profile.html" >Preview Coworker</a> </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div > <a class=" btn btn-primary" href="coworker-Profile.html" >Preview Coworker</a> </div>
+        </div>
+        <div class="modal fade" id="coworker_modal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <form id="question_form" action="/faq" method="POST" role="form">
+                <fieldset>
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="modal_label"> <img class="coworker-preview-image" src="../themes/landing/img/avatars/avatar-1-md.jpg" alt=" name"/>&nbsp; &nbsp;Lizzel Harison&nbsp;</h4>
+                </div>
+              </form>
+              <div class="coworker-preview">
+                <p> <a  class="coworker-name" href="javascript:;">Lizzel Harison</a> shared an idea to <a> Entire Company</a>,<a> David Harison and 3 other people</a> </p>
+                <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
+              </div>
+              <div class="coworker-preview">
+                <p> <a  class="coworker-name" href="javascript:;">Lizzel Harison</a> </p>
+                <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
+              </div>
+              <div class="coworker-preview">
+                <p> <a class="coworker-name" href="javascript:;">Lizzel Harison</a> posted a file <a> David Harison and 3 other people</a> </p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
+              </div>
+              <hr>
+              <div class="text-center"> <a class="btn btn-primary" href="javascript:;">Add as Friend</a> <a class="btn btn-primary" href="javascript:;">Send Message</a> </div>
+              <hr>
+            </div>
+          </div>
+          <div> </div>
+          <div class="modal fade" id="coworker_modal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form id="question_form" action="/faq" method="POST" role="form">
+                  <fieldset>
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="modal_label"> <img class="coworker-preview-image" src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/>&nbsp; &nbsp;Lizzel Harison&nbsp;</h4>
+                  </div>
+                </form>
+                <div class="coworker-preview">
+                  <p> <a  class="coworker-name" href="javascript:;">Lizzel Harison</a> shared an idea to <a> Entire Company</a>,<a> David Harison and 3 other people</a> </p>
+                  <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
+                </div>
+                <div class="coworker-preview">
+                  <p> <a  class="coworker-name" href="javascript:;">Lizzel Harison</a> </p>
+                  <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
+                </div>
+                <div class="coworker-preview">
+                  <p> <a class="coworker-name" href="javascript:;">Lizzel Harison</a> posted a file <a> David Harison and 3 other people</a> </p>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
+                </div>
+                <hr>
+                <div class="text-center"> <a class="btn btn-primary" href="javascript:;">Add as Friend</a> <a class="btn btn-primary" href="javascript:;">Send Message</a> </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <!--end caroulsel--> 
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade" id="coworker_modal" tabindex="-1" role="dialog" aria-labelledby="modal_label" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <form id="question_form" action="/faq" method="POST" role="form">
-        <fieldset>
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="modal_label"> <img class="coworker-preview-image" src="../themes/landing/img/avatars/avatar-2-lg.jpg" alt=" name"/>&nbsp; &nbsp;Lizzel Harison&nbsp;</h4>
-        </div>
-      </form>
-      <div class="coworker-preview">
-        <p> <a  class="coworker-name" href="javascript:;">Lizzel Harison</a> shared an idea to <a> Entire Company</a>,<a> David Harison and 3 other people</a> </p>
-        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
-      </div>
-      <div class="coworker-preview">
-        <p> <a  class="coworker-name" href="javascript:;">Lizzel Harison</a> </p>
-        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
-      </div>
-      <div class="coworker-preview">
-        <p> <a class="coworker-name" href="javascript:;">Lizzel Harison</a> posted a file <a> David Harison and 3 other people</a> </p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. massa....</p>
-      </div>
-      <hr>
-      <div class="text-center"> <a class="btn btn-primary" href="javascript:;">Add as Friend</a> <a class="btn btn-primary" href="javascript:;">Send Message</a> </div>
-      <hr>
-    </div>
-  </div>
-</div>
+
 
 <!-- Bootstrap core JavaScript  --> 
 <script type="text/javascript" src="../themes/admin/js/libs/jquery-1.10.2.min.js"></script> 

@@ -2844,8 +2844,6 @@ a:hover, a:focus {
 }
 .suggested-coworker-box {
 	padding: 10px;
-	margin: 4px;
-
 	border: 1px solid #e3e3e3;
 	border-radius: 4px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
@@ -3048,5 +3046,7 @@ opacity:70%;
 	.modal-footer {
     margin-top: 15px;
     padding: 0px 0px 0px;
-    text-align: right;
+    text-align: right;}
+	.padding-bottom-inbox
+	{ padding-bottom:15px;}
 }
